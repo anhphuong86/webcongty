@@ -9,42 +9,48 @@ export default function Home() {
       desc: "Chuyên sâu nhà ở, văn phòng, nhà xưởng và hạ tầng kỹ thuật dân dụng cao cấp.",
       icon: "🏗️",
       image: "/service1.png",
-      size: "large"
+      size: "large",
+      color: "orange"
     },
     {
       title: "Điện & Năng lượng Tái tạo",
       desc: "Trạm biến áp, pin mặt trời, tuabin gió và hệ thống PCCC chuẩn quốc tế.",
       icon: "⚡",
       image: "/service2.png",
-      size: "medium"
+      size: "medium",
+      color: "yellow"
     },
     {
       title: "Cấp thoát nước & Điều hòa",
       desc: "Mạng lưới cấp thoát nước đô thị và hệ thống điều hòa trung tâm.",
       icon: "💧",
       image: "/service3.png",
-      size: "small"
+      size: "small",
+      color: "blue"
     },
     {
       title: "Giao thông & Thủy lợi",
       desc: "Xây dựng đường bộ, đường sắt, cầu cống và các công trình thủy lợi quy mô lớn.",
       icon: "🛣️",
       image: "/hero.png",
-      size: "small"
+      size: "small",
+      color: "green"
     },
     {
       title: "Thương mại & Dịch vụ Phụ trợ",
       desc: "Cung cấp máy móc xây dựng và tư vấn bất động sản chuyên nghiệp.",
       icon: "🤝",
       image: "/service1.png",
-      size: "medium"
+      size: "medium",
+      color: "purple"
     },
     {
       title: "Nhập khẩu & Phân phối Thiết bị",
       desc: "Cung cấp trang thiết bị xây dựng, máy móc kỹ thuật cao nhập khẩu chính hãng.",
       icon: "🚢",
       image: "/service3.png",
-      size: "medium"
+      size: "medium",
+      color: "cyan"
     }
   ];
 
@@ -86,7 +92,7 @@ export default function Home() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`${styles.bentoItem} ${styles[service.size]} fade-in`}
+                className={`${styles.bentoItem} ${styles[service.size]} ${styles[service.color]} fade-in`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <Image src={service.image} alt={service.title} fill className={styles.bentoImage} />

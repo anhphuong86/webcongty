@@ -475,3 +475,79 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Color Branding Utilities */
+.orange {
+  border-top: 6px solid #FF8C00;
+}
+
+.yellow {
+  border-top: 6px solid #FFD700;
+}
+
+.blue {
+  border-top: 6px solid #00BFFF;
+}
+
+.green {
+  border-top: 6px solid #32CD32;
+}
+
+.purple {
+  border-top: 6px solid #FF00FF;
+}
+
+.cyan {
+  border-top: 6px solid #00FFFF;
+}
+
+.orange:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(255, 140, 0, 0.8) 0%, transparent 100%);
+}
+
+.yellow:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(255, 215, 0, 0.8) 0%, transparent 100%);
+}
+
+.blue:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(0, 191, 255, 0.8) 0%, transparent 100%);
+}
+
+.green:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(50, 205, 50, 0.8) 0%, transparent 100%);
+}
+
+.purple:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(255, 0, 255, 0.8) 0%, transparent 100%);
+}
+
+.cyan:hover .bentoOverlay {
+  background: linear-gradient(to top, rgba(0, 255, 255, 0.8) 0%, transparent 100%);
+}
+
+.orange :global(.btn-primary) {
+  background-color: #FF8C00;
+}
+
+.yellow :global(.btn-primary) {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.blue :global(.btn-primary) {
+  background-color: #00BFFF;
+}
+
+.green :global(.btn-primary) {
+  background-color: #32CD32;
+}
+
+.purple :global(.btn-primary) {
+  background-color: #FF00FF;
+}
+
+.cyan :global(.btn-primary) {
+  background-color: #00FFFF;
+  color: #000;
+}

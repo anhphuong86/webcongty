@@ -230,12 +230,15 @@
 }
 
 .sectionTitle {
-  font-size: clamp(38px, 4vw, 56px);
-  /* Adaptive Text */
-  color: var(--primary-color);
-  margin-bottom: 30px;
+  font-size: clamp(42px, 5vw, 64px);
+  /* Tăng nhẹ để Cân bằng Widescreen */
+  color: var(--primary-dark);
+  /* Màu tối quyền lực thay vì Navy blue cũ kỹ */
+  margin-bottom: 25px;
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  /* Ép viền siêu sắt nét */
 }
 
 .sectionDesc {
@@ -394,20 +397,26 @@
 }
 
 .statNum {
-  font-size: 52px;
-  font-weight: 900;
-  color: var(--primary-color);
-  display: block;
+  font-size: 72px;
+  /* Tăng độ lớn Thống kê */
+  font-weight: 950;
+  /* Đổ màu Thép Xanh tương lai cực quang (Cyber-Blue Gradient) */
+  background: linear-gradient(135deg, var(--accent-color) 0%, #00F0FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  letter-spacing: -3px;
 }
 
 .statItem p {
-  font-size: 15px;
-  color: var(--text-main);
-  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-light);
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .trustImageWrapper {

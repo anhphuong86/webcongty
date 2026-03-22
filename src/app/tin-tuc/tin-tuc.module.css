@@ -1,3 +1,44 @@
+.hero {
+    background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.95)), url('/service1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 80px;
+    text-align: center;
+    color: var(--white);
+    margin-top: -80px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 950;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.breadcrumb span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.newsContentWrapper {
+    padding: 100px 0;
+    background: #fdfdfd;
+}
+
 .newsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -6,13 +47,14 @@
 
 .newsCard {
     background: var(--white);
-    border-radius: 2px;
+    border-radius: 8px;
+    /* Smoother corner */
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
-    border: 1px solid #f0f0f0;
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .newsCard:hover {

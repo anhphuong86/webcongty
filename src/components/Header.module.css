@@ -80,12 +80,12 @@
     margin-left: 8px;
 }
 
-/* Nav Desktop - Pushed to right near CTA */
+/* Nav Desktop - Centered */
 .nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: 40px;
+    margin: 0 auto;
+    /* Kéo Menu vào chính giữa màn hình */
 }
 
 .nav ul {

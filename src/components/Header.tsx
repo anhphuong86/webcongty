@@ -23,14 +23,21 @@ export default function Header({ initialConfig }: { initialConfig?: any }) {
     setIsMenuOpen(false);
   }, [pathname]);
 
-  const logoText = initialConfig?.general?.logoUrl || "CP XÂY LẮP CHỢ LỚN";
+  const companyName = initialConfig?.general?.companyName || "XÂY LẮP CHỢ LỚN";
+  const logoImage = initialConfig?.general?.logoUrl || "/logo.png";
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.logo}>
-          <Link href="/">
-            <span className={styles.logoText}>{logoText}</span>
+          <Link href="/" className={styles.logoLink}>
+            <img
+              src={logoImage}
+              alt="Logo Cty"
+              className={styles.logoImage}
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
+            <span className={styles.logoText}>{companyName}</span>
           </Link>
         </div>
 

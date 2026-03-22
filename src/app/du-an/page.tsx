@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./projects.module.css";
 
 export default function ProjectsPage() {
     const projects = [
@@ -39,7 +40,7 @@ export default function ProjectsPage() {
         { id: 29, name: "Bàn Đông/Mát Inox Bếp Nhà Hàng", category: "Bếp Công Nghiệp", image: "/service1.png", year: "2023" },
         { id: 30, name: "Hệ Thống Tủ Trưng Bày Bánh GS25", category: "Thiết bị", image: "/service1.png", year: "2023" },
 
-        // Nhóm 4, 5, 6 (Rút gọn tên nhưng đủ 10 bài cho mỗi mục)
+        // Nhóm 4, 5, 6 
         { id: 31, name: "Hệ Thống Thoát Nước Mưa Quận 8", category: "Thủy lợi", image: "/service3.png", year: "2023" },
         { id: 32, name: "Cấp Nước Sinh Hoạt Cần Giuộc", category: "Thủy lợi", image: "/service3.png", year: "2022" },
         { id: 33, name: "Điều Hòa VRV Trụ Sở Ngân Hàng", category: "Điều hòa", image: "/service3.png", year: "2023" },
@@ -78,46 +79,29 @@ export default function ProjectsPage() {
         <div className="section-padding">
             <div className="container">
                 <div className="text-center mb-60 fade-in">
-                    <h1 style={{ fontSize: '48px', color: 'var(--primary-dark)', textTransform: 'uppercase' }}>Hồ Sơ Năng Lực Dự Án</h1>
-                    <div style={{ height: '4px', width: '60px', backgroundColor: 'var(--primary-color)', margin: '20px auto' }}></div>
-                    <p style={{ fontSize: '18px' }}>Xây Lắp Chợ Lớn tự hào đồng hành cùng 60+ dự án tiêu biểu trải rộng trên tất cả các mảng kinh doanh chiến lược.</p>
+                    <h1 className={styles.pageTitle}>Hồ Sơ Năng Lực Dự Án</h1>
+                    <div className={styles.titleLine}></div>
+                    <p className={styles.pageSubtitle}>Xây Lắp Chợ Lớn tự hào đồng hành cùng 60+ dự án tiêu biểu trải rộng trên tất cả các mảng kinh doanh chiến lược.</p>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', gap: '40px' }}>
+                <div className={styles.projectsGrid}>
                     {projects.map((project) => (
-                        <div key={project.id} className="fade-in" style={{
-                            background: 'white',
-                            boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                            borderRadius: '4px',
-                            overflow: 'hidden',
-                            transition: 'var(--transition)'
-                        }}>
-                            <div style={{ position: 'relative', height: '280px' }}>
+                        <div key={project.id} className={`${styles.projectCard} fade-in`}>
+                            <div className={styles.imageContainer}>
                                 <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
-                                <div style={{
-                                    position: 'absolute',
-                                    top: '20px',
-                                    left: '20px',
-                                    background: 'var(--accent-color)',
-                                    color: 'white',
-                                    padding: '5px 15px',
-                                    fontSize: '12px',
-                                    fontWeight: 'bold',
-                                    borderRadius: '2px'
-                                }}>{project.year}</div>
+                                <div className={styles.projectYear}>{project.year}</div>
                             </div>
-                            <div style={{ padding: '30px' }}>
-                                <span style={{ color: 'var(--primary-color)', fontSize: '13px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>{project.category}</span>
-                                <h3 style={{ fontSize: '20px', marginTop: '10px', color: 'var(--primary-dark)' }}>{project.name}</h3>
-                                <Link href="/lien-he" style={{ display: 'inline-block', marginTop: '20px', color: 'var(--text-light)', fontSize: '13px', textDecoration: 'none', borderBottom: '1px solid currentColor' }}>Tư vấn giải pháp tương tự →</Link>
+                            <div className={styles.projectContent}>
+                                <span className={styles.projectCategory}>{project.category}</span>
+                                <h3 className={styles.projectName}>{project.name}</h3>
+                                <Link href="/lien-he" className={styles.projectLink}>Tư vấn giải pháp tương tự →</Link>
                             </div>
                         </div>
                     ))}
                 </div>
 
-                {/* CTA Section */}
                 <div className="text-center mt-100 fade-in">
-                    <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Bạn cần đối tác thi công uy tín cho dự án sắp tới?</h2>
+                    <h2 className={styles.ctaTitle}>Bạn cần đối tác thi công uy tín cho dự án sắp tới?</h2>
                     <Link href="/lien-he" className="btn btn-primary">Gửi yêu cầu hợp tác ngay</Link>
                 </div>
             </div>

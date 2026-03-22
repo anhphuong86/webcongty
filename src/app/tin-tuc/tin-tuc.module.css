@@ -114,3 +114,22 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+    .newsGrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .newsContent {
+        padding: 25px;
+    }
+
+    .newsContent h3 {
+        font-size: 20px;
+    }
+
+    .newsImg {
+        height: 220px;
+    }
+}

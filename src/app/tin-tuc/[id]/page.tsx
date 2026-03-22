@@ -6,14 +6,15 @@ import { notFound } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
 
-export default async function PostDetail({ params }: { params: { id: string } }) {
+export default async function PostDetail({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
     const postsFilePath = path.join(process.cwd(), 'src', 'data', 'posts.json');
     let post = null;
 
     try {
         const fileContent = fs.readFileSync(postsFilePath, 'utf8');
         const posts = JSON.parse(fileContent);
-        post = posts.find((p: any) => p.id === Number(params.id));
+        post = posts.find((p: any) => Number(p.id) === Number(id));
     } catch (error) {
         console.error('Failed to read post:', error);
     }

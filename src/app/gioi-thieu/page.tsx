@@ -61,12 +61,11 @@ export default async function AboutPage() {
                             </div>
                         </div>
 
-                        <div className={`${styles.imageBox} fade-in`} style={{ animationDelay: '0.2s' }}>
-                            <Image
-                                src="/hero.png"
+                        <div className={`${styles.imageBox} fade-in`} style={{ animationDelay: '0.2s', position: 'relative', overflow: 'hidden', borderRadius: '12px' }}>
+                            <img
+                                src={config.about?.heroImage || "/hero.png"}
                                 alt="Dự án Xây Lắp Chợ Lớn"
-                                fill
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
                         </div>
                     </div>

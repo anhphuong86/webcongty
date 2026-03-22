@@ -6,7 +6,7 @@ import path from 'path';
 
 export default async function Home() {
   const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
-  let config = { home: { heroTitle: '', heroHighlight: '', heroSlogan: '', aboutTitle: '', aboutContent: '' } };
+  let config: any = { home: { heroImage: '', heroTitle: '', heroHighlight: '', heroSlogan: '', aboutTitle: '', aboutContent: '' } };
   try {
     const fileContent = fs.readFileSync(configFilePath, 'utf8');
     config = JSON.parse(fileContent);
@@ -70,7 +70,7 @@ export default async function Home() {
       {/* Hero Section - Elite Split Layout */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
-          <Image src="/hero.png" alt="Xây Lắp Chợ Lớn Building" fill priority style={{ objectFit: 'cover' }} />
+          <img src={config.home?.heroImage || "/hero.png"} alt="Xây Lắp Chợ Lớn Building" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
         <div className={styles.heroOverlay}></div>
 

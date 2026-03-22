@@ -133,6 +133,17 @@ export default function AdminPage() {
         });
     };
 
+    const handleConfigImageChange = (e: any, section: string, key: string) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                handleConfigChange(section, key, reader.result as string);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     const handleSaveConfig = async () => {
         setMessage('Đang lưu cấu hình...');
         try {
@@ -229,6 +240,15 @@ export default function AdminPage() {
                             {/* Home Page Config */}
                             <div style={{ flex: '1', minWidth: '300px' }}>
                                 <h3 className="mb-20" style={{ color: 'var(--primary-color)' }}>2. Nội dung Trang Chủ</h3>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Nền Hero (Trang Chủ)</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.home.heroImage && <img src={config.home.heroImage} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'home', 'heroImage')} style={{ fontSize: '14px' }} />
+                                    </div>
+                                </div>
+
                                 <div className={styles.formGroup}>
                                     <label>Tiêu đề Hero (Trang Chủ)</label>
                                     <textarea className={styles.input} rows={2} value={config.home.heroTitle} onChange={e => handleConfigChange('home', 'heroTitle', e.target.value)} />
@@ -248,6 +268,35 @@ export default function AdminPage() {
                                 <div className={styles.formGroup}>
                                     <label>Nội dung phần Giới thiệu (Home)</label>
                                     <textarea className={styles.input} rows={4} value={config.home.aboutContent} onChange={e => handleConfigChange('home', 'aboutContent', e.target.value)} />
+                                </div>
+                            </div>
+
+                            {/* Images & Other */}
+                            <div style={{ flex: '1', minWidth: '300px' }}>
+                                <h3 className="mb-20" style={{ color: 'var(--primary-color)' }}>3. Hình ảnh Các Trang Con</h3>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Giới thiệu Công ty</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.about?.heroImage && <img src={config.about.heroImage} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'about', 'heroImage')} style={{ fontSize: '14px' }} />
+                                    </div>
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Cover Trang Dự Án</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.heroImages?.projects && <img src={config.heroImages.projects} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'heroImages', 'projects')} style={{ fontSize: '14px' }} />
+                                    </div>
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Cover Trang Tin Tức</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.heroImages?.news && <img src={config.heroImages.news} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'heroImages', 'news')} style={{ fontSize: '14px' }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>

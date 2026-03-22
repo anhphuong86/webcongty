@@ -8,13 +8,17 @@ export const dynamic = 'force-dynamic';
 
 export default async function ProjectsPage() {
     const postsFilePath = path.join(process.cwd(), 'src', 'data', 'posts.json');
+    const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
     let dynamicPosts = [];
+    let config: any = { heroImages: {} };
 
     try {
         const fileContent = fs.readFileSync(postsFilePath, 'utf8');
         dynamicPosts = JSON.parse(fileContent);
+        const configFileContent = fs.readFileSync(configFilePath, 'utf8');
+        config = JSON.parse(configFileContent);
     } catch (error) {
-        console.error('Failed to read dynamic posts:', error);
+        console.error('Failed to read config or dynamic posts:', error);
     }
 
     const staticProjects = [
@@ -58,7 +62,7 @@ export default async function ProjectsPage() {
     return (
         <main>
             {/* Sub Hero Section */}
-            <section className={styles.hero}>
+            <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.95)), url(${config.heroImages?.projects || '/hero.png'})` }}>
                 <div className="container">
                     <div className={`${styles.breadcrumb} fade-in`}>
                         <Link href="/">Trang chủ</Link>

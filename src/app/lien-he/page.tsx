@@ -16,7 +16,7 @@ export default async function ContactPage() {
     return (
         <main>
             {/* Sub Hero Section */}
-            <section className={styles.hero}>
+            <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.95)), url(${config.heroImages?.contact || '/service2.png'})` }}>
                 <div className="container">
                     <div className={`${styles.breadcrumb} fade-in`}>
                         <Link href="/">Trang chủ</Link>

@@ -3,10 +3,10 @@
     background-image: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.95));
     background-size: cover;
     background-position: center;
-    padding: 180px 0 100px;
+    padding: 240px 0 100px;
     text-align: center;
     color: var(--white);
-    margin-top: -100px;
+    margin-top: -90px;
 }
 
 .hero h1 {
@@ -22,13 +22,28 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: var(--primary-color);
+    color: var(--white);
     font-weight: 700;
     display: flex;
     justify-content: center;
     gap: 15px;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.8;
+}
+
+.breadcrumb p {
+    color: var(--white);
+    margin: 0;
 }
 
 .breadcrumb span {

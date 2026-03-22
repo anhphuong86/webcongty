@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import FloatingContact from "@/components/FloatingContact";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <FloatingContact />
       </body>
     </html>
   );

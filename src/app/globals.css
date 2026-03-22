@@ -93,7 +93,8 @@ h4 {
 .btn {
   display: inline-block;
   padding: 16px 36px;
-  border-radius: 4px;
+  border-radius: 0;
+  /* Chuyển từ 4px sang vuông sắc lẹm */
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition);

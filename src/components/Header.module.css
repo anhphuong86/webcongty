@@ -3,16 +3,15 @@
     top: 0;
     width: 100%;
     background-color: transparent;
-    padding: 30px 0;
-    z-index: 1000;
-    transition: var(--transition);
+    padding: 35px 0;
+    z-index: 2000;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .scrolled {
-    padding: 15px 0;
-    background-color: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.12);
+    padding: 18px 0;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 80, 0.12);
 }
 
 .headerContainer {
@@ -22,24 +21,29 @@
 }
 
 .logoText {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 900;
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: var(--font-header);
-    transition: var(--transition);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .scrolled .logoText {
     color: var(--primary-color);
+    font-size: 26px;
+    /* Subtle shrink is better than a big jump */
 }
 
 .logoHighlight {
     color: var(--accent-color);
+    margin-left: 10px;
 }
 
-/* Nav Desktop */
 .nav {
     display: flex;
     align-items: center;
@@ -47,18 +51,19 @@
 
 .nav ul {
     display: flex;
-    gap: 35px;
+    gap: 45px;
     list-style: none;
 }
 
 .nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     font-weight: 800;
-    font-size: 13px;
+    font-size: 15px;
+    /* Increased from 13px */
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: var(--transition);
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
     position: relative;
     padding: 10px 0;
 }
@@ -70,17 +75,17 @@
 .nav a::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--accent-color);
-    transition: var(--transition);
+    transition: 0.3s;
 }
 
 .nav a:hover,
 .nav a.active {
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
 }
 
 .nav a:hover::after,
@@ -88,51 +93,48 @@
     width: 100%;
 }
 
-.mobileCta {
-    display: none;
-    /* Crucial: hide on desktop */
-}
-
 .cta {
     display: flex;
 }
 
-.mobileToggle {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    z-index: 2000;
+/* Ensure the CTA button is also prominent in both states */
+.cta :global(.btn) {
+    font-size: 13px;
+    padding: 14px 28px;
 }
 
-.mobileToggle span {
-    width: 28px;
-    height: 2px;
-    background-color: var(--white);
-    transition: var(--transition);
-}
-
-.scrolled .mobileToggle span {
+.scrolled .cta :global(.btn-primary) {
     background-color: var(--primary-color);
 }
 
-/* Responsive Overlay */
+.mobileCta {
+    display: none;
+}
+
+.mobileToggle {
+    display: none;
+}
+
+/* Responsive Overlay for Mobile */
+@media (max-width: 1100px) {
+    .nav ul {
+        gap: 30px;
+    }
+
+    .logoText {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         padding: 15px 0;
         background-color: var(--white);
     }
 
-    .scrolled {
-        background-color: var(--white);
-    }
-
     .logoText {
         color: var(--primary-color);
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .cta {
@@ -141,10 +143,6 @@
 
     .mobileToggle {
         display: flex;
-    }
-
-    .mobileToggle span {
-        background-color: var(--primary-color);
     }
 
     .nav {
@@ -156,7 +154,7 @@
         background-color: var(--primary-color);
         flex-direction: column;
         justify-content: center;
-        transition: var(--transition);
+        transition: 0.5s;
         z-index: 1000;
     }
 
@@ -166,34 +164,24 @@
 
     .nav ul {
         flex-direction: column;
-        gap: 25px;
-        margin-bottom: 40px;
+        gap: 30px;
         text-align: center;
     }
 
     .nav a {
-        font-size: 22px;
+        font-size: 24px;
         color: var(--white);
     }
 
     .mobileCta {
         display: block;
+        margin-top: 40px;
     }
 
-    /* Burger Animation */
-    .toggleActive span {
-        background-color: var(--white) !important;
-    }
-
-    .toggleActive span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .toggleActive span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .toggleActive span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+    .mobileToggle span {
+        width: 30px;
+        height: 3px;
+        background-color: var(--primary-color);
+        border-radius: 4px;
     }
 }

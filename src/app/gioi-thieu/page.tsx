@@ -1,56 +1,81 @@
 import Image from "next/image";
+import Link from "next/link";
+import styles from "./about.module.css";
 
 export default function AboutPage() {
     return (
-        <div className="section-padding">
-            <div className="container">
-                <div className="text-center mb-60 fade-in">
-                    <h1 style={{ fontSize: '48px', color: 'var(--primary-dark)', textTransform: 'uppercase' }}>Về Xây Lắp Chợ Lớn</h1>
-                    <div style={{ height: '4px', width: '60px', backgroundColor: 'var(--primary-color)', margin: '20px auto' }}></div>
+        <main>
+            {/* Sub Hero Section */}
+            <section className={styles.hero}>
+                <div className="container">
+                    <div className={`${styles.breadcrumb} fade-in`}>
+                        <Link href="/">Trang chủ</Link>
+                        <span>/</span>
+                        <p>Giới thiệu</p>
+                    </div>
+                    <h1 className="fade-in">Về Xây Lắp Chợ Lớn</h1>
                 </div>
+            </section>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '80px', alignItems: 'center' }}>
-                    <div className="fade-in">
-                        <h2 className="mb-40" style={{ color: 'var(--primary-color)', fontSize: '32px' }}>Tầm Nhìn & Sứ Mệnh</h2>
-                        <p className="mb-20" style={{ fontSize: '18px', lineHeight: '1.8' }}>
-                            Được thành lập với khát khao nâng tầm chất lượng công trình Việt, Công ty CP Xây lắp Chợ Lớn
-                            đã không ngừng nỗ lực để trở thành biểu tượng của sự uy tín trong ngành xây dựng.
-                        </p>
-                        <p className="mb-40" style={{ fontSize: '18px', lineHeight: '1.8' }}>
-                            Sứ mệnh của chúng tôi là kiến tạo nên những không gian sống và làm việc đẳng cấp,
-                            kết hợp hài hòa giữa công nghệ xây dựng tiên tiến và tính thẩm mỹ trường tồn.
-                        </p>
+            {/* Main Content */}
+            <section className={styles.aboutContent}>
+                <div className="container">
+                    <div className={styles.grid}>
+                        <div className={`${styles.textSection} fade-in`}>
+                            <h2>Tầm Nhìn & Sứ Mệnh</h2>
+                            <p className={styles.description}>
+                                Được thành lập với khát khao nâng tầm chất lượng công trình Việt,
+                                <strong> Công ty CP Xây lắp Chợ Lớn</strong> đã không ngừng nỗ lực để trở thành
+                                biểu tượng của sự uy tín và bền vững trong ngành xây dựng tại Việt Nam.
+                            </p>
+                            <p className={styles.description}>
+                                Sứ mệnh của chúng tôi không chỉ là xây dựng nên những khối bê tông, mà là kiến tạo
+                                nên những không gian sống và làm việc đẳng cấp, nơi kết hợp hài hòa giữa
+                                công nghệ xây dựng hiện đại và tính thẩm mỹ trường tồn.
+                            </p>
 
-                        <h2 className="mb-40" style={{ color: 'var(--primary-color)', fontSize: '32px' }}>Giá Trị Cốt Lõi</h2>
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
-                            <div>
-                                <h4 className="mb-10" style={{ color: 'var(--primary-dark)' }}>UY TÍN</h4>
-                                <p style={{ fontSize: '15px' }}>Cam kết tuyệt đối về chất lượng và tiến độ.</p>
-                            </div>
-                            <div>
-                                <h4 className="mb-10" style={{ color: 'var(--primary-dark)' }}>SÁNG TẠO</h4>
-                                <p style={{ fontSize: '15px' }}>Luôn đổi mới trong thiết kế và giải pháp thi công.</p>
-                            </div>
-                            <div>
-                                <h4 className="mb-10" style={{ color: 'var(--primary-dark)' }}>TẬN TÂM</h4>
-                                <p style={{ fontSize: '15px' }}>Lắng nghe và thấu hiểu mọi nguyện vọng của khách hàng.</p>
-                            </div>
-                            <div>
-                                <h4 className="mb-10" style={{ color: 'var(--primary-dark)' }}>BỀN VỮNG</h4>
-                                <p style={{ fontSize: '15px' }}>Xây dựng những giá trị lâu dài cho cộng đồng.</p>
-                            </div>
-                            <div>
-                                <h4 className="mb-10" style={{ color: 'var(--primary-dark)' }}>TOÀN CẦU</h4>
-                                <p style={{ fontSize: '15px' }}>Nhập khẩu trang thiết bị hiện đại từ các đối tác quốc tế.</p>
+                            <div className={styles.coreValues}>
+                                <div className={styles.valueCard}>
+                                    <h4>Uy Tín</h4>
+                                    <p>Cam kết tuyệt đối về chất lượng và tiến độ trong từng hạng mục thi công.</p>
+                                </div>
+                                <div className={styles.valueCard}>
+                                    <h4>Sáng Tạo</h4>
+                                    <p>Luôn đổi mới giải pháp kỹ thuật để tối ưu hóa chi phí và công năng dự án.</p>
+                                </div>
+                                <div className={styles.valueCard}>
+                                    <h4>Tận Tâm</h4>
+                                    <p>Đồng hành và thấu hiểu mọi nguyện vọng của đối tác từ khâu lên ý tưởng.</p>
+                                </div>
+                                <div className={styles.valueCard}>
+                                    <h4>Toàn Cầu</h4>
+                                    <p>Kết nối và nhập khẩu trang thiết bị hiện đại từ các đối tác hàng đầu thế giới.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="fade-in" style={{ position: 'relative', height: '600px', borderRadius: '4px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
-                        <Image src="/hero.png" alt="Xây Lắp Chợ Lớn Office" fill style={{ objectFit: 'cover' }} />
+                        <div className={`${styles.imageBox} fade-in`} style={{ animationDelay: '0.2s' }}>
+                            <Image
+                                src="/hero.png"
+                                alt="Dự án Xây Lắp Chợ Lớn"
+                                fill
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+
+            {/* CTA Section */}
+            <section style={{ backgroundColor: 'var(--primary-dark)', padding: '100px 0', textAlign: 'center', color: 'white' }}>
+                <div className="container">
+                    <h2 className="mb-30" style={{ fontSize: '36px', fontWeight: '800' }}>Sẵn sàng kiến tạo dự án cùng chuyên gia?</h2>
+                    <p className="mb-40" style={{ fontSize: '18px', opacity: 0.8, maxWidth: '700px', margin: '0 auto 40px' }}>
+                        Hãy để Xây Lắp Chợ Lớn đồng hành cùng bạn hiện thực hóa những công trình mang tầm di sản.
+                    </p>
+                    <Link href="/lien-he" className="btn btn-primary" style={{ padding: '18px 45px' }}>Nhận tư vấn ngay</Link>
+                </div>
+            </section>
+        </main>
     );
 }

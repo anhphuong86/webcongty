@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
 
-export default function Header() {
+export default function Header({ initialConfig }: { initialConfig?: any }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
@@ -23,12 +23,14 @@ export default function Header() {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  const logoText = initialConfig?.general?.logoUrl || "CP XÂY LẮP CHỢ LỚN";
+
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.logo}>
           <Link href="/">
-            <span className={styles.logoText}>CP Xây Lắp <span className={styles.logoHighlight}>Chợ Lớn</span></span>
+            <span className={styles.logoText}>{logoText}</span>
           </Link>
         </div>
 

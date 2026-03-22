@@ -1,8 +1,19 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import fs from 'fs';
+import path from 'path';
 
-export default function Home() {
+export default async function Home() {
+  const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
+  let config = { home: { heroTitle: '', heroHighlight: '', heroSlogan: '', aboutTitle: '', aboutContent: '' } };
+  try {
+    const fileContent = fs.readFileSync(configFilePath, 'utf8');
+    config = JSON.parse(fileContent);
+  } catch (error) {
+    console.error('Failed to read config:', error);
+  }
+
   const services = [
     {
       title: "Xây dựng Dân dụng & Công nghiệp",
@@ -68,14 +79,12 @@ export default function Home() {
             {/* Left Column: Core Message */}
             <div className={`${styles.heroLeft} fade-in`}>
               <div className={styles.heroBadge}>SINCE 2014 • ISO 9001:2015</div>
-              <h1 className={styles.heroTitle}>
-                KIẾN TẠO <span className={styles.textOutline}>DI SẢN</span> <br />
-                VỮNG XÂY <span className={styles.logoHighlight}>TƯƠNG LAI</span>
+              <h1 className={styles.heroTitle} style={{ whiteSpace: 'pre-line' }}>
+                {config.home.heroTitle || 'KIẾN TẠO \nGIẢI PHÁP ĐẲNG CẤP'} <span className={styles.logoHighlight}>{config.home.heroHighlight || 'TƯƠNG LAI'}</span>
               </h1>
               <div className={styles.heroDivider}></div>
               <p className={styles.heroDesc}>
-                Công ty CP Xây Lắp Chợ Lớn tiên phong trong các giải pháp hạ tầng kỹ thuật cao,
-                mang đến chuẩn mực xây dựng bền vững và đổi mới không ngừng cho mọi công trình.
+                {config.home.heroSlogan || 'Công ty CP Xây Lắp Chợ Lớn tiên phong trong các giải pháp hạ tầng kỹ thuật cao, mang đến chuẩn mực xây dựng bền vững và đổi mới không ngừng cho mọi công trình.'}
               </p>
               <div className={styles.heroBtns}>
                 <Link href="/du-an" className="btn btn-primary">XEM DỰ ÁN TIÊU BIỂU</Link>

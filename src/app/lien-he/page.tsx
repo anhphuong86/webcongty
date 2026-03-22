@@ -1,7 +1,18 @@
 import Link from "next/link";
+import fs from 'fs';
+import path from 'path';
 import styles from "./contact.module.css";
 
-export default function ContactPage() {
+export const dynamic = 'force-dynamic';
+
+export default async function ContactPage() {
+    const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
+    let config: any = { contact: {} };
+    try {
+        const fileContent = fs.readFileSync(configFilePath, 'utf8');
+        config = JSON.parse(fileContent);
+    } catch (e) { console.error(e); }
+
     return (
         <main>
             {/* Sub Hero Section */}
@@ -28,22 +39,22 @@ export default function ContactPage() {
 
                             <div className={styles.infoItem}>
                                 <h4>Địa chỉ trụ sở</h4>
-                                <p>868 Đường Tạ Quang Bửu, Phường Chánh Hưng, Quận 8, TP. Hồ Chí Minh</p>
+                                <p>{config.contact?.address || '868 Đường Tạ Quang Bửu, Phường Chánh Hưng, Quận 8, TP. Hồ Chí Minh'}</p>
                             </div>
 
                             <div className={styles.infoItem}>
                                 <h4>Hotline hỗ trợ 24/7</h4>
-                                <p>090 123 4567 - 028 3844 5566</p>
+                                <p>{config.contact?.phone || '090 123 4567 - 028 3844 5566'}</p>
                             </div>
 
                             <div className={styles.infoItem}>
                                 <h4>Hòm thư điện tử</h4>
-                                <p>contact@xaylapcholon.com</p>
+                                <p>{config.contact?.email || 'contact@xaylapcholon.com'}</p>
                             </div>
 
                             <div className={styles.infoItem}>
                                 <h4>Thông tin pháp lý</h4>
-                                <p>Mã số thuế: 0312671412</p>
+                                <p>Mã số thuế: {config.contact?.taxCode || '0312671412'}</p>
                             </div>
                         </div>
 

@@ -16,7 +16,7 @@ export async function POST(req: Request) {
         }
 
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
+        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
         const prompt = `
 Bạn là một chuyên gia content marketing giàu kinh nghiệm trong lĩnh vực Xây dựng dân dụng, Công nghiệp và Cơ điện (MEP). 

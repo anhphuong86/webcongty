@@ -1,8 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import fs from 'fs';
+import path from 'path';
 import styles from "./about.module.css";
 
-export default function AboutPage() {
+export const dynamic = 'force-dynamic';
+
+export default async function AboutPage() {
+    const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
+    let config: any = { about: {}, heroImages: {} };
+    try {
+        const fileContent = fs.readFileSync(configFilePath, 'utf8');
+        config = JSON.parse(fileContent);
+    } catch (e) { console.error(e); }
+
     return (
         <main>
             {/* Sub Hero Section */}
@@ -13,7 +24,7 @@ export default function AboutPage() {
                         <span>/</span>
                         <p>Giới thiệu</p>
                     </div>
-                    <h1 className="fade-in">Về Xây Lắp Chợ Lớn</h1>
+                    <h1 className="fade-in">{config.about?.heroTitle || 'Về Xây Lắp Chợ Lớn'}</h1>
                 </div>
             </section>
 
@@ -24,14 +35,10 @@ export default function AboutPage() {
                         <div className={`${styles.textSection} fade-in`}>
                             <h2>Tầm Nhìn & Sứ Mệnh</h2>
                             <p className={styles.description}>
-                                Được thành lập với khát khao nâng tầm chất lượng công trình Việt,
-                                <strong> Công ty CP Xây lắp Chợ Lớn</strong> đã không ngừng nỗ lực để trở thành
-                                biểu tượng của sự uy tín và bền vững trong ngành xây dựng tại Việt Nam.
+                                {config.about?.vision || 'Được thành lập với khát khao nâng tầm chất lượng công trình Việt, Công ty CP Xây lắp Chợ Lớn đã không ngừng nỗ lực để trở thành biểu tượng của sự uy tín.'}
                             </p>
                             <p className={styles.description}>
-                                Sứ mệnh của chúng tôi không chỉ là xây dựng nên những khối bê tông, mà là kiến tạo
-                                nên những không gian sống và làm việc đẳng cấp, nơi kết hợp hài hòa giữa
-                                công nghệ xây dựng hiện đại và tính thẩm mỹ trường tồn.
+                                {config.about?.mission || 'Sứ mệnh của chúng tôi không chỉ là xây dựng nên những khối bê tông, mà là kiến tạo nên không gian sống đẳng cấp.'}
                             </p>
 
                             <div className={styles.coreValues}>

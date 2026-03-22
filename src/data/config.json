@@ -1,0 +1,33 @@
+{
+    "general": {
+        "companyName": "Công ty Cổ phần Xây Lắp Chợ Lớn",
+        "slogan": "Uy Tín - Chất Lượng - Hiệu Quả",
+        "logoUrl": "CP XÂY LẮP  CHỢ LỚN",
+        "facebook": "https://facebook.com/",
+        "youtube": "https://youtube.com/"
+    },
+    "contact": {
+        "address": "868 Đường Tạ Quang Bửu, Phường Chánh Hưng, Quận 8, TP. Hồ Chí Minh",
+        "phone": "090 123 4567 - 028 3844 5566",
+        "email": "contact@xaylapcholon.com",
+        "taxCode": "0312671412"
+    },
+    "home": {
+        "heroTitle": "Kiến Tạo Giải Pháp \nXây Dựng Đẳng Cấp",
+        "heroHighlight": "Tương Lai",
+        "heroSlogan": "Xây Lắp Chợ Lớn - Hơn 10 năm kinh nghiệm định hình chuẩn mực mới trong lĩnh vực xây lắp, cơ điện và năng lượng tái tạo.",
+        "aboutTitle": "Hành Trình Kiến Tạo Giá Trị",
+        "aboutContent": "Được thành lập với khát vọng vươn lên trở thành đơn vị tổng thầu hàng đầu tại Việt Nam, Xây Lắp Chợ Lớn đã từng bước khẳng định uy tín và năng lực chuyên môn qua hàng trăm dự án mang tầm vóc quốc gia. Chúng tôi không chỉ xây dựng công trình, mà còn kiến tạo những giá trị bền vững cho đối tác và cộng đồng."
+    },
+    "about": {
+        "heroImage": "/service1.png",
+        "heroTitle": "Về Xây Lắp Chợ Lớn",
+        "vision": "Trở thành biểu tượng niềm tin hàng đầu Việt Nam về chất lượng, tiến độ và giải pháp kỹ thuật tối ưu trong lĩnh vực xây lắp và cơ điện.",
+        "mission": "Cung cấp những công trình chất lượng vượt trội, an toàn và thân thiện với môi trường. Mang lại môi trường làm việc chuyên nghiệp, cơ hội phát triển cho nhân viên và lợi ích bền vững cho cổ đông."
+    },
+    "heroImages": {
+        "news": "/media_1774154547684.png",
+        "projects": "/hero.png",
+        "contact": "/service2.png"
+    }
+}

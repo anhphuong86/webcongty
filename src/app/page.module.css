@@ -75,7 +75,8 @@
 .heroTitle {
   font-size: 88px;
   font-weight: 950;
-  line-height: 0.95;
+  line-height: 1.1;
+  /* Increased for better legibility */
   margin-bottom: 35px;
   text-transform: uppercase;
   letter-spacing: -2px;
@@ -83,9 +84,9 @@
 }
 
 .textOutline {
-  color: rgba(255, 255, 255, 0.2);
-  /* Semi-transparent fill is better */
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.8);
+  color: var(--white);
+  font-weight: 950;
+  /* Removed outline effect as per user preference */
 }
 
 .logoHighlight {

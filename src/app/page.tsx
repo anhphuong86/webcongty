@@ -211,11 +211,11 @@ export default async function Home() {
 
       {/* CTA Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--primary-color)', color: 'white' }}>
-        <div className="container text-center fade-in">
-          <h2 style={{ fontSize: '46px', fontWeight: '900', marginBottom: '30px' }}>Sẵn Sàng Cho Những Giải Pháp Đột Phá?</h2>
-          <p style={{ fontSize: '20px', marginBottom: '50px', opacity: 0.9, maxWidth: '700px', margin: '0 auto' }}>Liên hệ ngay với chúng tôi để nhận tư vấn chuyên sâu và báo giá tối ưu cho dự án của bạn.</p>
-          <div style={{ marginTop: '50px' }}>
-            <Link href="/lien-he" className="btn" style={{ padding: '20px 60px', backgroundColor: 'white', color: 'var(--primary-color)', fontWeight: '800' }}>Yêu cầu tư vấn ngay</Link>
+        <div className="container fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 46px)', fontWeight: '900', marginBottom: '30px' }}>Sẵn Sàng Cho Những Giải Pháp Đột Phá?</h2>
+          <p style={{ fontSize: 'clamp(16px, 2vw, 20px)', marginBottom: '50px', opacity: 0.9, maxWidth: '700px', margin: '0 auto' }}>Liên hệ ngay với chúng tôi để nhận tư vấn chuyên sâu và báo giá tối ưu cho dự án của bạn.</p>
+          <div style={{ marginTop: '40px' }}>
+            <Link href="/lien-he" className="btn" style={{ padding: '18px 50px', backgroundColor: 'white', color: 'var(--primary-color)', fontWeight: '800', borderRadius: '50px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>YÊU CẦU TƯ VẤN NGAY</Link>
           </div>
         </div>
       </section>

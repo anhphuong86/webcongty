@@ -235,17 +235,19 @@
 }
 
 .bentoContent h3 {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 15px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 900;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .bentoContent p {
   font-size: 16px;
-  opacity: 0.85;
+  opacity: 1;
   line-height: 1.6;
   margin-bottom: 25px;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -254,11 +256,23 @@
 }
 
 .bentoLink {
-  font-weight: 700;
-  color: var(--accent-color);
+  font-weight: 800;
+  color: var(--white);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 13px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.bentoItem:hover .bentoLink {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
 /* Trust Section Modernized */

@@ -1,11 +1,11 @@
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.92), rgba(10, 25, 47, 0.95)), url('/hero.png');
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.95)), url('/service1.png');
     background-size: cover;
     background-position: center;
-    padding: 120px 0 80px;
+    padding: 180px 0 100px;
     text-align: center;
     color: var(--white);
-    margin-top: -80px;
+    margin-top: -100px;
     /* Offset header height if needed */
 }
 

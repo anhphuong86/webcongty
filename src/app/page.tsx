@@ -67,7 +67,7 @@ export default function Home() {
             <p className={styles.heroDesc}>Công ty CP Xây Lắp Chợ Lớn là đơn vị tiên phong trong lĩnh vực hạ tầng kỹ thuật và xây dựng dân dụng, mang đến những giải pháp đột phá, bền vững và đạt chuẩn mực quốc tế hàng đầu tại Việt Nam.</p>
             <div className={styles.heroBtns}>
               <Link href="/du-an" className="btn btn-primary">Khám phá dự án</Link>
-              <Link href="/lien-he" className="btn btn-outline" style={{ border: '2px solid white', color: 'white' }}>Nhận báo giá ngay</Link>
+              <Link href="/lien-he" className="btn btn-outline">Nhận báo giá ngay</Link>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 className={`${styles.bentoItem} ${styles[service.size]} fade-in`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <Image src={service.image} alt={service.title} fill className={styles.bentoImage} style={{ objectFit: 'cover' }} />
+                <Image src={service.image} alt={service.title} fill className={styles.bentoImage} />
                 <div className={styles.bentoOverlay}></div>
                 <div className={styles.bentoContent}>
                   <div className={styles.bentoIcon}>{service.icon}</div>
@@ -110,12 +110,11 @@ export default function Home() {
             <div className={`${styles.trustInfo} fade-in`}>
               <span className={styles.sectionSubtitle}>Năng Lực & Minh Bạch</span>
               <h2 className={styles.sectionTitle}>Bản Lĩnh Qua Từng Công Trình</h2>
-              <p className="mb-40" style={{ fontSize: '18px', color: 'var(--text-light)', lineHeight: '1.8' }}>
-                Với nền tảng kỹ thuật vững chắc và kinh nghiệm triển khai đa lĩnh vực, Xây Lắp Chợ Lớn đã khẳng định vị thế qua hàng trăm dự án trọng điểm,
-                đóng góp vào sự phát triển hạ tầng hiện đại.
+              <p className={styles.sectionDesc}>
+                Với nền tảng kỹ thuật vững chắc và kinh nghiệm triển khai đa lĩnh vực, Xây Lắp Chợ Lớn đã khẳng định vị thế qua hàng trăm dự án trọng điểm.
               </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
+              <div className={styles.statsGrid}>
                 <div className={styles.statItem}>
                   <span className={styles.statNum}>12+</span>
                   <p>Năm Kinh nghiệm</p>
@@ -141,7 +140,6 @@ export default function Home() {
                 <div className={styles.imageTag}>DỰ ÁN TRỌNG ĐIỂM 2024</div>
                 <div className={styles.imageInfo}>
                   <h4>Khu Phức Hợp Chợ Lớn</h4>
-                  <p>Hạng mục: Xây dựng dân dụng & Hệ thống M&E</p>
                 </div>
               </div>
               <div className={styles.sideImageCard}>
@@ -159,8 +157,10 @@ export default function Home() {
       <section className="section-padding" style={{ backgroundColor: 'var(--primary-color)', color: 'white' }}>
         <div className="container text-center fade-in">
           <h2 style={{ fontSize: '46px', fontWeight: '900', marginBottom: '30px' }}>Sẵn Sàng Cho Những Giải Pháp Đột Phá?</h2>
-          <p style={{ fontSize: '20px', marginBottom: '50px', opacity: 0.9, maxWidth: '700px', margin: '0 auto 50px' }}>Liên hệ ngay với chúng tôi để nhận tư vấn chuyên sâu và báo giá tối ưu cho dự án của bạn.</p>
-          <Link href="/lien-he" className="btn" style={{ padding: '20px 60px', backgroundColor: 'white', color: 'var(--primary-color)', fontWeight: '800', fontSize: '16px' }}>Yêu cầu tư vấn ngay</Link>
+          <p style={{ fontSize: '20px', marginBottom: '50px', opacity: 0.9, maxWidth: '700px', margin: '0 auto' }}>Liên hệ ngay với chúng tôi để nhận tư vấn chuyên sâu và báo giá tối ưu cho dự án của bạn.</p>
+          <div style={{ marginTop: '50px' }}>
+            <Link href="/lien-he" className="btn" style={{ padding: '20px 60px', backgroundColor: 'white', color: 'var(--primary-color)', fontWeight: '800' }}>Yêu cầu tư vấn ngay</Link>
+          </div>
         </div>
       </section>
     </div>

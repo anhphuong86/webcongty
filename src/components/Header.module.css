@@ -1,0 +1,106 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.05);
+    transition: var(--transition);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primary-color);
+    /* Navy Blue #000080 */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-header);
+}
+
+.logoHighlight {
+    color: var(--accent-color);
+    /* Blue Skies #1674D5 */
+}
+
+.nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    /* Slate Blue #0D203A */
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+    position: relative;
+    padding: 10px 0;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+    /* Hover to Blue Skies */
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.cta {
+    display: flex;
+}
+
+.cta :global(.btn) {
+    background-color: var(--primary-color);
+    /* Navy Blue */
+    color: white;
+    padding: 14px 28px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.cta :global(.btn):hover {
+    background-color: var(--accent-color);
+    /* Hover to Blue Skies */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(22, 116, 213, 0.2);
+}
+
+/* Scroll effect - optional but nice */
+.scrolled {
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+}

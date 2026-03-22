@@ -1,0 +1,506 @@
+[
+  {
+    "id": 1,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Thi công Nhà xưởng Tiền chế chuẩn ISO",
+    "date": "22/03/2024",
+    "excerpt": "Giải pháp nhà xưởng hiện đại, thi công nhanh và tiết kiệm chi phí.",
+    "content": "Xây Lắp Chợ Lớn chuyên cung cấp dịch vụ thiết kế và thi công nhà xưởng tiền chế với kết cấu thép vững chắc, đáp ứng các tiêu chuẩn khắt khe về an toàn và công năng sử dụng.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 2,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Cải tạo Nhà xưởng cũ thành Trung tâm Logistics",
+    "date": "21/03/2024",
+    "excerpt": "Nâng cấp hạ tầng và tối ưu hóa diện tích kho bãi.",
+    "content": "Chúng tôi mang đến giải pháp cải tạo toàn diện, từ gia cố nền móng đến lắp đặt hệ thống phòng cháy chữa cháy tự động cho các cụm nhà xưởng tại Quận 8.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 3,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Xây dựng Nhà máy Sản xuất Thực phẩm tiêu chuẩn HACCP",
+    "date": "20/03/2024",
+    "excerpt": "Môi trường sản xuất sạch và đảm bảo vệ sinh an toàn.",
+    "content": "Thi công nhà máy thực phẩm đòi hỏi sự am hiểu về vật liệu kháng khuẩn và hệ thống thoát nước chuyên biệt mà Xây Lắp Chợ Lớn đã thực hiện thành công.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 4,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Thiết kế Nhà xưởng Thông minh 4.0",
+    "date": "19/03/2024",
+    "excerpt": "Tích hợp tự động hóa và quản lý năng lượng.",
+    "content": "Giải pháp nhà xưởng thông minh giúp doanh nghiệp giám sát vận hành qua IoT và giảm thiểu hao phí điện năng thông qua các vật liệu cách nhiệt tiên tiến.",
+    "image": "/news-growth.png"
+  },
+  {
+    "id": 5,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Giải pháp Sàn bê tông Công nghiệp chịu lực cao",
+    "date": "18/03/2024",
+    "excerpt": "Sàn phẳng tuyệt đối, chống mài mòn và không bụi.",
+    "content": "Kỹ thuật đánh bóng sàn bê tông tăng cứng (Hardener) của chúng tôi đảm bảo tuổi thọ trên 20 năm cho các kho bãi có mật độ di chuyển xe nâng cao.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 6,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Thi công Nhà văn phòng kết hợp Nhà xưởng",
+    "date": "17/03/2024",
+    "excerpt": "Kết hợp hài hòa giữa không gian làm việc và sản xuất.",
+    "content": "Thiết kế tối ưu tối đa hóa diện tích sử dụng và đảm bảo khả năng cách âm tuyệt vời giữa khu vực máy móc và khu vực văn phòng điều hành.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 7,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Lắp đặt mái tôn chống nóng cho nhà xưởng lớn",
+    "date": "16/03/2024",
+    "excerpt": "Giảm nhiệt độ bên trong hiệu quả bằng vật liệu PU.",
+    "content": "Giải pháp mái tôn 3 lớp giúp ổn định nhiệt độ nhà xưởng, bảo vệ máy móc và cải thiện môi trường làm việc cho công nhân.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 8,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Gia cố kết cấu thép cho nhà xưởng tải trọng lớn",
+    "date": "15/03/2024",
+    "excerpt": "Đảm bảo an toàn tuyệt đối khi lắp đặt máy móc mới.",
+    "content": "Kiểm tra kỹ thuật và gia cố dầm cột thép cho các nhà máy muốn nâng cấp dây chuyền sản xuất tự động nặng hàng chục tấn.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 9,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Xây dựng Nhà kho thông minh cao tầng",
+    "date": "14/03/2024",
+    "excerpt": "Tiết kiệm diện tích đất bằng giải pháp xây cao tầng.",
+    "content": "Áp dụng kỹ thuật thi công vượt nhịp lớn, giúp các đơn vị logistics tại thành phố tối ưu hóa không gian lưu trữ theo chiều dọc.",
+    "image": "/news-growth.png"
+  },
+  {
+    "id": 10,
+    "category": "Xây dựng Dân dụng & Công nghiệp",
+    "title": "Quy trình xin phép xây dựng nhà xưởng 2024",
+    "date": "13/03/2024",
+    "excerpt": "Tư vấn pháp lý trọn gói từ khâu thiết kế đến hoàn công.",
+    "content": "Xây Lắp Chợ Lớn hỗ trợ chủ đầu tư hoàn thiện hồ sơ xây dựng nhanh chóng, tuân thủ mọi quy định mới nhất của pháp luật.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 11,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Lắp đặt Mái Năng lượng Mặt trời cho Nhà xưởng",
+    "date": "12/03/2024",
+    "excerpt": "Tận dụng diện tích mái để tự chủ nguồn điện sạch.",
+    "content": "Hệ thống điện mặt trời áp mái 1MWp giúp doanh nghiệp tiết kiệm hàng trăm triệu tiền điện mỗi tháng và đạt chứng chỉ xanh quốc tế.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 12,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Giải pháp Điện Mặt Trời Hòa Lưới cho Hộ gia đình",
+    "date": "11/03/2024",
+    "excerpt": "Điện xanh mỗi ngày, đầu tư một lần sử dụng 25 năm.",
+    "content": "Chúng tôi cung cấp hệ thống lưu trữ hybrid giúp gia đình bạn luôn có điện ngay cả khi sự cố lưới điện xảy ra.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 13,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Bảo trì Hệ thống Pin năng lượng mặt trời chuyên nghiệp",
+    "date": "10/03/2024",
+    "excerpt": "Vệ sinh và kiểm tra hiệu suất định kỳ.",
+    "content": "Dịch vụ bảo trì chuyên sâu giúp tăng 15% hiệu suất phát điện của các tấm pin sau thời gian dài sử dụng dưới tác động của bụi bẩn.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 14,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Thi công Trạm biến áp 110kV cho Khu công nghiệp",
+    "date": "09/03/2024",
+    "excerpt": "Cung cấp nguồn điện ổn định cho sản xuất quy mô lớn.",
+    "content": "Xây Lắp Chợ Lớn có đội ngũ kỹ sư điện trình độ cao, am hiểu các quy trình lắp đặt thiết bị trung và cao thế an toàn.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 15,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Mái kính năng lượng mặt trời cho kiến trúc hiện đại",
+    "date": "08/03/2024",
+    "excerpt": "Sự kết hợp hoàn hảo giữa thẩm mỹ và công nghệ sinh điện.",
+    "content": "Giải pháp vừa thay thế vật liệu xây dựng truyền thống vừa tạo ra nguồn năng lượng vô tận từ ánh sáng tự nhiên.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 16,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Hệ thống Chiếu sáng Công cộng dùng Năng lượng xanh",
+    "date": "07/03/2024",
+    "excerpt": "Đèn đường thông minh tự động bật/tắt không tốn điện.",
+    "content": "Triển khai hệ thống đèn LED năng lượng mặt trời tích hợp cảm biến tại các khu dân cư mới và tuyến đường liên tỉnh.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 17,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Tư vấn lắp đặt Trạm sạc Ô tô điện (EV Charging)",
+    "date": "06/03/2024",
+    "excerpt": "Đón đầu xu hướng xe điện tại các tòa nhà và siêu thị.",
+    "content": "Cung cấp giải pháp trạm sạc nhanh tiêu chuẩn châu Âu, tích hợp phần mềm quản lý thanh toán tự động.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 18,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Hợp tác đầu tư Điện mặt trời (PPA) 0 đồng",
+    "date": "05/03/2024",
+    "excerpt": "Doanh nghiệp không cần vốn vẫn có điện mặt trời.",
+    "content": "Mô hình hợp tác giúp doanh nghiệp sử dụng điện sạch với giá rẻ hơn EVN mà không cần bỏ chi phí đầu tư ban đầu.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 19,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Thi công Hệ thống PCCC pin Lithium",
+    "date": "04/03/2024",
+    "excerpt": "Chuyên biệt cho các trạm lưu trữ năng lượng.",
+    "content": "Ứng dụng các bình chữa cháy gốc nước và hệ thống cảnh báo sớm chuyên dụng cho cháy pin điện tử đặc thù.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 20,
+    "category": "Điện & Năng lượng Tái tạo",
+    "title": "Giám sát hiệu suất điện năng qua ứng dụng di động",
+    "date": "03/03/2024",
+    "excerpt": "Theo dõi mọi chỉ số phát điện ngay trên lòng bàn tay.",
+    "content": "Hệ thống phần mềm độc quyền giúp khách hàng kiểm soát lượng điện tạo ra và dự báo doanh thu hàng tháng từ điện mặt trời.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 21,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Nhập khẩu Tủ đông - Tủ lạnh Công nghiệp cao cấp",
+    "date": "02/03/2024",
+    "excerpt": "Thương hiệu quốc tế, bảo hành chính hãng tại Việt Nam.",
+    "content": "Chúng tôi phân phối đa dạng các dòng tủ đông nằm, tủ đứng và kho lạnh di động dành cho các chuỗi siêu thị và nhà hàng.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 22,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Giải pháp Máy cho Bếp ăn Công nghiệp tập thể",
+    "date": "01/03/2024",
+    "excerpt": "Hiện đại hóa khu bếp cho trường học và nhà máy.",
+    "content": "Cung cấp trọn gói từ máy rửa bát tự động, lò nướng đa năng đến hệ thống hút mùi công suất lớn đạt chuẩn vệ sinh thực phẩm.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 23,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Lắp đặt Tủ mát Siêu thị trưng bày hiện đại",
+    "date": "29/02/2024",
+    "excerpt": "Thiết kế mặt kính sang trọng, giữ thực phẩm tươi ngon.",
+    "content": "Hệ thống tủ mát không cửa hoặc có cửa kính low-e giúp tiết kiệm điện và làm nổi bật sản phẩm trưng bày trong siêu thị.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 24,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Thiết bị bảo quản dược phẩm chuyên dụng",
+    "date": "28/02/2024",
+    "excerpt": "Đảm bảo nhiệt độ khắt khe cho vaccine và thuốc.",
+    "content": "Dòng tủ mát y tế nhập khẩu với hệ thống ghi nhật ký nhiệt độ tự động và cảnh báo qua tin nhắn khi có biến động nhiệt.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 25,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Nhập khẩu thiết bị nhà bếp chuẩn 5 sao",
+    "date": "27/02/2024",
+    "excerpt": "Dành cho các dự án khách sạn và resort cao cấp.",
+    "content": "Sản phẩm từ các thương hiệu hàng đầu Đức, Ý giúp nâng tầm đẳng cấp không gian ẩm thực của bạn.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 26,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Hệ thống quầy kệ và xe đẩy siêu thị",
+    "date": "26/02/2024",
+    "excerpt": "Giải pháp tối ưu không gian mua sắm và vận chuyển.",
+    "content": "Cung cấp trọn bộ trang thiết bị trưng bày hàng hóa bền bỉ và dễ dàng vệ sinh cho các chuỗi bán lẻ lớn.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 27,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Máy làm đá viên tinh khiết công suất lớn",
+    "date": "25/02/2024",
+    "excerpt": "Đáp ứng nhu cầu cho các chuỗi cafe và nhà hàng.",
+    "content": "Thiết bị nhập khẩu trực tiếp, đạt chuẩn kiểm định an toàn và tiết kiệm nước tối đa trong quá trình làm lạnh.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 28,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Bàn mát và Bàn đông inox cho đầu bếp chuyên nghiệp",
+    "date": "24/02/2024",
+    "excerpt": "Vừa là nơi sơ chế vừa là kho bảo quản tại chỗ.",
+    "content": "Sản phẩm inox 304 không gỉ, chịu lực tốt và dễ dàng tích hợp vào không gian bếp chật hẹp.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 29,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Tư vấn thiết kế Bố trí thiết bị Siêu thị",
+    "date": "23/02/2024",
+    "excerpt": "Tối ưu hóa hành trình mua sắm của khách hàng.",
+    "content": "Ngoài bán thiết bị, chúng tôi còn tư vấn giải pháp sắp xếp layout khoa học giúp tăng doanh số bán hàng cho siêu thị.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 30,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Chính sách bảo trì 24/7 cho thiết bị điện lạnh",
+    "date": "22/02/2024",
+    "excerpt": "Không để gián đoạn quá trình kinh doanh của bạn.",
+    "content": "Đội ngũ kỹ thuật luôn sẵn sàng hỗ trợ sửa chữa và thay thế linh kiện chính hãng ngay trong ngày khi có sự cố tủ đông/tủ mát.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 31,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Thi công Mạng lưới Cấp nước Đô thị",
+    "date": "21/02/2024",
+    "excerpt": "Đảm bảo dòng chảy tinh sạch đến từng hộ dân.",
+    "content": "Quy trình lắp đặt đường ống HDPE chịu áp lực cao, giúp giải quyết triệt để vấn đề rò rỉ nước tại các khu dân cư cũ.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 32,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Hệ thống Thoát nước mưa và Xử lý ngập úng",
+    "date": "20/02/2024",
+    "excerpt": "Chủ động kiểm soát triều cường và mưa lớn.",
+    "content": "Xây dựng các hố ga thông minh và lắp đặt máy bơm công suất lớn giúp vùng thấp trũng không còn là nỗi lo của người dân.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 33,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Lắp đặt Điều hòa Trung tâm VRV cho Tòa nhà",
+    "date": "19/02/2024",
+    "excerpt": "Làm mát không gian lớn, tiết kiệm điện năng.",
+    "content": "Công nghệ điều hòa thông minh tự động điều chỉnh nhiệt độ theo nhu cầu thực tế của từng phòng, tối ưu hóa vận hành.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 34,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Bảo trì Hệ thống Thông gió Nhà xưởng (HVAC)",
+    "date": "18/02/2024",
+    "excerpt": "Không khí sạch cho môi trường làm việc hiệu quả.",
+    "content": "Vệ sinh đường ống gió và thay thế lọc bụi HEPA định kỳ giúp bảo vệ sức khỏe người lao động và máy móc.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 35,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Xử lý Nước thải Công nghiệp đạt chuẩn xả thải",
+    "date": "17/02/2024",
+    "excerpt": "Giải pháp môi trường bền vững cho các nhà máy.",
+    "content": "Thi công hệ thống xử lý nước thải sinh học và hóa lý, đảm bảo nước sau xử lý đạt yêu cầu nghiêm ngặt của Bộ Môi trường.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 36,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Thi công Hệ thống Cấp nước PCCC tòa nhà",
+    "date": "16/02/2024",
+    "excerpt": "Luôn sẵn sàng ứng phó trong mọi tình huống khẩn cấp.",
+    "content": "Lắp đặt bể chứa nước ngầm và hệ thống họng tiếp nước PCCC tại các vị trí chiến lược đạt chuẩn thẩm duyệt.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 37,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Giải pháp chống đọng sương đường ống lạnh",
+    "date": "15/02/2024",
+    "excerpt": "Sử dụng vật liệu bảo ôn cao cấp cho các kho lạnh.",
+    "content": "Kỹ thuật bọc cách nhiệt chuyên nghiệp giúp đường ống không bị mất nhiệt và tránh hư hại trần thạch cao bên dưới.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 38,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Lọc tổng đầu nguồn cho các tòa nhà văn phòng",
+    "date": "14/02/2024",
+    "excerpt": "Nguồn nước tiêu chuẩn cho toàn bộ hệ thống tòa nhà.",
+    "content": "Áp dụng công nghệ lọc đa tầng loại bỏ tạp chất và kim loại nặng, bảo vệ các thiết bị vệ sinh cao cấp.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 39,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Kiểm toán năng lượng hệ thống Điều hòa",
+    "date": "13/02/2024",
+    "excerpt": "Phát hiện lãng phí và đề xuất giải pháp tiết kiệm điện.",
+    "content": "Đội ngũ chuyên gia rà soát hiệu suất máy nén và dàn trao đổi nhiệt để đưa ra lộ trình tối ưu hóa chi phí vận hành.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 40,
+    "category": "Cấp thoát nước & Điều hòa",
+    "title": "Thi công hệ thống xả thải nhà cao tầng",
+    "date": "12/02/2024",
+    "excerpt": "Đảm bảo thông thoáng và không mùi cho căn hộ.",
+    "content": "Sử dụng ống nhựa uPVC độ dày lớn kết hợp phụ kiện chống ồn, mang lại sự riêng tư và thoải mái tối đa cho cư dân.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 41,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Xây dựng Cầu vượt nhịp lớn tại Quận 8",
+    "date": "11/02/2024",
+    "excerpt": "Kết nối giao thương, giảm thiểu ùn tắc hạ tầng.",
+    "content": "Dự án tiêu biểu sử dụng công nghệ đúc hẫng cân bằng, đảm bảo độ chính xác kỹ thuật và thẩm mỹ kiến trúc đô thị.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 42,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Nâng cấp Đê bao kết hợp Giao thông nông thôn",
+    "date": "10/02/2024",
+    "excerpt": "Chống ngập mặn và tạo đường đi thuận tiện cho dân.",
+    "content": "Giải pháp kết hợp bền vững giúp bảo vệ sản xuất nông nghiệp và cải thiện đời sống lưu thông tại các tỉnh miền Tây.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 43,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Thi công Đường Nhựa Asphalts KCN Lê Minh Xuân",
+    "date": "09/02/2024",
+    "excerpt": "Mặt đường chịu tải trọng xe container nặng.",
+    "content": "Sử dụng công nghệ thảm bê tông nhựa nóng hiện đại, đạt độ phẳng và độ nhám tiêu chuẩn quốc tế cho xe vận tải lớn.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 44,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Xây dựng Trạm Bơm Thủy lợi công suất lớn",
+    "date": "08/02/2024",
+    "excerpt": "Phục vụ tưới tiêu diện rộng cho cánh đồng mẫu lớn.",
+    "content": "Lắp đặt hệ thống máy bơm trục đứng hiện đại giúp chủ động điều tiết nguồn nước cho sản xuất nông nghiệp tập trung.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 45,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Kỹ thuật kè đá chống sạt lở bờ sông",
+    "date": "07/02/2024",
+    "excerpt": "Bảo vệ vùng đất ven sông trước dòng chảy siết.",
+    "content": "Sử dụng giải pháp rồng đá và thảm bê tông tự chèn, vừa đảm bảo chống xói mòn vừa tạo cảnh quan sinh thái ven sông.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 46,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Lắp đặt Hệ thống Biển báo và Đèn tín hiệu Thông minh",
+    "date": "06/02/2024",
+    "excerpt": "Hiện đại hóa hạ tầng giao thông đô thị.",
+    "content": "Hệ thống đèn tích hợp camera giám sát và điều khiển trung tâm giúp tối ưu luồng xe vào các giờ cao điểm.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 47,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Thi công Đường sắt đô thị - Các hạng mục hạ tầng",
+    "date": "05/02/2024",
+    "excerpt": "Đóng góp vào dự án giao thông chiến lược của thành phố.",
+    "content": "Xây Lắp Chợ Lớn tham gia xây dựng các hạng mục phụ trợ và đường gom cho các tuyến Metro đang triển khai.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 48,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Nạo vét Kênh mương khơi thông dòng chảy",
+    "date": "04/02/2024",
+    "excerpt": "Chuẩn bị cho mùa mưa và hạn chế ô nhiễm lòng kênh.",
+    "content": "Sử dụng tàu hút bùn chuyên dụng giúp làm sạch lòng kênh nhanh chóng, đảm bảo vệ sinh môi trường đô thị quanh Quận 8.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 49,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Xây dựng Cảng đường thủy nội địa cỡ vừa",
+    "date": "03/02/2024",
+    "excerpt": "Tăng cường năng lực vận tải đường sông.",
+    "content": "Thi công cầu cảng và kho bãi ven sông giúp giảm tải cho đường bộ và tối ưu hóa chi phí logistics cho doanh nghiệp.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 50,
+    "category": "Giao thông & Thủy lợi",
+    "title": "Tư vấn thiết kế Nút giao thông khác mức",
+    "date": "02/02/2024",
+    "excerpt": "Giải pháp giải quyết điểm đen ùn tắc tại ngoại ô.",
+    "content": "Sử dụng phần mềm mô phỏng giao thông 3D để đưa ra phương án thiết kế cầu vượt hoặc hầm chui tối ưu nhất.",
+    "image": "/hero.png"
+  },
+  {
+    "id": 51,
+    "category": "Thương mại & Dịch vụ Phụ trợ",
+    "title": "Cung cấp Máy thi công Cọc Nhồi hiện đại",
+    "date": "01/02/2024",
+    "excerpt": "Thiết bị chính hãng cho các nền móng công trình lớn.",
+    "content": "Ngoài thi công, chúng tôi còn là đối tác phân phối và cho thuê các dòng máy khoan, máy ép cọc bánh xích công suất lớn.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 52,
+    "category": "Thương mại & Dịch vụ Phụ trợ",
+    "title": "Dịch vụ Tư vấn Thiết kế Bản vẽ Blueprint chuyên sâu",
+    "date": "31/01/2024",
+    "excerpt": "Chính xác từng thông số kỹ thuật, tối ưu chi phí thi công.",
+    "content": "Đội ngũ kiến trúc sư và kỹ sư của chúng tôi cam kết mang đến những bản vẽ chất lượng, đảm bảo tính thẩm mỹ và khả thi.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 53,
+    "category": "Thương mại & Dịch vụ Phụ trợ",
+    "title": "Dịch vụ Môi giới Bất động sản Công nghiệp",
+    "date": "30/01/2024",
+    "excerpt": "Cầu nối giữa chủ đất và các nhà đầu tư sản xuất.",
+    "content": "Hỗ trợ nhà đầu tư tìm kiếm quỹ đất phù hợp tại các khu công nghiệp trọng điểm phía Nam với thủ tục pháp lý minh bạch.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 54,
+    "category": "Thương mại & Dịch vụ Phụ trợ",
+    "title": "Cung cấp vật liệu xây dựng hoàn thiện cao cấp",
+    "date": "29/01/2024",
+    "excerpt": "Gạch ốp lát, thiết bị vệ sinh nhập khẩu chuẩn Âu.",
+    "content": "Showroom của chúng tôi trưng bày hàng ngàn mẫu vật liệu mới nhất, giúp chủ đầu tư dễ dàng lựa chọn cho công trình của mình.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 55,
+    "category": "Thương mại & Dịch vụ Phụ trợ",
+    "title": "Dịch vụ Kiểm định Chất lượng Công trình",
+    "date": "28/01/2024",
+    "excerpt": "Xác thực độ an toàn và bền vững cho tòa nhà cũ.",
+    "content": "Dùng thiết bị siêu âm và khoan lấy mẫu để đánh giá chính xác hiện trạng kết cấu bê tông, đưa ra phương án gia cố hiệu quả.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 100,
+    "category": "Nhập khẩu & Phân phối Thiết bị",
+    "title": "Hệ thống Tủ mát Siêu thị Co.op Mart",
+    "date": "27/01/2024",
+    "excerpt": "Cung cấp giải pháp bảo quản thực phẩm cho chuỗi bán lẻ.",
+    "content": "Dự án lắp đặt 50 tổ hợp tủ mát trưng bày thực phẩm tươi sống tại các chi nhánh siêu thị khu vực TP.HCM.",
+    "image": "/service1.png"
+  }
+]

@@ -6,7 +6,7 @@ import path from 'path';
 
 export default async function Home() {
   const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
-  let config: any = { home: { heroImage: '', heroTitle: '', heroHighlight: '', heroSlogan: '', aboutTitle: '', aboutContent: '' } };
+  let config: any = { home: { heroImage: '', heroTitle: '', heroHighlight: '', heroSlogan: '', aboutTitle: '', aboutContent: '' }, services: {}, trust: {} };
   try {
     const fileContent = fs.readFileSync(configFilePath, 'utf8');
     config = JSON.parse(fileContent);
@@ -19,7 +19,7 @@ export default async function Home() {
       title: "Xây dựng Dân dụng & Công nghiệp",
       desc: "Chuyên sâu nhà ở, văn phòng, nhà xưởng và hạ tầng kỹ thuật dân dụng cao cấp.",
       icon: "🏗️",
-      image: "/service1.png",
+      image: config.services?.img1 || "/service1.png",
       size: "large",
       color: "orange"
     },
@@ -27,7 +27,7 @@ export default async function Home() {
       title: "Điện & Năng lượng Tái tạo",
       desc: "Trạm biến áp, pin mặt trời, tuabin gió và hệ thống PCCC chuẩn quốc tế.",
       icon: "⚡",
-      image: "/service2.png",
+      image: config.services?.img2 || "/service2.png",
       size: "medium",
       color: "yellow"
     },
@@ -35,7 +35,7 @@ export default async function Home() {
       title: "Cấp thoát nước & Điều hòa",
       desc: "Mạng lưới cấp thoát nước đô thị và hệ thống điều hòa trung tâm.",
       icon: "💧",
-      image: "/service3.png",
+      image: config.services?.img3 || "/service3.png",
       size: "small",
       color: "blue"
     },
@@ -43,7 +43,7 @@ export default async function Home() {
       title: "Giao thông & Thủy lợi",
       desc: "Xây dựng đường bộ, đường sắt, cầu cống và các công trình thủy lợi quy mô lớn.",
       icon: "🛣️",
-      image: "/hero.png",
+      image: config.services?.img4 || "/hero.png",
       size: "small",
       color: "green"
     },
@@ -51,7 +51,7 @@ export default async function Home() {
       title: "Thương mại & Dịch vụ Phụ trợ",
       desc: "Cung cấp máy móc xây dựng và tư vấn bất động sản chuyên nghiệp.",
       icon: "🤝",
-      image: "/service1.png",
+      image: config.services?.img5 || "/service1.png",
       size: "medium",
       color: "purple"
     },
@@ -59,7 +59,7 @@ export default async function Home() {
       title: "Nhập khẩu & Phân phối Thiết bị",
       desc: "Cung cấp trang thiết bị xây dựng, máy móc kỹ thuật cao nhập khẩu chính hãng.",
       icon: "🚢",
-      image: "/service3.png",
+      image: config.services?.img6 || "/service3.png",
       size: "medium",
       color: "cyan"
     }
@@ -192,14 +192,14 @@ export default async function Home() {
 
             <div className={`${styles.trustImageWrapper} fade-in`}>
               <div className={styles.mainImageCard}>
-                <Image src="/hero.png" alt="Dự án Tiêu biểu" fill style={{ objectFit: 'cover' }} />
+                <Image src={config.trust?.imgMain || "/hero.png"} alt="Dự án Tiêu biểu" fill style={{ objectFit: 'cover' }} />
                 <div className={styles.imageTag}>DỰ ÁN TRỌNG ĐIỂM 2024</div>
                 <div className={styles.imageInfo}>
                   <h4>Khu Phức Hợp Chợ Lớn</h4>
                 </div>
               </div>
               <div className={styles.sideImageCard}>
-                <Image src="/service2.png" alt="Công trình hạ tầng" fill style={{ objectFit: 'cover' }} />
+                <Image src={config.trust?.imgSide || "/service2.png"} alt="Công trình hạ tầng" fill style={{ objectFit: 'cover' }} />
                 <div className={styles.sideImageInfo}>
                   <p>Trạm Biến Áp 220kV Quận 8</p>
                 </div>

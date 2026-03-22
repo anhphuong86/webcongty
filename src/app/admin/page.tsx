@@ -298,6 +298,48 @@ export default function AdminPage() {
                                         <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'heroImages', 'news')} style={{ fontSize: '14px' }} />
                                     </div>
                                 </div>
+
+                                <h3 className="mb-20" style={{ color: 'var(--primary-color)', marginTop: '30px' }}>4. Hình ảnh Dịch Vụ & Năng Lực (Trang Chủ)</h3>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Dịch vụ 1 & 2</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.services?.img1 && <img src={config.services.img1} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img1')} style={{ fontSize: '12px' }} />
+                                        {config.services?.img2 && <img src={config.services.img2} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img2')} style={{ fontSize: '12px' }} />
+                                    </div>
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Dịch vụ 3 & 4</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.services?.img3 && <img src={config.services.img3} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img3')} style={{ fontSize: '12px' }} />
+                                        {config.services?.img4 && <img src={config.services.img4} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img4')} style={{ fontSize: '12px' }} />
+                                    </div>
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Dịch vụ 5 & 6</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.services?.img5 && <img src={config.services.img5} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img5')} style={{ fontSize: '12px' }} />
+                                        {config.services?.img6 && <img src={config.services.img6} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img6')} style={{ fontSize: '12px' }} />
+                                    </div>
+                                </div>
+
+                                <div className={styles.formGroup}>
+                                    <label>Ảnh Bản Lĩnh / Năng lực (Chính & Phụ)</label>
+                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                                        {config.trust?.imgMain && <img src={config.trust.imgMain} style={{ width: '60px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'trust', 'imgMain')} style={{ fontSize: '12px' }} />
+                                        {config.trust?.imgSide && <img src={config.trust.imgSide} style={{ width: '60px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
+                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'trust', 'imgSide')} style={{ fontSize: '12px' }} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

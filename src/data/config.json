@@ -26,8 +26,20 @@
         "mission": "Cung cấp những công trình chất lượng vượt trội, an toàn và thân thiện với môi trường. Mang lại môi trường làm việc chuyên nghiệp, cơ hội phát triển cho nhân viên và lợi ích bền vững cho cổ đông."
     },
     "heroImages": {
-        "news": "/media_1774154547684.png",
+        "news": "/media__1774154547684.png",
         "projects": "/hero.png",
         "contact": "/service2.png"
+    },
+    "services": {
+        "img1": "/service1.png",
+        "img2": "/service2.png",
+        "img3": "/service3.png",
+        "img4": "/hero.png",
+        "img5": "/service1.png",
+        "img6": "/service3.png"
+    },
+    "trust": {
+        "imgMain": "/hero.png",
+        "imgSide": "/service2.png"
     }
 }

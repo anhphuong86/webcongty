@@ -19,6 +19,10 @@ export default function AdminPage() {
     const [videoUrl, setVideoUrl] = useState('');
     const [images, setImages] = useState<string[]>([]);
 
+    // AI states
+    const [aiTopic, setAiTopic] = useState('');
+    const [aiKeywords, setAiKeywords] = useState('');
+    const [isGenerating, setIsGenerating] = useState(false);
     useEffect(() => {
         fetchPosts();
     }, []);
@@ -116,6 +120,35 @@ export default function AdminPage() {
         setMessage('');
     };
 
+    const handleGenerateAI = async () => {
+        if (!aiTopic) {
+            setMessage('Vui lòng nhập chủ đề bài viết!');
+            return;
+        }
+        setIsGenerating(true);
+        setMessage('AI đang phân tích và soạn thảo bài viết, vui lòng đợi...');
+        try {
+            const res = await fetch('/api/ai-generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ topic: aiTopic, keywords: aiKeywords })
+            });
+            const data = await res.json();
+            if (res.ok) {
+                setTitle(data.title);
+                setExcerpt(data.excerpt);
+                setContent(data.content);
+                setActiveTab('form');
+                setMessage('AI đã viết xong! Vui lòng kiểm tra, chọn hình ảnh chuyên mục trước khi xuất bản.');
+            } else {
+                setMessage('Lỗi AI: ' + (data.error || 'Thử lại sau. Kiểm tra GEMINI_API_KEY.'));
+            }
+        } catch (error) {
+            setMessage('Lỗi kết nối API AI.');
+        }
+        setIsGenerating(false);
+    };
+
     return (
         <div className={styles.adminContainer}>
             <div className="container">
@@ -130,6 +163,11 @@ export default function AdminPage() {
                             className={`btn ${activeTab === 'form' ? 'btn-primary' : ''}`}
                             onClick={() => { resetForm(); setActiveTab('form'); }}
                         >+ Thêm bài mới</button>
+                        <button
+                            className={`btn ${activeTab === 'ai' ? 'btn-primary' : ''}`}
+                            onClick={() => setActiveTab('ai')}
+                            style={{ backgroundColor: activeTab === 'ai' ? '#10a37f' : 'transparent', color: activeTab === 'ai' ? 'white' : 'inherit', border: activeTab === 'ai' ? 'none' : '1px solid #ddd' }}
+                        >✨ Trợ lý AI</button>
                     </div>
                 </div>
 
@@ -175,6 +213,36 @@ export default function AdminPage() {
                                 </tbody>
                             </table>
                         )}
+                    </div>
+                ) : activeTab === 'ai' ? (
+                    <div className={`${styles.adminForm} fade-in`}>
+                        <h2 className="mb-30" style={{ color: 'var(--primary-dark)' }}>✨ Trợ lý Viết Bài Tự Động (Gemini API)</h2>
+                        <p style={{ marginBottom: '20px', color: '#666' }}>Hệ thống AI sẽ tự động nghiên cứu và viết bài chuẩn SEO dựa trên chủ đề của bạn. Sau khi AI viết xong, bạn có thể chỉnh sửa lại trước khi xuất bản.</p>
+                        <div className={styles.formGroup}>
+                            <label>Chủ đề bài viết mong muốn (*)</label>
+                            <input
+                                type="text"
+                                placeholder="VD: Tương lai của điện năng lượng mặt trời áp mái năm 2025"
+                                className={styles.input}
+                                value={aiTopic}
+                                onChange={e => setAiTopic(e.target.value)}
+                            />
+                        </div>
+                        <div className={styles.formGroup}>
+                            <label>Từ khóa SEO gợi ý (Tùy chọn)</label>
+                            <input
+                                type="text"
+                                placeholder="VD: điện mặt trời, tiết kiệm điện, năng lượng xanh"
+                                className={styles.input}
+                                value={aiKeywords}
+                                onChange={e => setAiKeywords(e.target.value)}
+                            />
+                        </div>
+                        <div className={styles.formBtns} style={{ marginTop: '30px' }}>
+                            <button onClick={handleGenerateAI} disabled={isGenerating} className="btn btn-primary" style={{ backgroundColor: '#10a37f', color: 'white' }}>
+                                {isGenerating ? 'Đang sáng tạo...' : 'Bắt đầu viết bài'}
+                            </button>
+                        </div>
                     </div>
                 ) : (
                     <div className={`${styles.adminForm} fade-in`}>

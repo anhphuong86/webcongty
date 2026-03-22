@@ -203,7 +203,10 @@
 
 .sectionHeader {
   max-width: 900px;
-  margin-bottom: 100px;
+  margin: 0 auto 90px;
+  /* <--- Căn giữa nguyên khối ngang */
+  text-align: center;
+  /* <--- Căn giữa text */
 }
 
 .sectionSubtitle {
@@ -211,17 +214,20 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
-  display: block;
-  margin-bottom: 15px;
-  font-size: 14px;
+  display: inline-block;
+  /* <--- Chuyển về inline-block để text-align center hoạt động */
+  margin-bottom: 20px;
+  font-size: 15px;
+  /* Tăng 1 chút size */
 }
 
 .sectionTitle {
-  font-size: 52px;
+  font-size: clamp(38px, 4vw, 56px);
+  /* Adaptive Text */
   color: var(--primary-color);
   margin-bottom: 30px;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .sectionDesc {

@@ -31,7 +31,7 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="fade-in" style={{ backgroundColor: 'var(--primary-dark)', color: 'var(--white)', padding: '100px 0' }}>
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '80px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '40px', paddingBottom: '40px' }}>
               <div>
                 <h3 className="mb-20" style={{ fontSize: '24px', letterSpacing: '1px', textTransform: 'uppercase', color: 'white' }}>{config.general?.logoUrl || 'CP XÂY LẮP CHỢ LỚN'}</h3>
                 <p style={{ opacity: 0.9, fontSize: '15px', color: 'white' }}>{config.general?.slogan || 'Kiến tạo những công trình bền vững theo thời gian.'}</p>

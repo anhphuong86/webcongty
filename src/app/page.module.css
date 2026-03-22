@@ -3,11 +3,11 @@
   flex-direction: column;
 }
 
-/* Hero Section */
+/* Hero Section - Elite Split Layout */
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 850px;
+  min-height: 900px;
   display: flex;
   align-items: center;
   color: var(--white);
@@ -41,86 +41,154 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 80, 0.9) 0%, rgba(0, 0, 80, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 80, 0.85) 0%, rgba(0, 0, 30, 0.6) 100%);
   z-index: 1;
 }
 
-.heroContent {
+.heroGrid {
   position: relative;
-  max-width: 1100px;
   z-index: 2;
-  padding: 120px 80px 80px;
-  /* Increased top padding */
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(20px);
-  border-left: 10px solid var(--accent-color);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
-  animation: heroSlideUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
 }
 
-@keyframes heroSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.heroLeft {
+  max-width: 800px;
 }
 
-.heroSubtitle {
-  display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin-bottom: 25px;
+.heroBadge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--accent-color);
+  color: white;
+  font-size: 11px;
   font-weight: 800;
-  color: var(--accent-color);
+  letter-spacing: 3px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(22, 116, 213, 0.3);
 }
 
 .heroTitle {
-  font-size: 96px;
+  font-size: 84px;
   font-weight: 900;
   line-height: 1;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: -2px;
+}
+
+.textOutline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
 
 .logoHighlight {
   color: var(--accent-color);
 }
 
+.heroDivider {
+  width: 100px;
+  height: 4px;
+  background: var(--accent-color);
+  margin-bottom: 35px;
+}
+
 .heroDesc {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
-  max-width: 650px;
-  margin-bottom: 60px;
-  opacity: 0.95;
+  max-width: 600px;
+  margin-bottom: 50px;
+  opacity: 0.9;
   font-weight: 500;
 }
 
 .heroBtns {
   display: flex;
-  gap: 25px;
-  align-items: center;
+  gap: 20px;
 }
 
-.heroBtns :global(.btn-outline) {
-  background: transparent;
-  border: 2px solid white !important;
-  color: white !important;
+/* Logic Card - Right Column */
+.logicCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.4);
+}
+
+.cardHeader {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+}
+
+.cardHeader h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+}
+
+.cardHeader p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.logicItem {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.logicIcon {
+  width: 45px;
+  height: 45px;
+  background: rgba(22, 116, 213, 0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(22, 116, 213, 0.3);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.logicText strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.logicText p {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.cardLink {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   transition: var(--transition);
 }
 
-.heroBtns :global(.btn-outline):hover {
-  background: white;
-  color: var(--primary-color) !important;
+.cardLink:hover {
+  transform: translateX(10px);
+  color: white;
 }
 
-/* Bento Grid Services */
+/* Services Section */
 .bentoSection {
   background-color: var(--secondary-color);
   padding: 140px 0;
@@ -159,7 +227,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 380px;
-  /* Increased from 320px */
   gap: 30px;
 }
 
@@ -221,10 +288,6 @@
   transition: var(--transition);
 }
 
-.bentoItem:hover .bentoOverlay {
-  background: linear-gradient(to top, rgba(22, 116, 213, 0.9) 0%, rgba(0, 0, 80, 0.1) 100%);
-}
-
 .bentoContent {
   position: relative;
   z-index: 2;
@@ -279,7 +342,7 @@
   box-shadow: 0 15px 30px rgba(22, 116, 213, 0.4);
 }
 
-/* Trust Section Modernized */
+/* Trust Section */
 .trustGrid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -387,96 +450,6 @@
   font-size: 13px;
 }
 
-/* responsive */
-@media (max-width: 1200px) {
-  .heroTitle {
-    font-size: 72px;
-  }
-
-  .bentoGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .trustGrid {
-    gap: 50px;
-  }
-}
-
-@media (max-width: 991px) {
-  .trustGrid {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
-  .trustImageWrapper {
-    height: 500px;
-  }
-
-  .mainImageCard {
-    height: 450px;
-    width: 100%;
-    position: relative;
-  }
-
-  .sideImageCard {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding: 180px 0 120px;
-    min-height: auto;
-  }
-
-  .heroTitle {
-    font-size: 42px;
-    letter-spacing: -1px;
-  }
-
-  .heroDesc {
-    font-size: 18px;
-  }
-
-  .heroContent {
-    padding: 40px;
-    margin: 0 15px;
-  }
-
-  .heroBtns {
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-  }
-
-  .sectionTitle {
-    font-size: 34px;
-  }
-
-  .bentoSection {
-    padding: 80px 0;
-  }
-
-  .bentoGrid {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-  }
-
-  .large,
-  .medium,
-  .small {
-    grid-column: span 1;
-    grid-row: span 1;
-    height: 380px;
-  }
-
-  .statsGrid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 /* Color Branding Utilities */
 .orange {
   border-top: 6px solid #FF8C00;
@@ -550,4 +523,113 @@
 .cyan :global(.btn-primary) {
   background-color: #00FFFF;
   color: #000;
+}
+
+/* responsive */
+@media (max-width: 1400px) {
+  .heroTitle {
+    font-size: 64px;
+  }
+
+  .heroGrid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trustGrid {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 160px 0 100px;
+    min-height: auto;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .heroLeft {
+    text-align: center;
+  }
+
+  .heroBtns {
+    justify-content: center;
+  }
+
+  .heroDivider {
+    margin: 0 auto 35px;
+  }
+
+  .heroDesc {
+    margin: 0 auto 50px;
+  }
+
+  .logicCard {
+    padding: 30px;
+  }
+
+  .trustGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .trustImageWrapper {
+    height: 500px;
+  }
+
+  .mainImageCard {
+    height: 450px;
+    width: 100%;
+    position: relative;
+  }
+
+  .sideImageCard {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .heroDesc {
+    font-size: 18px;
+  }
+
+  .sectionTitle {
+    font-size: 34px;
+  }
+
+  .bentoSection {
+    padding: 80px 0;
+  }
+
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .large,
+  .medium,
+  .small {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 380px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
 }

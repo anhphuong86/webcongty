@@ -56,24 +56,65 @@ export default function Home() {
 
   return (
     <div className={styles.main}>
-      {/* Hero Section - Premium Branding */}
+      {/* Hero Section - Elite Split Layout */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image src="/hero.png" alt="Xây Lắp Chợ Lớn Building" fill priority style={{ objectFit: 'cover' }} />
         </div>
         <div className={styles.heroOverlay}></div>
+
         <div className="container">
-          <div className={`${styles.heroContent} fade-in`}>
-            <span className={styles.heroSubtitle}>HƠN 12 NĂM KHẲNG ĐỊNH UY TÍN & VỊ THẾ (SINCE 2014)</span>
-            <h1 className={styles.heroTitle}>
-              KIẾN TẠO DI SẢN <br />
-              VỮNG XÂY <br />
-              <span className={styles.logoHighlight}>TƯƠNG LAI</span>
-            </h1>
-            <p className={styles.heroDesc}>Công ty CP Xây Lắp Chợ Lớn là đơn vị tiên phong trong lĩnh vực hạ tầng kỹ thuật và xây dựng dân dụng, mang đến những giải pháp đột phá, bền vững và đạt chuẩn mực quốc tế hàng đầu tại Việt Nam.</p>
-            <div className={styles.heroBtns}>
-              <Link href="/du-an" className="btn btn-primary">Khám phá dự án</Link>
-              <Link href="/lien-he" className="btn btn-outline">Nhận báo giá ngay</Link>
+          <div className={styles.heroGrid}>
+            {/* Left Column: Core Message */}
+            <div className={`${styles.heroLeft} fade-in`}>
+              <div className={styles.heroBadge}>SINCE 2014 • ISO 9001:2015</div>
+              <h1 className={styles.heroTitle}>
+                KIẾN TẠO <span className={styles.textOutline}>DI SẢN</span> <br />
+                VỮNG XÂY <span className={styles.logoHighlight}>TƯƠNG LAI</span>
+              </h1>
+              <div className={styles.heroDivider}></div>
+              <p className={styles.heroDesc}>
+                Công ty CP Xây Lắp Chợ Lớn tiên phong trong các giải pháp hạ tầng kỹ thuật cao,
+                mang đến chuẩn mực xây dựng bền vững và đổi mới không ngừng cho mọi công trình.
+              </p>
+              <div className={styles.heroBtns}>
+                <Link href="/du-an" className="btn btn-primary">XEM DỰ ÁN TIÊU BIỂU</Link>
+                <Link href="/lien-he" className="btn btn-outline" style={{ border: '2px solid white', color: 'white' }}>NHẬN TƯ VẤN NGAY</Link>
+              </div>
+            </div>
+
+            {/* Right Column: Logic Highlights Card */}
+            <div className={`${styles.heroRight} fade-in`} style={{ animationDelay: '0.3s' }}>
+              <div className={styles.logicCard}>
+                <div className={styles.cardHeader}>
+                  <h3>GIÁ TRỊ CỐT LÕI</h3>
+                  <p>Tại sao chọn Xây Lắp Chợ Lớn?</p>
+                </div>
+                <div className={styles.cardBody}>
+                  <div className={styles.logicItem}>
+                    <div className={styles.logicIcon}>✔️</div>
+                    <div className={styles.logicText}>
+                      <strong>Minh bạch tuyệt đối</strong>
+                      <p>Cam kết 100% vật tư đúng chủng loại và khối lượng.</p>
+                    </div>
+                  </div>
+                  <div className={styles.logicItem}>
+                    <div className={styles.logicIcon}>🏆</div>
+                    <div className={styles.logicText}>
+                      <strong>Chất lượng đỉnh cao</strong>
+                      <p>Thi công đạt chuẩn xây dựng quốc tế khắt khe nhất.</p>
+                    </div>
+                  </div>
+                  <div className={styles.logicItem}>
+                    <div className={styles.logicIcon}>⏱️</div>
+                    <div className={styles.logicText}>
+                      <strong>Tiến độ thần tốc</strong>
+                      <p>Đảm bảo bàn giao đúng hoặc trước thời hạn cam kết.</p>
+                    </div>
+                  </div>
+                </div>
+                <Link href="/gioi-thieu" className={styles.cardLink}>Tìm hiểu về năng lực chúng tôi →</Link>
+              </div>
             </div>
           </div>
         </div>

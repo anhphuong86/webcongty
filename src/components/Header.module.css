@@ -3,15 +3,15 @@
     top: 0;
     width: 100%;
     background-color: transparent;
-    padding: 30px 0;
+    padding: 25px 0;
     z-index: 2000;
-    transition: padding 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .scrolled {
-    padding: 15px 0;
+    padding: 12px 0;
     background-color: #ffffff;
-    box-shadow: 0 4px 30px rgba(0, 0, 80, 0.1);
+    box-shadow: 0 4px 25px rgba(0, 0, 80, 0.1);
 }
 
 .headerContainer {
@@ -19,18 +19,19 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    /* Wider for enterprise feel */
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 50px;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
-    /* Don't squash the logo */
 }
 
 .logoText {
-    font-size: 28px;
+    font-size: 24px;
+    /* Reduced from 28px/30px for better fit */
     font-weight: 900;
     color: var(--white);
     text-transform: uppercase;
@@ -46,20 +47,21 @@
 
 .logoHighlight {
     color: var(--accent-color);
+    margin-left: 8px;
 }
 
-/* Nav Desktop */
+/* Nav Desktop - Pushed to right near CTA */
 .nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    justify-content: center;
-    /* Centralize Nav for balance */
+    margin-left: auto;
+    margin-right: 40px;
 }
 
 .nav ul {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    /* Reduced gap from 40px/45px */
     list-style: none;
 }
 
@@ -67,12 +69,13 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.95);
     font-weight: 800;
-    font-size: 14px;
+    font-size: 13px;
+    /* Slightly smaller for enterprise look */
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: color 0.3s ease;
     position: relative;
-    padding: 10px 0;
+    padding: 8px 0;
     white-space: nowrap;
 }
 
@@ -103,8 +106,11 @@
 
 .cta {
     flex-shrink: 0;
-    display: flex;
-    justify-content: flex-end;
+}
+
+.cta :global(.btn) {
+    font-size: 12px;
+    padding: 12px 24px;
 }
 
 .mobileCta {
@@ -115,20 +121,33 @@
     display: none;
 }
 
-/* Fixed sizing on scroll to avoid "running text" */
-.scrolled .logoText,
-.scrolled .nav a {
-    /* Keeping font size stable to avoid jitter */
-}
+/* Responsive ranges for middle resolutions */
+@media (max-width: 1300px) {
+    .headerContainer {
+        padding: 0 30px;
+    }
 
-/* Responsive */
-@media (max-width: 1200px) {
+    .nav {
+        margin-right: 20px;
+    }
+
     .nav ul {
         gap: 20px;
     }
 
     .logoText {
-        font-size: 22px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav ul {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 }
 
@@ -151,6 +170,12 @@
         display: flex;
     }
 
+    .mobileToggle span {
+        width: 25px;
+        height: 2px;
+        background-color: var(--primary-color);
+    }
+
     .nav {
         position: fixed;
         top: 0;
@@ -160,9 +185,8 @@
         background-color: var(--primary-color);
         flex-direction: column;
         justify-content: center;
-        transition: 0.4s;
-        z-index: 1000;
         margin: 0;
+        padding-right: 0;
     }
 
     .navOpen {

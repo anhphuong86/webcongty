@@ -104,7 +104,8 @@
 
 /* Mosaic Introduction - High Contrast */
 .aboutContent {
-    padding: 220px 0;
+    padding: 140px 0;
+    /* Reduced from 220px */
     background: #ffffff;
     background-image: var(--architectural-bg);
     position: relative;
@@ -146,12 +147,12 @@
 }
 
 .signatureDescription::first-letter {
-    font-size: 80px;
+    font-size: 64px;
     float: left;
     font-weight: 900;
-    margin-right: 20px;
+    margin-right: 15px;
     color: var(--gold-accent);
-    line-height: 0.9;
+    line-height: 1;
 }
 
 .imageMosaic {
@@ -215,7 +216,8 @@
 
 /* Editorial Vertical Timeline - Gold Standard */
 .timelineSection {
-    padding: 220px 0;
+    padding: 140px 0;
+    /* Reduced spacing */
     background: var(--prestige-navy);
     color: white;
     position: relative;
@@ -274,11 +276,19 @@
 }
 
 .iconicValueCard {
-    background: #ffffff;
-    padding: 80px 50px;
-    border: 1px solid #f1f5f9;
-    border-radius: 0;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.03);
+    background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+    padding: 60px 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.iconicValueCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold-accent);
+    box-shadow: 0 30px 60px rgba(196, 161, 99, 0.1);
 }
 
 .iconicValueCard::before {
@@ -306,26 +316,31 @@
 /* Partner Showcase - Elite Grid */
 /* Partner Section - Brand Wall */
 .partnerSection {
-    padding: 160px 0;
-    background: #ffffff;
+    padding: 140px 0;
+    background: #f8fafc;
 }
 
 .partnerGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 1px;
+    /* Borders between cells */
+    background: #e2e8f0;
+    /* Border color */
+    border: 1px solid #e2e8f0;
     margin-top: 80px;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.08);
 }
 
 .partnerItem {
     background: #ffffff;
-    padding: 40px 20px;
+    padding: 60px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 160px;
-    transition: all 0.4s ease;
+    height: 200px;
+    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -349,13 +364,15 @@
 }
 
 .partnerLogo {
-    font-size: 20px;
-    font-weight: 950;
+    font-size: 26px;
+    /* Increased from 20px */
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--prestige-navy);
     transition: all 0.4s ease;
     text-align: center;
+    line-height: 1.2;
 }
 
 .partnerItem:hover .partnerLogo {

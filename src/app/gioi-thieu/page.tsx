@@ -40,14 +40,25 @@ export default async function AboutPage() {
                     <div className={styles.mosaicGrid}>
                         <div className={`${styles.textSection} fade-in`}>
                             <div className={styles.decorativeLine}></div>
-                            <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '6px', fontSize: '14px', display: 'block', marginBottom: '25px' }}>Đối Tác Tin Cậy</span>
+                            <span style={{ color: 'var(--gold-accent)', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '4px', fontSize: '20px', display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '30px' }}>
+                                <span style={{ width: '40px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                                Đối Tác Tin Cậy
+                            </span>
                             <h2 className={styles.signatureTitle}>Khát Vọng<br />Vươn Tầm Thế Giới</h2>
                             <p className={styles.signatureDescription}>
                                 Công Ty Cổ Phần Xây Lắp Chợ Lớn (CHOLONCONS) không chỉ xây dựng những công trình, chúng tôi kiến tạo những biểu tượng của sự thịnh vượng và bền vững. Với hơn một thập kỷ kinh nghiệm, chúng tôi tự hào là đơn vị tiên phong trong lĩnh vực xây lắp công nghiệp và dân dụng tại Việt Nam.
                             </p>
-                            <p style={{ fontSize: '22px', lineHeight: '1.9', color: '#1e293b', fontWeight: '500' }}>
+                            <p style={{ fontSize: '20px', lineHeight: '1.8', color: '#475569', fontWeight: '450', marginBottom: '40px' }}>
                                 Chúng tôi vận hành dựa trên sự minh bạch tuyệt đối và tâm thế phụng sự khách hàng. Mỗi dự án là một lời cam kết về chất lượng đạt chuẩn quốc tế ISO 9001:2015.
                             </p>
+                            <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
+                                <div style={{ flex: 1, height: '200px', overflow: 'hidden', borderRadius: '4px' }}>
+                                    <img src="/projects/Xuong Viet phat kcn Binh an.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Construction" />
+                                </div>
+                                <div style={{ flex: 1, height: '200px', overflow: 'hidden', borderRadius: '4px' }}>
+                                    <img src="/projects/COOP SU VAN HANH.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Project" />
+                                </div>
+                            </div>
                         </div>
 
                         <div className={`${styles.imageMosaic} fade-in`} style={{ animationDelay: '0.2s' }}>
@@ -71,29 +82,33 @@ export default async function AboutPage() {
             <section className={styles.coreValuesSection}>
                 <div className="container">
                     <div className="text-center fade-in">
-                        <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '5px', fontSize: '14px', display: 'block', marginBottom: '20px' }}>Giá trị cốt lõi</span>
+                        <span style={{ color: 'var(--gold-accent)', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '4px', fontSize: '20px', display: 'inline-flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                            <span style={{ width: '30px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                            Giá trị cốt lõi
+                            <span style={{ width: '30px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                        </span>
                         <h2 style={{ fontSize: '52px', fontWeight: '950', color: '#0a192f', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Triết Lý Quản Trị</h2>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', marginTop: '100px' }}>
-                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.1s' }}>
-                            <span className={styles.valueNumber}>PR-01</span>
-                            <h4 style={{ margin: '30px 0 20px', fontWeight: '950' }}>UY TÍN</h4>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px', marginTop: '80px' }}>
+                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.1s', borderTop: '4px solid #c4a163' }}>
+                            <div style={{ width: '50px', height: '50px', background: 'rgba(196, 161, 99, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold-accent)', fontWeight: '900', fontSize: '20px' }}>01</div>
+                            <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>UY TÍN</h4>
                             <p>Danh dự của doanh nghiệp là tài sản quý giá nhất. Chúng tôi bảo vệ uy tín bằng chất lượng công trình thực tế.</p>
                         </div>
-                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.2s' }}>
-                            <span className={styles.valueNumber}>PR-02</span>
-                            <h4 style={{ margin: '30px 0 20px', fontWeight: '950' }}>CHUYÊN NGHIỆP</h4>
+                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.2s', borderTop: '4px solid #0a192f' }}>
+                            <div style={{ width: '50px', height: '50px', background: 'rgba(10, 25, 47, 0.05)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--prestige-navy)', fontWeight: '900', fontSize: '20px' }}>02</div>
+                            <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>CHUYÊN NGHIỆP</h4>
                             <p>Quy trình quản lý tinh gọn, đội ngũ kỹ sư tinh nhuệ sẵn sàng giải quyết mọi bài toán kỹ thuật phức tạp.</p>
                         </div>
-                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.3s' }}>
-                            <span className={styles.valueNumber}>PR-03</span>
-                            <h4 style={{ margin: '30px 0 20px', fontWeight: '950' }}>SÁNG TẠO</h4>
+                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.3s', borderTop: '4px solid #c4a163' }}>
+                            <div style={{ width: '50px', height: '50px', background: 'rgba(196, 161, 99, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold-accent)', fontWeight: '900', fontSize: '20px' }}>03</div>
+                            <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>SÁNG TẠO</h4>
                             <p>Không ngừng áp dụng công nghệ mới (BIM, AI) để tối ưu hóa chi phí và đẩy nhanh tiến độ thi công.</p>
                         </div>
-                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.4s' }}>
-                            <span className={styles.valueNumber}>PR-04</span>
-                            <h4 style={{ margin: '30px 0 20px', fontWeight: '950' }}>BỀN VỮNG</h4>
+                        <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.4s', borderTop: '4px solid #0a192f' }}>
+                            <div style={{ width: '50px', height: '50px', background: 'rgba(10, 25, 47, 0.05)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--prestige-navy)', fontWeight: '900', fontSize: '20px' }}>04</div>
+                            <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>BỀN VỮNG</h4>
                             <p>Kiến tạo những công trình xanh, thân thiện môi trường và có giá trị sử dụng lâu dài qua nhiều thế hệ.</p>
                         </div>
                     </div>
@@ -180,15 +195,19 @@ export default async function AboutPage() {
             <section className={styles.partnerSection}>
                 <div className="container">
                     <div className="text-center mb-80 fade-in">
-                        <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '6px', fontSize: '14px', display: 'block', marginBottom: '20px' }}>Đồng hành cùng phát triển</span>
-                        <h2 style={{ fontSize: '52px', color: 'var(--prestige-navy)', fontWeight: '950', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Mạng Lưới Đối Tác Hạng Nhất</h2>
-                        <p style={{ maxWidth: '800px', margin: '30px auto 0', fontSize: '20px', color: '#64748b' }}>Chúng tôi tự hào là đối tác chiến lược của những định chế tài chính và tập đoàn bán lẻ hàng đầu khu vực.</p>
+                        <span style={{ color: 'var(--gold-accent)', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '4px', fontSize: '20px', display: 'inline-flex', alignItems: 'center', gap: '15px', marginBottom: '25px' }}>
+                            <span style={{ width: '30px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                            Đồng hành cùng phát triển
+                            <span style={{ width: '30px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                        </span>
+                        <h2 style={{ fontSize: '52px', color: 'var(--prestige-navy)', fontWeight: '950', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Mạng Lưới Đối Tác Hàng Đầu</h2>
+                        <p style={{ maxWidth: '800px', margin: '30px auto 0', fontSize: '20px', color: '#64748b' }}>Chúng tôi trân trọng và tự hào là đối tác chiến lược của những định chế tài chính và tập đoàn bán lẻ hàng đầu.</p>
                     </div>
 
                     <div className={styles.partnerGrid}>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_coop}`}>SAIGON CO.OP</div></div>
-                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_viettien}`}>VIỆT TIẾN</div></div>
-                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_bidv}`}>BIDV BANK</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_viettien}`}>MAY VIỆT TIẾN</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_bidv}`}>NGÂN HÀNG BIDV</div></div>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_vcb}`}>VIETCOMBANK</div></div>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_ctg}`}>VIETINBANK</div></div>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_agri}`}>AGRIBANK</div></div>
@@ -198,6 +217,10 @@ export default async function AboutPage() {
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_lotte}`}>LOTTE MART</div></div>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_win}`}>WINMART</div></div>
                         <div className={styles.partnerItem}><div className={`${styles.partnerLogo} ${styles.p_aeon}`}>AEON MALL</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo}`} style={{ color: '#E31E24' }}>CENTRAL RETAIL</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo}`} style={{ color: '#004A99' }}>MAY 10</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo}`} style={{ color: '#0054A6' }}>VIỆT LONG</div></div>
+                        <div className={styles.partnerItem}><div className={`${styles.partnerLogo}`} style={{ color: '#00A1E4' }}>SENCE BEN TRE</div></div>
                     </div>
                 </div>
             </section>

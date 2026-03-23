@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
+import NewsContent from './NewsContent';
 import styles from './tin-tuc.module.css';
 
 export const dynamic = 'force-dynamic';
@@ -22,62 +22,22 @@ export default async function NewsPage() {
     }
 
     return (
-        <main>
-            {/* Sub Hero Section */}
-            <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.95)), url(${config.heroImages?.news || '/media__1774154547684.png'})` }}>
+        <main style={{ backgroundColor: '#fdfdfd' }}>
+            {/* Header Section */}
+            <section className={styles.hero} style={{ backgroundImage: `linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.98)), url(${config.heroImages?.news || '/media__1774154547684.png'})` }}>
                 <div className="container">
                     <div className={`${styles.breadcrumb} fade-in`}>
                         <Link href="/">Trang chủ</Link>
                         <span>/</span>
-                        <p>Tin tức</p>
+                        <p>Trung Tâm Tin Tức 2026</p>
                     </div>
-                    <h1 className="fade-in">Tin Tức & Sự Kiện</h1>
+                    <h1 className="fade-in">CHOLONCONS <span style={{ color: 'var(--accent-color)' }}>PRESS</span></h1>
+                    <p className="fade-in" style={{ fontSize: '20px', maxWidth: '700px', margin: '20px auto 0', opacity: 0.8, fontWeight: '500' }}>Cập nhật kịp thời những bước chuyển mình vĩ đại của ngành xây dựng toàn cầu.</p>
                 </div>
             </section>
 
             <section className={styles.newsContentWrapper}>
-                <div className="container">
-                    <div className="text-center mb-80 fade-in">
-                        <p style={{ fontSize: '18px', color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto' }}>Hành trình kiến tạo di sản và cập nhật công nghệ xây dựng hiện đại trên toàn cầu.</p>
-                        <div style={{ height: '4px', width: '60px', backgroundColor: 'var(--primary-color)', margin: '20px auto' }}></div>
-                    </div>
-
-                    <div className={styles.newsGrid}>
-                        {posts.map((post: any, index: number) => (
-                            <div key={post.id} className={`${styles.newsCard} fade-in`} style={{ animationDelay: `${index * 0.05}s` }}>
-                                <div className={styles.newsImg}>
-                                    <div className={styles.newsIcons}>
-                                        {post.images && post.images.length > 1 && (
-                                            <div className={styles.iconBadge} title="Có thư viện ảnh">🖼️</div>
-                                        )}
-                                        {post.videoUrl && (
-                                            <div className={styles.iconBadge} title="Có video thực tế">🎬</div>
-                                        )}
-                                    </div>
-                                    <img
-                                        src={post.image}
-                                        alt={post.title}
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                    />
-                                </div>
-                                <div className={styles.newsContent}>
-                                    <span className={styles.newsDate}>{post.date} | {post.category || 'Tin tức'}</span>
-                                    <h3>{post.title}</h3>
-                                    <p>{post.excerpt}</p>
-                                    <Link href={`/tin-tuc/${post.id}`} className={styles.readMore}>
-                                        Khám phá ngay
-                                    </Link>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    {posts.length === 0 && (
-                        <div className="text-center fade-in">
-                            <p style={{ fontSize: '18px', color: '#999' }}>Hiện chưa có bài viết nào. Vui lòng quay lại sau.</p>
-                        </div>
-                    )}
-                </div>
+                <NewsContent initialPosts={posts} />
             </section>
         </main>
     );

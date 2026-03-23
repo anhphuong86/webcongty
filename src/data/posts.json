@@ -1,506 +1,1082 @@
 [
   {
     "id": 1,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Thi công Nhà xưởng Tiền chế chuẩn ISO",
-    "date": "22/03/2024",
-    "excerpt": "Giải pháp nhà xưởng hiện đại, thi công nhanh và tiết kiệm chi phí.",
-    "content": "Xây Lắp Chợ Lớn chuyên cung cấp dịch vụ thiết kế và thi công nhà xưởng tiền chế với kết cấu thép vững chắc, đáp ứng các tiêu chuẩn khắt khe về an toàn và công năng sử dụng.",
-    "image": "/service1.png"
-  },
-  {
-    "id": 2,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Cải tạo Nhà xưởng cũ thành Trung tâm Logistics",
-    "date": "21/03/2024",
-    "excerpt": "Nâng cấp hạ tầng và tối ưu hóa diện tích kho bãi.",
-    "content": "Chúng tôi mang đến giải pháp cải tạo toàn diện, từ gia cố nền móng đến lắp đặt hệ thống phòng cháy chữa cháy tự động cho các cụm nhà xưởng tại Quận 8.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 3,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Xây dựng Nhà máy Sản xuất Thực phẩm tiêu chuẩn HACCP",
-    "date": "20/03/2024",
-    "excerpt": "Môi trường sản xuất sạch và đảm bảo vệ sinh an toàn.",
-    "content": "Thi công nhà máy thực phẩm đòi hỏi sự am hiểu về vật liệu kháng khuẩn và hệ thống thoát nước chuyên biệt mà Xây Lắp Chợ Lớn đã thực hiện thành công.",
-    "image": "/service1.png"
-  },
-  {
-    "id": 4,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Thiết kế Nhà xưởng Thông minh 4.0",
-    "date": "19/03/2024",
-    "excerpt": "Tích hợp tự động hóa và quản lý năng lượng.",
-    "content": "Giải pháp nhà xưởng thông minh giúp doanh nghiệp giám sát vận hành qua IoT và giảm thiểu hao phí điện năng thông qua các vật liệu cách nhiệt tiên tiến.",
-    "image": "/news-growth.png"
-  },
-  {
-    "id": 5,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Giải pháp Sàn bê tông Công nghiệp chịu lực cao",
-    "date": "18/03/2024",
-    "excerpt": "Sàn phẳng tuyệt đối, chống mài mòn và không bụi.",
-    "content": "Kỹ thuật đánh bóng sàn bê tông tăng cứng (Hardener) của chúng tôi đảm bảo tuổi thọ trên 20 năm cho các kho bãi có mật độ di chuyển xe nâng cao.",
+    "category": "Xây dựng Xanh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #1",
+    "date": "21/01/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 1 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service3.png"
   },
   {
+    "id": 2,
+    "category": "Công nghệ & BIM",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #2",
+    "date": "12/09/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 2 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 3,
+    "category": "Hạ tầng Thông minh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #3",
+    "date": "06/07/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 3 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 4,
+    "category": "Dự án Trọng điểm",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #4",
+    "date": "04/06/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 4 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Xây dựng Xanh",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #5",
+    "date": "23/12/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 5 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
     "id": 6,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Thi công Nhà văn phòng kết hợp Nhà xưởng",
-    "date": "17/03/2024",
-    "excerpt": "Kết hợp hài hòa giữa không gian làm việc và sản xuất.",
-    "content": "Thiết kế tối ưu tối đa hóa diện tích sử dụng và đảm bảo khả năng cách âm tuyệt vời giữa khu vực máy móc và khu vực văn phòng điều hành.",
-    "image": "/hero.png"
+    "category": "Xây dựng Xanh",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #6",
+    "date": "12/11/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 6 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   },
   {
     "id": 7,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Lắp đặt mái tôn chống nóng cho nhà xưởng lớn",
-    "date": "16/03/2024",
-    "excerpt": "Giảm nhiệt độ bên trong hiệu quả bằng vật liệu PU.",
-    "content": "Giải pháp mái tôn 3 lớp giúp ổn định nhiệt độ nhà xưởng, bảo vệ máy móc và cải thiện môi trường làm việc cho công nhân.",
-    "image": "/service1.png"
+    "category": "Xây dựng Xanh",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #7",
+    "date": "05/09/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 7 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 8,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Gia cố kết cấu thép cho nhà xưởng tải trọng lớn",
-    "date": "15/03/2024",
-    "excerpt": "Đảm bảo an toàn tuyệt đối khi lắp đặt máy móc mới.",
-    "content": "Kiểm tra kỹ thuật và gia cố dầm cột thép cho các nhà máy muốn nâng cấp dây chuyền sản xuất tự động nặng hàng chục tấn.",
-    "image": "/service2.png"
+    "category": "Công nghệ & BIM",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #8",
+    "date": "07/11/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 8 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 9,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Xây dựng Nhà kho thông minh cao tầng",
-    "date": "14/03/2024",
-    "excerpt": "Tiết kiệm diện tích đất bằng giải pháp xây cao tầng.",
-    "content": "Áp dụng kỹ thuật thi công vượt nhịp lớn, giúp các đơn vị logistics tại thành phố tối ưu hóa không gian lưu trữ theo chiều dọc.",
-    "image": "/news-growth.png"
+    "category": "Vật liệu Mới",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #9",
+    "date": "28/01/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 9 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
   },
   {
     "id": 10,
-    "category": "Xây dựng Dân dụng & Công nghiệp",
-    "title": "Quy trình xin phép xây dựng nhà xưởng 2024",
-    "date": "13/03/2024",
-    "excerpt": "Tư vấn pháp lý trọn gói từ khâu thiết kế đến hoàn công.",
-    "content": "Xây Lắp Chợ Lớn hỗ trợ chủ đầu tư hoàn thiện hồ sơ xây dựng nhanh chóng, tuân thủ mọi quy định mới nhất của pháp luật.",
-    "image": "/hero.png"
+    "category": "Công nghệ & BIM",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #10",
+    "date": "09/08/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 10 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
   },
   {
     "id": 11,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Lắp đặt Mái Năng lượng Mặt trời cho Nhà xưởng",
-    "date": "12/03/2024",
-    "excerpt": "Tận dụng diện tích mái để tự chủ nguồn điện sạch.",
-    "content": "Hệ thống điện mặt trời áp mái 1MWp giúp doanh nghiệp tiết kiệm hàng trăm triệu tiền điện mỗi tháng và đạt chứng chỉ xanh quốc tế.",
-    "image": "/service2.png"
+    "category": "Xây dựng Xanh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #11",
+    "date": "13/11/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 11 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
   },
   {
     "id": 12,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Giải pháp Điện Mặt Trời Hòa Lưới cho Hộ gia đình",
-    "date": "11/03/2024",
-    "excerpt": "Điện xanh mỗi ngày, đầu tư một lần sử dụng 25 năm.",
-    "content": "Chúng tôi cung cấp hệ thống lưu trữ hybrid giúp gia đình bạn luôn có điện ngay cả khi sự cố lưới điện xảy ra.",
-    "image": "/service2.png"
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #12",
+    "date": "01/04/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 12 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
   },
   {
     "id": 13,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Bảo trì Hệ thống Pin năng lượng mặt trời chuyên nghiệp",
-    "date": "10/03/2024",
-    "excerpt": "Vệ sinh và kiểm tra hiệu suất định kỳ.",
-    "content": "Dịch vụ bảo trì chuyên sâu giúp tăng 15% hiệu suất phát điện của các tấm pin sau thời gian dài sử dụng dưới tác động của bụi bẩn.",
-    "image": "/service2.png"
+    "category": "Công nghệ & BIM",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #13",
+    "date": "05/04/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 13 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 14,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Thi công Trạm biến áp 110kV cho Khu công nghiệp",
-    "date": "09/03/2024",
-    "excerpt": "Cung cấp nguồn điện ổn định cho sản xuất quy mô lớn.",
-    "content": "Xây Lắp Chợ Lớn có đội ngũ kỹ sư điện trình độ cao, am hiểu các quy trình lắp đặt thiết bị trung và cao thế an toàn.",
-    "image": "/service2.png"
+    "category": "Dự án Trọng điểm",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #14",
+    "date": "28/02/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 14 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 15,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Mái kính năng lượng mặt trời cho kiến trúc hiện đại",
-    "date": "08/03/2024",
-    "excerpt": "Sự kết hợp hoàn hảo giữa thẩm mỹ và công nghệ sinh điện.",
-    "content": "Giải pháp vừa thay thế vật liệu xây dựng truyền thống vừa tạo ra nguồn năng lượng vô tận từ ánh sáng tự nhiên.",
-    "image": "/service2.png"
+    "category": "Xây dựng Xanh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #15",
+    "date": "20/07/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 15 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 16,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Hệ thống Chiếu sáng Công cộng dùng Năng lượng xanh",
-    "date": "07/03/2024",
-    "excerpt": "Đèn đường thông minh tự động bật/tắt không tốn điện.",
-    "content": "Triển khai hệ thống đèn LED năng lượng mặt trời tích hợp cảm biến tại các khu dân cư mới và tuyến đường liên tỉnh.",
-    "image": "/service2.png"
+    "category": "Vật liệu Mới",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #16",
+    "date": "07/12/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 16 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 17,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Tư vấn lắp đặt Trạm sạc Ô tô điện (EV Charging)",
-    "date": "06/03/2024",
-    "excerpt": "Đón đầu xu hướng xe điện tại các tòa nhà và siêu thị.",
-    "content": "Cung cấp giải pháp trạm sạc nhanh tiêu chuẩn châu Âu, tích hợp phần mềm quản lý thanh toán tự động.",
+    "category": "Xây dựng Xanh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #17",
+    "date": "05/09/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 17 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service2.png"
   },
   {
     "id": 18,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Hợp tác đầu tư Điện mặt trời (PPA) 0 đồng",
-    "date": "05/03/2024",
-    "excerpt": "Doanh nghiệp không cần vốn vẫn có điện mặt trời.",
-    "content": "Mô hình hợp tác giúp doanh nghiệp sử dụng điện sạch với giá rẻ hơn EVN mà không cần bỏ chi phí đầu tư ban đầu.",
-    "image": "/service2.png"
+    "category": "Vật liệu Mới",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #18",
+    "date": "19/09/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 18 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 19,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Thi công Hệ thống PCCC pin Lithium",
-    "date": "04/03/2024",
-    "excerpt": "Chuyên biệt cho các trạm lưu trữ năng lượng.",
-    "content": "Ứng dụng các bình chữa cháy gốc nước và hệ thống cảnh báo sớm chuyên dụng cho cháy pin điện tử đặc thù.",
-    "image": "/service2.png"
+    "category": "Vật liệu Mới",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #19",
+    "date": "26/04/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 19 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   },
   {
     "id": 20,
-    "category": "Điện & Năng lượng Tái tạo",
-    "title": "Giám sát hiệu suất điện năng qua ứng dụng di động",
-    "date": "03/03/2024",
-    "excerpt": "Theo dõi mọi chỉ số phát điện ngay trên lòng bàn tay.",
-    "content": "Hệ thống phần mềm độc quyền giúp khách hàng kiểm soát lượng điện tạo ra và dự báo doanh thu hàng tháng từ điện mặt trời.",
-    "image": "/service2.png"
+    "category": "Hạ tầng Thông minh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #20",
+    "date": "17/03/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 20 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
   },
   {
     "id": 21,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Nhập khẩu Tủ đông - Tủ lạnh Công nghiệp cao cấp",
-    "date": "02/03/2024",
-    "excerpt": "Thương hiệu quốc tế, bảo hành chính hãng tại Việt Nam.",
-    "content": "Chúng tôi phân phối đa dạng các dòng tủ đông nằm, tủ đứng và kho lạnh di động dành cho các chuỗi siêu thị và nhà hàng.",
-    "image": "/service1.png"
+    "category": "Thị trường & Pháp lý",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #21",
+    "date": "23/06/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 21 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 22,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Giải pháp Máy cho Bếp ăn Công nghiệp tập thể",
-    "date": "01/03/2024",
-    "excerpt": "Hiện đại hóa khu bếp cho trường học và nhà máy.",
-    "content": "Cung cấp trọn gói từ máy rửa bát tự động, lò nướng đa năng đến hệ thống hút mùi công suất lớn đạt chuẩn vệ sinh thực phẩm.",
-    "image": "/service1.png"
+    "category": "Xây dựng Xanh",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #22",
+    "date": "09/08/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 22 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 23,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Lắp đặt Tủ mát Siêu thị trưng bày hiện đại",
-    "date": "29/02/2024",
-    "excerpt": "Thiết kế mặt kính sang trọng, giữ thực phẩm tươi ngon.",
-    "content": "Hệ thống tủ mát không cửa hoặc có cửa kính low-e giúp tiết kiệm điện và làm nổi bật sản phẩm trưng bày trong siêu thị.",
-    "image": "/service1.png"
+    "category": "Hạ tầng Thông minh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #23",
+    "date": "05/11/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 23 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 24,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Thiết bị bảo quản dược phẩm chuyên dụng",
-    "date": "28/02/2024",
-    "excerpt": "Đảm bảo nhiệt độ khắt khe cho vaccine và thuốc.",
-    "content": "Dòng tủ mát y tế nhập khẩu với hệ thống ghi nhật ký nhiệt độ tự động và cảnh báo qua tin nhắn khi có biến động nhiệt.",
-    "image": "/service1.png"
+    "category": "Vật liệu Mới",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #24",
+    "date": "22/06/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 24 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
   },
   {
     "id": 25,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Nhập khẩu thiết bị nhà bếp chuẩn 5 sao",
-    "date": "27/02/2024",
-    "excerpt": "Dành cho các dự án khách sạn và resort cao cấp.",
-    "content": "Sản phẩm từ các thương hiệu hàng đầu Đức, Ý giúp nâng tầm đẳng cấp không gian ẩm thực của bạn.",
-    "image": "/service1.png"
+    "category": "Dự án Trọng điểm",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #25",
+    "date": "09/02/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 25 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   },
   {
     "id": 26,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Hệ thống quầy kệ và xe đẩy siêu thị",
-    "date": "26/02/2024",
-    "excerpt": "Giải pháp tối ưu không gian mua sắm và vận chuyển.",
-    "content": "Cung cấp trọn bộ trang thiết bị trưng bày hàng hóa bền bỉ và dễ dàng vệ sinh cho các chuỗi bán lẻ lớn.",
-    "image": "/service1.png"
+    "category": "Vật liệu Mới",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #26",
+    "date": "25/03/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 26 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
   },
   {
     "id": 27,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Máy làm đá viên tinh khiết công suất lớn",
-    "date": "25/02/2024",
-    "excerpt": "Đáp ứng nhu cầu cho các chuỗi cafe và nhà hàng.",
-    "content": "Thiết bị nhập khẩu trực tiếp, đạt chuẩn kiểm định an toàn và tiết kiệm nước tối đa trong quá trình làm lạnh.",
-    "image": "/service1.png"
+    "category": "Công nghệ & BIM",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #27",
+    "date": "12/02/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 27 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 28,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Bàn mát và Bàn đông inox cho đầu bếp chuyên nghiệp",
-    "date": "24/02/2024",
-    "excerpt": "Vừa là nơi sơ chế vừa là kho bảo quản tại chỗ.",
-    "content": "Sản phẩm inox 304 không gỉ, chịu lực tốt và dễ dàng tích hợp vào không gian bếp chật hẹp.",
-    "image": "/service1.png"
+    "category": "Công nghệ & BIM",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #28",
+    "date": "02/09/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 28 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 29,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Tư vấn thiết kế Bố trí thiết bị Siêu thị",
-    "date": "23/02/2024",
-    "excerpt": "Tối ưu hóa hành trình mua sắm của khách hàng.",
-    "content": "Ngoài bán thiết bị, chúng tôi còn tư vấn giải pháp sắp xếp layout khoa học giúp tăng doanh số bán hàng cho siêu thị.",
-    "image": "/service1.png"
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #29",
+    "date": "07/09/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 29 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
   },
   {
     "id": 30,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Chính sách bảo trì 24/7 cho thiết bị điện lạnh",
-    "date": "22/02/2024",
-    "excerpt": "Không để gián đoạn quá trình kinh doanh của bạn.",
-    "content": "Đội ngũ kỹ thuật luôn sẵn sàng hỗ trợ sửa chữa và thay thế linh kiện chính hãng ngay trong ngày khi có sự cố tủ đông/tủ mát.",
-    "image": "/service1.png"
+    "category": "Vật liệu Mới",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #30",
+    "date": "11/04/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 30 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 31,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Thi công Mạng lưới Cấp nước Đô thị",
-    "date": "21/02/2024",
-    "excerpt": "Đảm bảo dòng chảy tinh sạch đến từng hộ dân.",
-    "content": "Quy trình lắp đặt đường ống HDPE chịu áp lực cao, giúp giải quyết triệt để vấn đề rò rỉ nước tại các khu dân cư cũ.",
-    "image": "/service3.png"
+    "category": "Hạ tầng Thông minh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #31",
+    "date": "01/05/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 31 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 32,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Hệ thống Thoát nước mưa và Xử lý ngập úng",
-    "date": "20/02/2024",
-    "excerpt": "Chủ động kiểm soát triều cường và mưa lớn.",
-    "content": "Xây dựng các hố ga thông minh và lắp đặt máy bơm công suất lớn giúp vùng thấp trũng không còn là nỗi lo của người dân.",
-    "image": "/service3.png"
+    "category": "Xây dựng Xanh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #32",
+    "date": "18/06/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 32 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
   },
   {
     "id": 33,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Lắp đặt Điều hòa Trung tâm VRV cho Tòa nhà",
-    "date": "19/02/2024",
-    "excerpt": "Làm mát không gian lớn, tiết kiệm điện năng.",
-    "content": "Công nghệ điều hòa thông minh tự động điều chỉnh nhiệt độ theo nhu cầu thực tế của từng phòng, tối ưu hóa vận hành.",
-    "image": "/service3.png"
+    "category": "Xây dựng Xanh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #33",
+    "date": "18/08/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 33 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
   },
   {
     "id": 34,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Bảo trì Hệ thống Thông gió Nhà xưởng (HVAC)",
-    "date": "18/02/2024",
-    "excerpt": "Không khí sạch cho môi trường làm việc hiệu quả.",
-    "content": "Vệ sinh đường ống gió và thay thế lọc bụi HEPA định kỳ giúp bảo vệ sức khỏe người lao động và máy móc.",
-    "image": "/service3.png"
+    "category": "Công nghệ & BIM",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #34",
+    "date": "10/05/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 34 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 35,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Xử lý Nước thải Công nghiệp đạt chuẩn xả thải",
-    "date": "17/02/2024",
-    "excerpt": "Giải pháp môi trường bền vững cho các nhà máy.",
-    "content": "Thi công hệ thống xử lý nước thải sinh học và hóa lý, đảm bảo nước sau xử lý đạt yêu cầu nghiêm ngặt của Bộ Môi trường.",
-    "image": "/service3.png"
+    "category": "Xây dựng Xanh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #35",
+    "date": "24/04/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 35 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   },
   {
     "id": 36,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Thi công Hệ thống Cấp nước PCCC tòa nhà",
-    "date": "16/02/2024",
-    "excerpt": "Luôn sẵn sàng ứng phó trong mọi tình huống khẩn cấp.",
-    "content": "Lắp đặt bể chứa nước ngầm và hệ thống họng tiếp nước PCCC tại các vị trí chiến lược đạt chuẩn thẩm duyệt.",
-    "image": "/service3.png"
+    "category": "Vật liệu Mới",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #36",
+    "date": "04/09/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 36 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 37,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Giải pháp chống đọng sương đường ống lạnh",
-    "date": "15/02/2024",
-    "excerpt": "Sử dụng vật liệu bảo ôn cao cấp cho các kho lạnh.",
-    "content": "Kỹ thuật bọc cách nhiệt chuyên nghiệp giúp đường ống không bị mất nhiệt và tránh hư hại trần thạch cao bên dưới.",
-    "image": "/service3.png"
+    "category": "Công nghệ & BIM",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #37",
+    "date": "12/12/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 37 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
   },
   {
     "id": 38,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Lọc tổng đầu nguồn cho các tòa nhà văn phòng",
-    "date": "14/02/2024",
-    "excerpt": "Nguồn nước tiêu chuẩn cho toàn bộ hệ thống tòa nhà.",
-    "content": "Áp dụng công nghệ lọc đa tầng loại bỏ tạp chất và kim loại nặng, bảo vệ các thiết bị vệ sinh cao cấp.",
-    "image": "/service3.png"
+    "category": "Dự án Trọng điểm",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #38",
+    "date": "11/08/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 38 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 39,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Kiểm toán năng lượng hệ thống Điều hòa",
-    "date": "13/02/2024",
-    "excerpt": "Phát hiện lãng phí và đề xuất giải pháp tiết kiệm điện.",
-    "content": "Đội ngũ chuyên gia rà soát hiệu suất máy nén và dàn trao đổi nhiệt để đưa ra lộ trình tối ưu hóa chi phí vận hành.",
-    "image": "/service3.png"
+    "category": "Dự án Trọng điểm",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #39",
+    "date": "10/05/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 39 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   },
   {
     "id": 40,
-    "category": "Cấp thoát nước & Điều hòa",
-    "title": "Thi công hệ thống xả thải nhà cao tầng",
-    "date": "12/02/2024",
-    "excerpt": "Đảm bảo thông thoáng và không mùi cho căn hộ.",
-    "content": "Sử dụng ống nhựa uPVC độ dày lớn kết hợp phụ kiện chống ồn, mang lại sự riêng tư và thoải mái tối đa cho cư dân.",
+    "category": "Dự án Trọng điểm",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #40",
+    "date": "02/04/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 40 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service3.png"
   },
   {
     "id": 41,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Xây dựng Cầu vượt nhịp lớn tại Quận 8",
-    "date": "11/02/2024",
-    "excerpt": "Kết nối giao thương, giảm thiểu ùn tắc hạ tầng.",
-    "content": "Dự án tiêu biểu sử dụng công nghệ đúc hẫng cân bằng, đảm bảo độ chính xác kỹ thuật và thẩm mỹ kiến trúc đô thị.",
-    "image": "/hero.png"
+    "category": "Vật liệu Mới",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #41",
+    "date": "11/11/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 41 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
   },
   {
     "id": 42,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Nâng cấp Đê bao kết hợp Giao thông nông thôn",
-    "date": "10/02/2024",
-    "excerpt": "Chống ngập mặn và tạo đường đi thuận tiện cho dân.",
-    "content": "Giải pháp kết hợp bền vững giúp bảo vệ sản xuất nông nghiệp và cải thiện đời sống lưu thông tại các tỉnh miền Tây.",
-    "image": "/hero.png"
+    "category": "Công nghệ & BIM",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #42",
+    "date": "17/03/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 42 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 43,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Thi công Đường Nhựa Asphalts KCN Lê Minh Xuân",
-    "date": "09/02/2024",
-    "excerpt": "Mặt đường chịu tải trọng xe container nặng.",
-    "content": "Sử dụng công nghệ thảm bê tông nhựa nóng hiện đại, đạt độ phẳng và độ nhám tiêu chuẩn quốc tế cho xe vận tải lớn.",
-    "image": "/hero.png"
+    "category": "Hạ tầng Thông minh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #43",
+    "date": "14/05/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 43 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
   },
   {
     "id": 44,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Xây dựng Trạm Bơm Thủy lợi công suất lớn",
-    "date": "08/02/2024",
-    "excerpt": "Phục vụ tưới tiêu diện rộng cho cánh đồng mẫu lớn.",
-    "content": "Lắp đặt hệ thống máy bơm trục đứng hiện đại giúp chủ động điều tiết nguồn nước cho sản xuất nông nghiệp tập trung.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 45,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Kỹ thuật kè đá chống sạt lở bờ sông",
-    "date": "07/02/2024",
-    "excerpt": "Bảo vệ vùng đất ven sông trước dòng chảy siết.",
-    "content": "Sử dụng giải pháp rồng đá và thảm bê tông tự chèn, vừa đảm bảo chống xói mòn vừa tạo cảnh quan sinh thái ven sông.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 46,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Lắp đặt Hệ thống Biển báo và Đèn tín hiệu Thông minh",
-    "date": "06/02/2024",
-    "excerpt": "Hiện đại hóa hạ tầng giao thông đô thị.",
-    "content": "Hệ thống đèn tích hợp camera giám sát và điều khiển trung tâm giúp tối ưu luồng xe vào các giờ cao điểm.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 47,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Thi công Đường sắt đô thị - Các hạng mục hạ tầng",
-    "date": "05/02/2024",
-    "excerpt": "Đóng góp vào dự án giao thông chiến lược của thành phố.",
-    "content": "Xây Lắp Chợ Lớn tham gia xây dựng các hạng mục phụ trợ và đường gom cho các tuyến Metro đang triển khai.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 48,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Nạo vét Kênh mương khơi thông dòng chảy",
-    "date": "04/02/2024",
-    "excerpt": "Chuẩn bị cho mùa mưa và hạn chế ô nhiễm lòng kênh.",
-    "content": "Sử dụng tàu hút bùn chuyên dụng giúp làm sạch lòng kênh nhanh chóng, đảm bảo vệ sinh môi trường đô thị quanh Quận 8.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 49,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Xây dựng Cảng đường thủy nội địa cỡ vừa",
-    "date": "03/02/2024",
-    "excerpt": "Tăng cường năng lực vận tải đường sông.",
-    "content": "Thi công cầu cảng và kho bãi ven sông giúp giảm tải cho đường bộ và tối ưu hóa chi phí logistics cho doanh nghiệp.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 50,
-    "category": "Giao thông & Thủy lợi",
-    "title": "Tư vấn thiết kế Nút giao thông khác mức",
-    "date": "02/02/2024",
-    "excerpt": "Giải pháp giải quyết điểm đen ùn tắc tại ngoại ô.",
-    "content": "Sử dụng phần mềm mô phỏng giao thông 3D để đưa ra phương án thiết kế cầu vượt hoặc hầm chui tối ưu nhất.",
-    "image": "/hero.png"
-  },
-  {
-    "id": 51,
-    "category": "Thương mại & Dịch vụ Phụ trợ",
-    "title": "Cung cấp Máy thi công Cọc Nhồi hiện đại",
-    "date": "01/02/2024",
-    "excerpt": "Thiết bị chính hãng cho các nền móng công trình lớn.",
-    "content": "Ngoài thi công, chúng tôi còn là đối tác phân phối và cho thuê các dòng máy khoan, máy ép cọc bánh xích công suất lớn.",
+    "category": "Hạ tầng Thông minh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #44",
+    "date": "06/09/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 44 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service1.png"
   },
   {
+    "id": 45,
+    "category": "Thị trường & Pháp lý",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #45",
+    "date": "03/04/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 45 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 46,
+    "category": "Thị trường & Pháp lý",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #46",
+    "date": "13/09/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 46 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 47,
+    "category": "Công nghệ & BIM",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #47",
+    "date": "09/07/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 47 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 48,
+    "category": "Thị trường & Pháp lý",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #48",
+    "date": "20/01/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 48 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 49,
+    "category": "Hạ tầng Thông minh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #49",
+    "date": "18/11/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 49 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 50,
+    "category": "Hạ tầng Thông minh",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #50",
+    "date": "02/11/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 50 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 51,
+    "category": "Xây dựng Xanh",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #51",
+    "date": "23/04/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 51 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
     "id": 52,
-    "category": "Thương mại & Dịch vụ Phụ trợ",
-    "title": "Dịch vụ Tư vấn Thiết kế Bản vẽ Blueprint chuyên sâu",
-    "date": "31/01/2024",
-    "excerpt": "Chính xác từng thông số kỹ thuật, tối ưu chi phí thi công.",
-    "content": "Đội ngũ kiến trúc sư và kỹ sư của chúng tôi cam kết mang đến những bản vẽ chất lượng, đảm bảo tính thẩm mỹ và khả thi.",
+    "category": "Hạ tầng Thông minh",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #52",
+    "date": "07/02/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 52 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service1.png"
   },
   {
     "id": 53,
-    "category": "Thương mại & Dịch vụ Phụ trợ",
-    "title": "Dịch vụ Môi giới Bất động sản Công nghiệp",
-    "date": "30/01/2024",
-    "excerpt": "Cầu nối giữa chủ đất và các nhà đầu tư sản xuất.",
-    "content": "Hỗ trợ nhà đầu tư tìm kiếm quỹ đất phù hợp tại các khu công nghiệp trọng điểm phía Nam với thủ tục pháp lý minh bạch.",
-    "image": "/service1.png"
+    "category": "Xây dựng Xanh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #53",
+    "date": "14/08/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 53 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
   },
   {
     "id": 54,
-    "category": "Thương mại & Dịch vụ Phụ trợ",
-    "title": "Cung cấp vật liệu xây dựng hoàn thiện cao cấp",
-    "date": "29/01/2024",
-    "excerpt": "Gạch ốp lát, thiết bị vệ sinh nhập khẩu chuẩn Âu.",
-    "content": "Showroom của chúng tôi trưng bày hàng ngàn mẫu vật liệu mới nhất, giúp chủ đầu tư dễ dàng lựa chọn cho công trình của mình.",
-    "image": "/service1.png"
+    "category": "Xây dựng Xanh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #54",
+    "date": "07/10/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 54 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
   },
   {
     "id": 55,
-    "category": "Thương mại & Dịch vụ Phụ trợ",
-    "title": "Dịch vụ Kiểm định Chất lượng Công trình",
-    "date": "28/01/2024",
-    "excerpt": "Xác thực độ an toàn và bền vững cho tòa nhà cũ.",
-    "content": "Dùng thiết bị siêu âm và khoan lấy mẫu để đánh giá chính xác hiện trạng kết cấu bê tông, đưa ra phương án gia cố hiệu quả.",
+    "category": "Công nghệ & BIM",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #55",
+    "date": "25/02/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 55 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
+  },
+  {
+    "id": 56,
+    "category": "Xây dựng Xanh",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #56",
+    "date": "28/01/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 56 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 57,
+    "category": "Công nghệ & BIM",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #57",
+    "date": "19/08/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 57 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 58,
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #58",
+    "date": "11/01/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 58 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
+  },
+  {
+    "id": 59,
+    "category": "Công nghệ & BIM",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #59",
+    "date": "07/10/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 59 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
+  },
+  {
+    "id": 60,
+    "category": "Vật liệu Mới",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #60",
+    "date": "15/07/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 60 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 61,
+    "category": "Vật liệu Mới",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #61",
+    "date": "25/07/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 61 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 62,
+    "category": "Thị trường & Pháp lý",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #62",
+    "date": "17/12/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 62 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 63,
+    "category": "Xây dựng Xanh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #63",
+    "date": "04/05/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 63 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 64,
+    "category": "Hạ tầng Thông minh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #64",
+    "date": "25/11/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 64 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 65,
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #65",
+    "date": "08/05/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 65 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 66,
+    "category": "Thị trường & Pháp lý",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #66",
+    "date": "25/03/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 66 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
+  },
+  {
+    "id": 67,
+    "category": "Hạ tầng Thông minh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #67",
+    "date": "08/05/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 67 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 68,
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #68",
+    "date": "24/06/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 68 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 69,
+    "category": "Dự án Trọng điểm",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #69",
+    "date": "04/04/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 69 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 70,
+    "category": "Hạ tầng Thông minh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #70",
+    "date": "17/02/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 70 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 71,
+    "category": "Dự án Trọng điểm",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #71",
+    "date": "24/02/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 71 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 72,
+    "category": "Xây dựng Xanh",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #72",
+    "date": "08/05/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 72 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 73,
+    "category": "Hạ tầng Thông minh",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #73",
+    "date": "18/01/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 73 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 74,
+    "category": "Dự án Trọng điểm",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #74",
+    "date": "24/12/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 74 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 75,
+    "category": "Vật liệu Mới",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #75",
+    "date": "21/12/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 75 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 76,
+    "category": "Xây dựng Xanh",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #76",
+    "date": "13/12/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 76 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 77,
+    "category": "Thị trường & Pháp lý",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #77",
+    "date": "02/06/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 77 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 78,
+    "category": "Công nghệ & BIM",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #78",
+    "date": "27/04/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 78 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/NHA 953 CMT8 VEIW 1.jpg"
+  },
+  {
+    "id": 79,
+    "category": "Xây dựng Xanh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #79",
+    "date": "18/01/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 79 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 80,
+    "category": "Hạ tầng Thông minh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #80",
+    "date": "07/05/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 80 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 81,
+    "category": "Công nghệ & BIM",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #81",
+    "date": "03/09/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 81 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 82,
+    "category": "Công nghệ & BIM",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #82",
+    "date": "09/04/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 82 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 83,
+    "category": "Xây dựng Xanh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #83",
+    "date": "26/05/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 83 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 84,
+    "category": "Dự án Trọng điểm",
+    "title": "Digital Twin - Bản sao số: Quản lý vận hành tòa nhà thông minh #84",
+    "date": "12/09/2026",
+    "excerpt": "Tạo lập mô hình ảo song hành cùng thực thể giúp tối ưu hóa 100% công năng sử dụng.",
+    "content": "Hệ thống bản sao số cho phép ban quản lý dự đoán các hỏng hóc kỹ thuật trước khi chúng xảy ra trong thực tế. Đây là bài viết chuyên sâu số 84 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 85,
+    "category": "Thị trường & Pháp lý",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #85",
+    "date": "25/02/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 85 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 86,
+    "category": "Thị trường & Pháp lý",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #86",
+    "date": "24/06/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 86 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 87,
+    "category": "Vật liệu Mới",
+    "title": "Net-Zero Building: Tiêu chuẩn bắt buộc cho cao ốc văn phòng #87",
+    "date": "06/08/2026",
+    "excerpt": "Lộ trình hướng tới phát thải ròng bằng 0 vào năm 2050 khởi đầu bằng các quy định khắt khe năm 2026.",
+    "content": "Các tòa nhà tại trung tâm TP.HCM đang chạy đua nâng cấp hệ thống năng lượng để đạt chứng chỉ xanh toàn cầu. Đây là bài viết chuyên sâu số 87 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 88,
+    "category": "Công nghệ & BIM",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #88",
+    "date": "20/11/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 88 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 89,
+    "category": "Thị trường & Pháp lý",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #89",
+    "date": "23/11/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 89 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 90,
+    "category": "Vật liệu Mới",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #90",
+    "date": "10/05/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 90 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 91,
+    "category": "Thị trường & Pháp lý",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #91",
+    "date": "07/07/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 91 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 92,
+    "category": "Vật liệu Mới",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #92",
+    "date": "14/07/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 92 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 93,
+    "category": "Dự án Trọng điểm",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #93",
+    "date": "09/12/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 93 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 94,
+    "category": "Vật liệu Mới",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #94",
+    "date": "10/08/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 94 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 95,
+    "category": "Thị trường & Pháp lý",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #95",
+    "date": "25/06/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 95 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 96,
+    "category": "Hạ tầng Thông minh",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #96",
+    "date": "08/11/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 96 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 97,
+    "category": "Hạ tầng Thông minh",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #97",
+    "date": "09/12/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 97 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 98,
+    "category": "Vật liệu Mới",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #98",
+    "date": "22/05/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 98 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 99,
+    "category": "Hạ tầng Thông minh",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #99",
+    "date": "08/08/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 99 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service1.png"
   },
   {
     "id": 100,
-    "category": "Nhập khẩu & Phân phối Thiết bị",
-    "title": "Hệ thống Tủ mát Siêu thị Co.op Mart",
-    "date": "27/01/2024",
-    "excerpt": "Cung cấp giải pháp bảo quản thực phẩm cho chuỗi bán lẻ.",
-    "content": "Dự án lắp đặt 50 tổ hợp tủ mát trưng bày thực phẩm tươi sống tại các chi nhánh siêu thị khu vực TP.HCM.",
+    "category": "Xây dựng Xanh",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #100",
+    "date": "18/06/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 100 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
     "image": "/service1.png"
+  },
+  {
+    "id": 101,
+    "category": "Xây dựng Xanh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #101",
+    "date": "26/04/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 101 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 102,
+    "category": "Thị trường & Pháp lý",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #102",
+    "date": "24/05/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 102 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 103,
+    "category": "Dự án Trọng điểm",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #103",
+    "date": "04/03/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 103 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 104,
+    "category": "Công nghệ & BIM",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #104",
+    "date": "23/06/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 104 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 105,
+    "category": "Dự án Trọng điểm",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #105",
+    "date": "28/07/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 105 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 106,
+    "category": "Hạ tầng Thông minh",
+    "title": "Gạch tái chế từ rác thải xây dựng: Xu hướng vật liệu tuần hoàn #106",
+    "date": "15/07/2026",
+    "excerpt": "Tận dụng xà bần cũ để tạo ra các loại gạch lát vỉa hè có độ bền cao và thân thiện môi trường.",
+    "content": "CHOLONCONS tiên phong ứng dụng vật liệu tái chế 100% vào các dự án hạ tầng công cộng tại Quận 8. Đây là bài viết chuyên sâu số 106 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 107,
+    "category": "Vật liệu Mới",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #107",
+    "date": "07/09/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 107 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 108,
+    "category": "Xây dựng Xanh",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #108",
+    "date": "15/06/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 108 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 109,
+    "category": "Công nghệ & BIM",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #109",
+    "date": "07/04/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 109 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 110,
+    "category": "Công nghệ & BIM",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #110",
+    "date": "01/11/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 110 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 111,
+    "category": "Thị trường & Pháp lý",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #111",
+    "date": "04/06/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 111 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service2.png"
+  },
+  {
+    "id": 112,
+    "category": "Dự án Trọng điểm",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #112",
+    "date": "22/07/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 112 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
+  },
+  {
+    "id": 113,
+    "category": "Thị trường & Pháp lý",
+    "title": "Vật liệu tự phục hồi: Tương lai của các cây cầu vượt biển #113",
+    "date": "12/12/2026",
+    "excerpt": "Bê tông sinh học có khả năng tự vá các vết nứt li ti bằng vi khuẩn đặc biệt.",
+    "content": "Nghiên cứu mới nhất cho thấy các công trình ven biển sẽ có tuổi thọ gấp đôi nhờ ứng dụng vật liệu thông minh này, giảm chi phí bảo trì hàng tỷ đồng. Đây là bài viết chuyên sâu số 113 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service3.png"
+  },
+  {
+    "id": 114,
+    "category": "Xây dựng Xanh",
+    "title": "Sửa đổi Luật Xây dựng 2026: Những điểm mới chủ đầu tư cần lưu ý #114",
+    "date": "10/03/2026",
+    "excerpt": "Rút ngắn thời gian cấp phép và tăng cường giám sát an toàn lao động bằng flycam.",
+    "content": "Quy định mới nhấn mạnh vào trách nhiệm bảo hành công trình lâu dài và áp dụng BIM bắt buộc cho mọi dự án cấp 1. Đây là bài viết chuyên sâu số 114 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/service1.png"
+  },
+  {
+    "id": 115,
+    "category": "Công nghệ & BIM",
+    "title": "In 3D bê tông: Giải pháp cho nhà ở xã hội quy mô lớn #115",
+    "date": "18/05/2026",
+    "excerpt": "Công nghệ in 3D cho phép xây dựng phần thô ngôi nhà chỉ trong 48 giờ với chi phí tối ưu.",
+    "content": "Năm 2026 chứng kiến bước ngoặt khi các cụm nhà ở tại Long An được thực hiện bằng công nghệ in 3D, mở ra kỷ nguyên mới cho ngành xây dựng Việt Nam. Đây là bài viết chuyên sâu số 115 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 116,
+    "category": "Dự án Trọng điểm",
+    "title": "Thị trường Bất động sản Công nghiệp 2026: Làn sóng dịch chuyển mới #116",
+    "date": "09/09/2026",
+    "excerpt": "Các doanh nghiệp FDI ưu tiên lựa chọn các khu công nghiệp có hạ tầng xanh và bền vững.",
+    "content": "Bình Dương và Đồng Nai tiếp tục là tâm điểm thu hút vốn nhờ chính sách ưu đãi cho các nhà máy không phát thải. Đây là bài viết chuyên sâu số 116 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 117,
+    "category": "Hạ tầng Thông minh",
+    "title": "Thi công hầm ngầm Metro số 2: Thử thách địa chất và giải pháp công nghệ #117",
+    "date": "04/10/2026",
+    "excerpt": "Sử dụng robot đào hầm TBM thế hệ mới nhất với độ chính xác milimet dưới lòng đất.",
+    "content": "Dự án Metro số 2 đang đạt tiến độ kỷ lục nhờ sự kết hợp giữa chuyên gia quốc tế và đội ngũ kỹ sư Việt Nam tinh nhuệ. Đây là bài viết chuyên sâu số 117 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/CENTRE MALL CU CHI.jpg"
+  },
+  {
+    "id": 118,
+    "category": "Dự án Trọng điểm",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #118",
+    "date": "02/08/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 118 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Sanh 648.jpg"
+  },
+  {
+    "id": 119,
+    "category": "Công nghệ & BIM",
+    "title": "Kiến trúc Module: Xây dựng như xếp hình Lego tại các khu đô thị #119",
+    "date": "26/05/2026",
+    "excerpt": "Lắp ráp các cấu kiện đúc sẵn giúp giảm 50% thời gian thi công và hạn chế tiếng ồn đô thị.",
+    "content": "Giải pháp xây dựng module đang được áp dụng rộng rãi cho các dự án khách sạn và căn hộ dịch vụ cao tầng. Đây là bài viết chuyên sâu số 119 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/COOP SU VAN HANH.jpg"
+  },
+  {
+    "id": 120,
+    "category": "Công nghệ & BIM",
+    "title": "Cách mạng AI trong quản lý tiến độ thi công 2026 #120",
+    "date": "17/10/2026",
+    "excerpt": "Ứng dụng trí tuệ nhân tạo giúp giảm 30% lãng phí vật tư tại các công trình trọng điểm.",
+    "content": "Công nghệ AI đã không còn là viễn cảnh xa vời mà đã trở thành công cụ đắc lực tại CHOLONCONS, giúp dự báo rủi ro và tối ưu hóa nhân lực thực tế trên công trường. Đây là bài viết chuyên sâu số 120 về xu hướng xây dựng trong năm 2026. Chúng tôi phân tích các khía cạnh kỹ thuật, pháp lý và kinh tế để mang đến cái nhìn toàn diện nhất cho khách hàng. Ngành xây dựng đang chuyển mình mạnh mẽ với sự hỗ trợ của công nghệ số và tư duy phát triển bền vững.",
+    "image": "/projects/Xuong Viet phat kcn Binh an.jpg"
   }
 ]

@@ -104,10 +104,11 @@
 
 /* Mosaic Introduction - High Contrast */
 .aboutContent {
-    padding: 140px 0;
-    /* Reduced from 220px */
+    padding: 80px 0;
+    /* Tightened from 140px */
     background: #ffffff;
-    background-image: var(--architectural-bg);
+    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+    background-size: 40px 40px;
     position: relative;
 }
 
@@ -216,9 +217,12 @@
 
 /* Editorial Vertical Timeline - Gold Standard */
 .timelineSection {
-    padding: 140px 0;
-    /* Reduced spacing */
+    padding: 80px 0;
+    /* Tighter spacing */
     background: var(--prestige-navy);
+    background-image: linear-gradient(rgba(196, 161, 99, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(196, 161, 99, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
     color: white;
     position: relative;
     overflow: hidden;
@@ -316,8 +320,10 @@
 /* Partner Showcase - Elite Grid */
 /* Partner Section - Brand Wall */
 .partnerSection {
-    padding: 140px 0;
-    background: #f8fafc;
+    padding: 100px 0;
+    background: #ffffff;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 30px 30px;
 }
 
 .partnerGrid {
@@ -438,6 +444,58 @@
 
 .p_vlong {
     color: #0054A6;
+}
+
+/* Chairman's Message - Personality and Trust */
+.chairmanSection {
+    padding: 120px 0;
+    background: #f1f5f9;
+    position: relative;
+}
+
+.chairmanGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.chairmanImage {
+    position: relative;
+    box-shadow: 20px 20px 0 var(--gold-accent);
+}
+
+.chairmanQuote {
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--prestige-navy);
+    margin-bottom: 30px;
+}
+
+/* Project Strip - Livelyhood */
+.projectStrip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 350px;
+    overflow: hidden;
+    background: #000;
+}
+
+.stripImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    filter: grayscale(0.5);
+}
+
+.stripImage:hover {
+    opacity: 1;
+    filter: grayscale(0);
+    transform: scale(1.05);
 }
 
 /* Global Professional Polish */

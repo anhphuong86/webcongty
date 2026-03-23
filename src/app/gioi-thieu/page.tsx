@@ -78,6 +78,14 @@ export default async function AboutPage() {
                 </div>
             </section>
 
+            {/* Project Strip - Visual Richness */}
+            <div className={styles.projectStrip}>
+                <img src="/projects/Xuong Viet phat kcn Binh an.jpg" className={styles.stripImage} alt="Project 1" />
+                <img src="/projects/COOP SU VAN HANH.jpg" className={styles.stripImage} alt="Project 2" />
+                <img src="/projects/NHA 953 CMT8 VEIW 1.jpg" className={styles.stripImage} alt="Project 3" />
+                <img src="/projects/CENTRE MALL CU CHI.jpg" className={styles.stripImage} alt="Project 4" />
+            </div>
+
             {/* Iconic Core Values Section */}
             <section className={styles.coreValuesSection}>
                 <div className="container">
@@ -110,6 +118,43 @@ export default async function AboutPage() {
                             <div style={{ width: '50px', height: '50px', background: 'rgba(10, 25, 47, 0.05)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--prestige-navy)', fontWeight: '900', fontSize: '20px' }}>04</div>
                             <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>BỀN VỮNG</h4>
                             <p>Kiến tạo những công trình xanh, thân thiện môi trường và có giá trị sử dụng lâu dài qua nhiều thế hệ.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Chairman's Message - Human Connection */}
+            <section className={styles.chairmanSection}>
+                <div className="container">
+                    <div className={styles.chairmanGrid}>
+                        <div className={`${styles.chairmanImage} fade-in`}>
+                            <img src="/projects/Sanh 648.jpg" style={{ width: '100%', height: '520px', objectFit: 'cover' }} alt="Corporate Office" />
+                            <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', background: 'var(--gold-accent)', padding: '30px', color: '#0a192f', boxShadow: '20px 20px 60px rgba(0,0,0,0.2)' }}>
+                                <p style={{ fontWeight: '950', fontSize: '26px', margin: 0, letterSpacing: '-1px' }}>Ông Nguyễn Văn Phương</p>
+                                <p style={{ fontWeight: '700', fontSize: '14px', margin: '5px 0 0', textTransform: 'uppercase', letterSpacing: '2px', opacity: 0.8 }}>Chủ tịch Hội đồng Quản trị</p>
+                            </div>
+                        </div>
+                        <div className="fade-in" style={{ animationDelay: '0.2s' }}>
+                            <span style={{ color: 'var(--gold-accent)', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '4px', fontSize: '20px', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                <span style={{ width: '40px', height: '2px', background: 'var(--gold-accent)' }}></span>
+                                Thông điệp Ban Lãnh Đạo
+                            </span>
+                            <div className={styles.chairmanQuote}>
+                                "Tại CHOLONCONS, chúng tôi không chỉ xây dựng bằng bê tông cốt thép, mà bằng cả sự tận tâm và khát vọng kiến tạo giá trị thực cho cộng đồng. Mỗi dự án là một minh chứng cho sự chuyên nghiệp và cam kết bền vững."
+                            </div>
+                            <p style={{ fontSize: '20px', color: '#475569', lineHeight: '1.9', marginBottom: '40px', fontWeight: '450' }}>
+                                Chúng tôi hiểu rằng, sự phát triển của doanh nghiệp luôn song hành cùng sự tin tưởng của đối tác và khách hàng. Với tầm nhìn trở thành tập đoàn xây lắp đa ngành hàng đầu, chúng tôi luôn không ngừng đổi mới, cập nhật công nghệ và bồi dưỡng nhân tài để sẵn sàng chinh phục những thử thách lớn hơn trong kỷ nguyên số.
+                            </p>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '30px', marginTop: '50px' }}>
+                                <div style={{ background: 'white', padding: '30px', borderRadius: '4px', borderLeft: '6px solid var(--gold-accent)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+                                    <p style={{ fontSize: '36px', fontWeight: '950', color: 'var(--prestige-navy)', margin: 0, lineHeight: '1' }}>450+</p>
+                                    <p style={{ fontSize: '14px', color: '#64748b', textTransform: 'uppercase', fontWeight: '800', marginTop: '10px', letterSpacing: '1px' }}>Công trình hoàn thiện</p>
+                                </div>
+                                <div style={{ background: 'white', padding: '30px', borderRadius: '4px', borderLeft: '6px solid var(--prestige-navy)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+                                    <p style={{ fontSize: '36px', fontWeight: '950', color: 'var(--prestige-navy)', margin: 0, lineHeight: '1' }}>98%</p>
+                                    <p style={{ fontSize: '14px', color: '#64748b', textTransform: 'uppercase', fontWeight: '800', marginTop: '10px', letterSpacing: '1px' }}>Khách hàng hài lòng</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

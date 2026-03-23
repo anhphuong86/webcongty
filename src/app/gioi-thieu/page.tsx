@@ -130,8 +130,8 @@ export default async function AboutPage() {
                         <div className={`${styles.chairmanImage} fade-in`}>
                             <img src="/projects/Sanh 648.jpg" style={{ width: '100%', height: '520px', objectFit: 'cover' }} alt="Corporate Office" />
                             <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', background: 'var(--gold-accent)', padding: '30px', color: '#0a192f', boxShadow: '20px 20px 60px rgba(0,0,0,0.2)' }}>
-                                <p style={{ fontWeight: '950', fontSize: '26px', margin: 0, letterSpacing: '-1px' }}>Ông Nguyễn Văn Phương</p>
-                                <p style={{ fontWeight: '700', fontSize: '14px', margin: '5px 0 0', textTransform: 'uppercase', letterSpacing: '2px', opacity: 0.8 }}>Chủ tịch Hội đồng Quản trị</p>
+                                <p style={{ fontWeight: '950', fontSize: '26px', margin: 0, letterSpacing: '-1px', textTransform: 'uppercase' }}>Ông LÊ HUY ANH VŨ</p>
+                                <p style={{ fontWeight: '700', fontSize: '14px', margin: '5px 0 0', textTransform: 'uppercase', letterSpacing: '2px', opacity: 0.8 }}>GIÁM ĐỐC CÔNG TY XÂY LẮP CHỢ LỚN</p>
                             </div>
                         </div>
                         <div className="fade-in" style={{ animationDelay: '0.2s' }}>

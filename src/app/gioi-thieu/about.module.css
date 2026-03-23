@@ -1,22 +1,19 @@
 :root {
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glow-primary: rgba(37, 99, 235, 0.5);
-    --glow-secondary: rgba(59, 130, 246, 0.3);
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
+    --gold-accent: #c4a163;
+    --prestige-navy: #0a192f;
+    --deep-charcoal: #1e293b;
+    --architectural-bg: radial-gradient(circle at 20% 20%, rgba(196, 161, 99, 0.03) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(0, 0, 128, 0.05) 0%, transparent 40%);
 }
 
 .hero {
-    height: 85vh;
-    /* Larger impact */
-    min-height: 600px;
+    height: 90vh;
+    min-height: 700px;
+    background: var(--prestige-navy);
     position: relative;
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: #0f172a;
-    /* Fallback */
 }
 
 .heroBackground {
@@ -32,9 +29,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4) saturate(1.2) contrast(1.1);
-    transform: scale(1.05);
-    /* Avoid edges */
+    filter: brightness(0.3) contrast(1.2) grayscale(0.2);
+    transform: scale(1.1);
+    transition: transform 10s linear;
 }
 
 .heroOverlay {
@@ -43,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9));
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.8) 0%, rgba(10, 25, 47, 0.4) 50%, rgba(10, 25, 47, 0.9) 100%);
     z-index: 1;
 }
 
@@ -57,13 +54,16 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    padding: 10px 24px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
-    margin-bottom: 40px;
-    font-size: 14px;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(196, 161, 99, 0.2);
+    border-radius: 0;
+    /* Sharp for authority */
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .breadcrumb a {
@@ -73,80 +73,86 @@
 }
 
 .breadcrumb a:hover {
-    color: #ffffff;
+    color: var(--gold-accent);
 }
 
 .breadcrumb span {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumb p {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 6vw, 96px);
-    /* Bold and Large */
+    font-size: clamp(60px, 8vw, 120px);
+    /* Massive and Authoritative */
     font-weight: 950;
     color: #ffffff;
-    letter-spacing: -3px;
-    line-height: 1.1;
+    letter-spacing: -4px;
+    line-height: 0.95;
     margin-top: 20px;
-    text-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
-/* Mosaic Introduction */
+.hero h1 span {
+    color: var(--gold-accent);
+    display: block;
+}
+
+/* Mosaic Introduction - High Contrast */
 .aboutContent {
-    padding: 180px 0;
-    /* More breathing room */
+    padding: 220px 0;
     background: #ffffff;
+    background-image: var(--architectural-bg);
     position: relative;
 }
 
 .mosaicGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: flex-start;
+    gap: 100px;
+    align-items: center;
 }
 
 .textSection {
     position: relative;
-    padding-top: 40px;
 }
 
 .decorativeLine {
-    height: 4px;
-    width: 100px;
-    background: var(--primary-color);
-    margin-bottom: 40px;
+    height: 8px;
+    width: 120px;
+    background: var(--gold-accent);
+    margin-bottom: 50px;
 }
 
 .signatureTitle {
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 950;
-    color: #0f172a;
-    letter-spacing: -2px;
-    line-height: 1.1;
-    margin-bottom: 40px;
+    color: var(--prestige-navy);
+    letter-spacing: -3px;
+    line-height: 1;
+    margin-bottom: 50px;
 }
 
 .signatureDescription {
-    font-size: 22px;
-    line-height: 1.8;
-    color: #475569;
-    margin-bottom: 30px;
+    font-size: 26px;
+    /* Larger for readability */
+    font-weight: 500;
+    line-height: 1.7;
+    color: #0f172a;
+    margin-bottom: 40px;
 }
 
 .signatureDescription::first-letter {
-    font-size: 60px;
+    font-size: 80px;
     float: left;
     font-weight: 900;
-    margin-right: 15px;
-    color: var(--primary-color);
-    line-height: 1.1;
+    margin-right: 20px;
+    color: var(--gold-accent);
+    line-height: 0.9;
 }
 
 .imageMosaic {
@@ -155,31 +161,36 @@
 }
 
 .mainImage {
-    width: 85%;
-    height: 80%;
-    border-radius: 4px;
+    width: 90%;
+    height: 85%;
+    border-radius: 0;
     overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 80px 150px rgba(0, 0, 0, 0.15);
+    border: 15px solid white;
+    /* Classic frame */
 }
 
 .overlayCard {
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 0;
-    width: 50%;
-    background: var(--primary-color);
-    padding: 60px;
+    width: 55%;
+    background: var(--prestige-navy);
+    padding: 80px;
     color: white;
-    box-shadow: 20px 20px 60px rgba(37, 99, 235, 0.2);
+    border-top: 10px solid var(--gold-accent);
 }
 
 .overlayCard h3 {
-    font-size: 40px;
+    font-size: 100px;
+    /* Massive stat */
     font-weight: 950;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: var(--gold-accent);
 }
 
 .aboutContent::before {
@@ -203,193 +214,90 @@
     z-index: 1;
 }
 
-/* Editorial Vertical Timeline */
+/* Editorial Vertical Timeline - Gold Standard */
 .timelineSection {
-    padding: 180px 0;
-    background: #0f172a;
+    padding: 220px 0;
+    background: var(--prestige-navy);
     color: white;
     position: relative;
     overflow: hidden;
 }
 
-.timelineContainer {
-    max-width: 1000px;
-    margin: 100px auto 0;
-    position: relative;
-}
-
 .timelineContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent, rgba(37, 99, 235, 0.3), transparent);
-}
-
-.timelineRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 120px;
-    position: relative;
-}
-
-.timelineRow:last-child {
-    margin-bottom: 0;
-}
-
-.timelineItemSide {
-    width: 42%;
-}
-
-.timelineItemCenter {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    background: linear-gradient(to bottom, transparent, var(--gold-accent), transparent);
 }
 
 .timelineDotLarge {
-    width: 20px;
-    height: 20px;
-    background: #ffffff;
-    border: 4px solid var(--primary-color);
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+    width: 30px;
+    height: 30px;
+    background: var(--gold-accent);
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(196, 161, 99, 0.4);
 }
 
 .timelineYearStick {
-    font-size: 80px;
+    font-size: 180px;
+    /* Massive authoritative year */
     font-weight: 950;
-    color: rgba(255, 255, 255, 0.03);
-    position: absolute;
-    top: -40px;
-    line-height: 1;
-    pointer-events: none;
-}
-
-.timelineRow:nth-child(even) {
-    flex-direction: row-reverse;
+    color: rgba(255, 255, 255, 0.05);
+    top: -100px;
 }
 
 .timelineCardEditorial {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 60px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
-    transition: all 0.4s;
-}
-
-.timelineCardEditorial:hover {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(37, 99, 235, 0.3);
-    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+    padding: 80px 60px;
+    border: 1px solid rgba(196, 161, 99, 0.1);
 }
 
 .timelineCardEditorial h4 {
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 25px;
-    color: #ffffff;
-    letter-spacing: -1px;
+    font-size: 48px;
+    letter-spacing: -2px;
 }
 
 .timelineCardEditorial p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #94a3b8;
+    font-size: 22px;
+    color: #cbd5e1;
 }
 
 .actualYear {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--primary-color);
-    display: block;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+    font-size: 32px;
+    color: var(--gold-accent);
+    margin-bottom: 25px;
 }
 
-/* Iconic Core Values - Industrial Chic */
+/* Iconic Core Values - Executive Style */
 .coreValuesSection {
-    padding: 160px 0;
-    background: #f8fafc;
-}
-
-.coreValuesGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 80px;
+    padding: 200px 0;
+    background: #ffffff;
 }
 
 .iconicValueCard {
     background: #ffffff;
-    padding: 60px 40px;
-    position: relative;
-    border-radius: 4px;
-    border: 1px solid #e2e8f0;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-    overflow: hidden;
+    padding: 80px 50px;
+    border: 1px solid #f1f5f9;
+    border-radius: 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.03);
 }
 
 .iconicValueCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 0;
-    background: var(--primary-color);
-    transition: all 0.5s ease;
-}
-
-.iconicValueCard:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 40px 80px rgba(15, 23, 42, 0.08);
-    border-color: transparent;
-}
-
-.iconicValueCard:hover::before {
-    height: 100%;
-}
-
-.valueNumber {
-    font-size: 14px;
-    font-weight: 900;
-    color: #cbd5e1;
-    display: block;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-}
-
-.valueIconLarge {
-    font-size: 48px;
-    margin-bottom: 30px;
-    display: block;
-    filter: grayscale(1) opacity(0.8);
-    transition: all 0.5s ease;
-}
-
-.iconicValueCard:hover .valueIconLarge {
-    filter: grayscale(0) opacity(1);
-    transform: scale(1.1);
+    background: var(--gold-accent);
+    width: 6px;
 }
 
 .iconicValueCard h4 {
-    font-size: 24px;
-    font-weight: 900;
-    color: #0f172a;
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
+    font-size: 32px;
+    color: var(--prestige-navy);
 }
 
 .iconicValueCard p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #64748b;
+    font-size: 18px;
+    color: #334155;
+}
+
+.valueNumber {
+    font-size: 18px;
+    color: var(--gold-accent);
+    opacity: 0.5;
 }
 
 /* Partner Showcase - Elite Grid */
@@ -440,177 +348,126 @@
 .partnerItem:hover {
     z-index: 2;
     transform: scale(1.02);
-}
-
-.partnerItem:hover::after {
-    width: 100%;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+    border-color: var(--gold-accent);
 }
 
 .partnerLogo {
+    font-size: 20px;
     font-weight: 950;
-    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-align: center;
-    line-height: 1.2;
-    filter: grayscale(1) contrast(1.2);
-    opacity: 0.6;
+    letter-spacing: 1px;
+    color: var(--prestige-navy);
     transition: all 0.4s ease;
+    text-align: center;
 }
 
 .partnerItem:hover .partnerLogo {
-    filter: grayscale(0) contrast(1);
-    opacity: 1;
-    transform: translateY(-5px);
+    color: var(--gold-accent);
 }
 
-/* Elite Colors for Partner Logos */
+/* Brand Specific Highlights for Authority */
 .p_coop {
     color: #0054A6;
-    text-shadow: 0 0 15px rgba(0, 84, 166, 0.1);
 }
 
 .p_viettien {
     color: #EE1C24;
-    text-shadow: 0 0 15px rgba(238, 28, 36, 0.1);
 }
 
 .p_bidv {
     color: #006A4E;
-    text-shadow: 0 0 15px rgba(0, 106, 78, 0.1);
 }
 
 .p_vcb {
     color: #00B14F;
-    text-shadow: 0 0 15px rgba(0, 177, 79, 0.1);
 }
 
 .p_ctg {
     color: #00A1E4;
-    text-shadow: 0 0 15px rgba(0, 161, 228, 0.1);
 }
 
 .p_agri {
     color: #A82424;
-    text-shadow: 0 0 15px rgba(168, 36, 36, 0.1);
 }
 
 .p_tcb {
     color: #E31837;
-    text-shadow: 0 0 15px rgba(227, 24, 55, 0.1);
 }
 
 .p_mb {
     color: #004F9F;
-    text-shadow: 0 0 15px rgba(0, 79, 159, 0.1);
 }
 
 .p_stb {
     color: #0054A6;
-    text-shadow: 0 0 15px rgba(0, 84, 166, 0.1);
 }
 
 .p_lotte {
     color: #E50012;
-    text-shadow: 0 0 15px rgba(229, 0, 18, 0.1);
 }
 
 .p_win {
     color: #ED1C24;
-    text-shadow: 0 0 15px rgba(237, 28, 36, 0.1);
 }
 
 .p_aeon {
     color: #C8007C;
-    text-shadow: 0 0 15px rgba(200, 0, 124, 0.1);
 }
 
 .p_central {
     color: #E31E24;
-    text-shadow: 0 0 15px rgba(227, 30, 36, 0.1);
 }
 
 .p_m10 {
     color: #004A99;
-    text-shadow: 0 0 15px rgba(0, 74, 153, 0.1);
 }
 
 .p_vlong {
     color: #0054A6;
-    text-shadow: 0 0 15px rgba(0, 84, 166, 0.1);
 }
 
-/* Responsive Elite */
-@media (max-width: 1200px) {
-    .grid {
+/* Global Professional Polish */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .signatureTitle {
+        font-size: 60px;
+    }
+
+    .mosaicGrid {
+        grid-template-columns: 1fr;
         gap: 60px;
     }
 
-    .timelineGrid {
-        gap: 25px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .timelineGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .coreValues {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .partnerGrid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 640px) {
-    .coreValues {
-        grid-template-columns: 1fr;
+    .imageMosaic {
+        height: 500px;
     }
 
     .partnerGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .timelineYearStick {
+        font-size: 100px;
+    }
 }
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
+
+    .aboutContent,
+    .timelineSection,
+    .partnerSection {
+        padding: 120px 0;
+    }
+
     .hero h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .imageBox {
-        height: 400px;
-    }
-
-    .timelineGrid::before {
-        left: 20px;
-    }
-
-    .timelineDot {
-        left: 15px;
-    }
-
-    .timelineItem {
-        padding-left: 60px;
-    }
-
-    .timelineYear {
-        position: relative;
-        text-align: left;
-        width: auto;
-        margin-bottom: 10px;
-        display: block;
+    .signatureDescription {
+        font-size: 20px;
     }
 }

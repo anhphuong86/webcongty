@@ -1,45 +1,45 @@
 {
     "general": {
-        "companyName": "Công ty Cổ phần Xây Lắp Chợ Lớn",
-        "slogan": "Uy Tín - Chất Lượng - Hiệu Quả",
+        "companyName": "CÔNG TY CỔ PHẦN XÂY LẮP CHỢ LỚN",
+        "slogan": "Chất lượng, hiệu quả và uy tín là những tiêu chí hàng đầu",
         "logoUrl": "/logo.jpg",
         "facebook": "https://facebook.com/",
         "youtube": "https://youtube.com/"
     },
     "contact": {
-        "address": "868 Đường Tạ Quang Bửu, Phường Chánh Hưng, Quận 8, TP. Hồ Chí Minh",
-        "phone": "090 123 4567 - 028 3844 5566",
-        "email": "contact@xaylapcholon.com",
+        "address": "868 Tạ Quang Bửu, Phường 5, Quận 8, Thành phố Hồ Chí Minh",
+        "phone": "028.62628057",
+        "email": "choloncons@xaylapcholon.com",
         "taxCode": "0312671412"
     },
     "home": {
-        "heroTitle": "Kiến Tạo Giải Pháp \nXây Dựng Đẳng Cấp",
-        "heroHighlight": "Tương Lai",
-        "heroSlogan": "Xây Lắp Chợ Lớn - Hơn 10 năm kinh nghiệm định hình chuẩn mực mới trong lĩnh vực xây lắp, cơ điện và năng lượng tái tạo.",
+        "heroTitle": "Kiến Tạo Giải Pháp \nXây Dựng Bền Vững",
+        "heroHighlight": "Chuyên Nghiệp",
+        "heroSlogan": "CÔNG TY CỔ PHẦN XÂY LẮP CHỢ LỚN tiên phong trong lĩnh vực xây lắp, cơ điện và hạ tầng kỹ thuật với tiềm lực tài chính vững mạnh và quy trình đạt chuẩn ISO 9001.",
         "aboutTitle": "Hành Trình Kiến Tạo Giá Trị",
-        "aboutContent": "Được thành lập với khát vọng vươn lên trở thành đơn vị tổng thầu hàng đầu tại Việt Nam, Xây Lắp Chợ Lớn đã từng bước khẳng định uy tín và năng lực chuyên môn qua hàng trăm dự án mang tầm vóc quốc gia. Chúng tôi không chỉ xây dựng công trình, mà còn kiến tạo những giá trị bền vững cho đối tác và cộng đồng."
+        "aboutContent": "Được thành lập từ năm 2014, Xây Lắp Chợ Lớn đã khẳng định uy tín qua hàng trăm dự án công nghiệp, thương mại và dân dụng. Chúng tôi chú trọng đầu tư phát triển nguồn nhân lực, máy móc thiết bị và ứng dụng công nghệ mới để mang lại giá trị gia tăng cao nhất cho khách hàng."
     },
     "about": {
-        "heroImage": "/service1.png",
+        "heroImage": "/projects/CENTRE MALL CU CHI.jpg",
         "heroTitle": "Về Xây Lắp Chợ Lớn",
         "vision": "Trở thành biểu tượng niềm tin hàng đầu Việt Nam về chất lượng, tiến độ và giải pháp kỹ thuật tối ưu trong lĩnh vực xây lắp và cơ điện.",
-        "mission": "Cung cấp những công trình chất lượng vượt trội, an toàn và thân thiện với môi trường. Mang lại môi trường làm việc chuyên nghiệp, cơ hội phát triển cho nhân viên và lợi ích bền vững cho cổ đông."
+        "mission": "Cung cấp những công trình chất lượng vượt trội, áp dụng tiêu chuẩn ISO 9001 và không ngừng cải tiến liên tục để đáp ứng mọi nhu cầu khắt khe nhất của khách hàng."
     },
     "heroImages": {
-        "news": "/media__1774154547684.png",
-        "projects": "/hero.png",
-        "contact": "/service2.png"
+        "news": "/projects/Sense Camau thuc te.JPG",
+        "projects": "/projects/648 CMT8 V3.jpg",
+        "contact": "/projects/Xuong Viet phat kcn Binh an.jpg"
     },
     "services": {
-        "img1": "/service1.png",
-        "img2": "/service2.png",
-        "img3": "/service3.png",
-        "img4": "/hero.png",
-        "img5": "/service1.png",
-        "img6": "/service3.png"
+        "img1": "/projects/XUONG MAY VIET TAN V2.jpg",
+        "img2": "/projects/Xuong Viet phat kcn Binh an.jpg",
+        "img3": "/projects/CENTRE MALL CU CHI.jpg",
+        "img4": "/projects/648 CMT8 V2.jpg",
+        "img5": "/projects/Sanh 648.jpg",
+        "img6": "/projects/XUONG MAY VIET KHANH-min.jpg"
     },
     "trust": {
-        "imgMain": "/hero.png",
-        "imgSide": "/service2.png"
+        "imgMain": "/projects/CENTRE MALL CU CHI.jpg",
+        "imgSide": "/projects/648 CMT8 V4.jpg"
     }
 }

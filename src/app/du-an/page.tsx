@@ -22,29 +22,21 @@ export default async function ProjectsPage() {
     }
 
     const staticProjects = [
-        // Nhóm 1: Xây dựng Dân dụng & Công nghiệp
-        { id: 's1', name: "Nhà Máy Thực Phẩm Masan (HACCP)", category: "Công nghiệp", image: "/service1.png", year: "2023" },
-        { id: 's2', name: "Kho Lạnh Logistics Tân Tạo", category: "Công nghiệp", image: "/hero.png", year: "2022" },
-        { id: 's3', name: "Xưởng Sản Xuất May Mặc Quận 8", category: "Công nghiệp", image: "/service1.png", year: "2023" },
-        { id: 's4', name: "Cụm Nhà Xưởng Tiền Chế Long An", category: "Công nghiệp", image: "/hero.png", year: "2024" },
-        { id: 's5', name: "Showroom Ô Tô Cao Cấp Tạ Quang Bửu", category: "Dân dụng", image: "/service1.png", year: "2023" },
-        { id: 's6', name: "Tòa Nhà Văn Phòng Central Chợ Lớn", category: "Dân dụng", image: "/hero.png", year: "2022" },
-        { id: 's7', name: "Chung Cư Cao Tầng Phường Chánh Hưng", category: "Dân dụng", image: "/service1.png", year: "2023" },
-        { id: 's8', name: "Nhà Xưởng Thông Minh 4.0 - VSIP", category: "Công nghiệp", image: "/hero.png", year: "2023" },
-        { id: 's9', name: "Biệt Thự Song Lập Bình Chánh", category: "Dân dụng", image: "/service1.png", year: "2022" },
-        { id: 's10', name: "Khu Phức Hộp Thương Mại Quận 10", category: "Dân dụng", image: "/hero.png", year: "2023" },
+        // Nhóm 1: Công trình Thương mại & Siêu thị
+        { id: 's1', name: "Trung Tâm Thương Mại Centre Mall Củ Chi", category: "Thương mại", image: "/projects/CENTRE MALL CU CHI.jpg", year: "2024" },
+        { id: 's2', name: "Siêu Thị Co.op Mart Sư Vạn Hạnh", category: "Thương mại", image: "/projects/COOP SU VAN HANH.jpg", year: "2023" },
+        { id: 's3', name: "Trung Tâm Thương Mại Sense City Cà Mau", category: "Thương mại", image: "/projects/Sense Camau thuc te.JPG", year: "2023" },
+        { id: 's4', name: "Tòa Nhà Văn Phòng 648 Cách Mạng Tháng 8", category: "Thương mại", image: "/projects/648 CMT8 V3.jpg", year: "2024" },
 
-        // Nhóm 2: Điện & Năng lượng Tái tạo
-        { id: 's11', name: "Được Áp Mái Năng Lượng Mặt Trời 1MWp", category: "Năng lượng", image: "/service2.png", year: "2024" },
-        { id: 's12', name: "Điện Mặt Trời Mái Nhà Xưởng CP", category: "Năng lượng", image: "/service2.png", year: "2023" },
-        { id: 's13', name: "Hệ Thống Pin Lưu Trữ Hybrid Gia Đình", category: "Năng lượng", image: "/service2.png", year: "2024" },
-        { id: 's14', name: "Trạm Biến Áp 110kV KCN Hiệp Phước", category: "Hệ thống Điện", image: "/service2.png", year: "2023" },
-        { id: 's15', name: "Điện Mặt Trời Mái Kính Văn Phòng", category: "Năng lượng", image: "/service2.png", year: "2022" },
-        { id: 's16', name: "Hệ Thống Đèn Đường Solar Quận 8", category: "Năng lượng", image: "/service2.png", year: "2023" },
-        { id: 's17', name: "Trạm Sạc Nhanh Xe Điện VinFast", category: "Hệ thống Điện", image: "/service2.png", year: "2024" },
-        { id: 's18', name: "Hợp Tác PPA Điện Mặt Trời 500kWp", category: "Năng lượng", image: "/service2.png", year: "2023" },
-        { id: 's19', name: "Hệ Thống Tủ Điện Phân Phối Tòa Nhà", category: "Hệ thống Điện", image: "/service2.png", year: "2022" },
-        { id: 's20', name: "Nâng Cấp Trạm Hạ Thế Phường 5", category: "Hệ thống Điện", image: "/service2.png", year: "2023" }
+        // Nhóm 2: Công trình Công nghiệp
+        { id: 's5', name: "Hệ Thống Xưởng May Việt Long Hưng", category: "Công nghiệp", image: "/projects/XUONG MAY VIET LONG HUNG v2.jpg", year: "2023" },
+        { id: 's6', name: "Xưởng May Việt Tân - Giai Đoạn 2", category: "Công nghiệp", image: "/projects/XUONG MAY VIET TAN V2.jpg", year: "2022" },
+        { id: 's7', name: "Xưởng Sản Xuất Việt Phát - KCN Bình An", category: "Công nghiệp", image: "/projects/Xuong Viet phat kcn Binh an.jpg", year: "2023" },
+        { id: 's8', name: "Kho Vận Logistics Việt Khánh", category: "Công nghiệp", image: "/projects/XUONG MAY VIET KHANH-min.jpg", year: "2024" },
+
+        // Nhóm 3: Công trình Dân dụng
+        { id: 's9', name: "Biệt Thự Phố 953 Cách Mạng Tháng 8", category: "Dân dụng", image: "/projects/NHA 953 CMT8 VEIW 1.jpg", year: "2023" },
+        { id: 's10', name: "Nhà Phố Cao Cấp Lê Đại Hành", category: "Dân dụng", image: "/projects/NHA LE DAI HANH.jpg", year: "2022" }
     ];
 
     // Convert dynamic posts to project format

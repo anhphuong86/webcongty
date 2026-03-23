@@ -115,9 +115,9 @@ export default async function AboutPage() {
             </section>
 
             {/* Stats Section - Premium Design */}
-            <section style={{ backgroundColor: '#ffffff', padding: '120px 0', position: 'relative', overflow: 'hidden' }}>
+            <section style={{ backgroundColor: '#ffffff', padding: '100px 0', borderTop: '1px solid #f1f5f9' }}>
                 <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', textAlign: 'center' }}>
                         <div>
                             <span style={{ borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px', display: 'inline-block', marginBottom: '20px', fontWeight: '900', color: '#cbd5e1', fontSize: '14px', letterSpacing: '4px' }}>EST. 2014</span>
                             <h3 style={{ fontSize: '64px', color: '#0f172a', fontWeight: '950', letterSpacing: '-2px' }}>10+</h3>

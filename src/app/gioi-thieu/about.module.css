@@ -273,10 +273,16 @@
     letter-spacing: 2px;
 }
 
-/* Iconic Core Values - Executive Style */
 .coreValuesSection {
-    padding: 200px 0;
+    padding: 100px 0;
     background: #ffffff;
+}
+
+.iconicValueGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 80px;
 }
 
 .iconicValueCard {

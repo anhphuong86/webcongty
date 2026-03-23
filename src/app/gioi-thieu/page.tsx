@@ -98,7 +98,7 @@ export default async function AboutPage() {
                         <h2 style={{ fontSize: '52px', fontWeight: '950', color: '#0a192f', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Triết Lý Quản Trị</h2>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '30px', marginTop: '80px' }}>
+                    <div className={styles.iconicValueGrid}>
                         <div className={`${styles.iconicValueCard} fade-in`} style={{ animationDelay: '0.1s', borderTop: '4px solid #c4a163' }}>
                             <div style={{ width: '50px', height: '50px', background: 'rgba(196, 161, 99, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--gold-accent)', fontWeight: '900', fontSize: '20px' }}>01</div>
                             <h4 style={{ margin: '25px 0 15px', fontWeight: '950' }}>UY TÍN</h4>

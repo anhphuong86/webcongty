@@ -145,9 +145,9 @@ export default function NewsContent({ initialPosts }: { initialPosts: Post[] }) 
             )}
 
             {filteredPosts.length === 0 && (
-                <div className={styles.noResults}>
-                    <h3>Không tìm thấy kết quả phù hợp</h3>
-                    <p>Vui lòng thử điều chỉnh từ khóa hoặc danh mục tìm kiếm.</p>
+                <div className={styles.noResults} style={{ padding: '100px 20px', textAlign: 'center', background: '#fff', borderRadius: '16px', border: '1px dashed #ccc' }}>
+                    <h3 style={{ color: 'var(--primary-color)', fontSize: '24px' }}>Hệ thống tin tức đã sẵn sàng</h3>
+                    <p style={{ opacity: 0.7, maxWidth: '500px', margin: '15px auto' }}>Toàn bộ nội dung mẫu đã được xóa sạch. Đội ngũ nhân viên hiện có thể bắt đầu nhập liệu các tin tức thực tế của công ty vào hệ thống.</p>
                 </div>
             )}
         </div>

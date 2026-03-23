@@ -72,7 +72,7 @@ export default async function AboutPage() {
                 <div className="container">
                     <div className="text-center fade-in">
                         <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '5px', fontSize: '14px', display: 'block', marginBottom: '20px' }}>Giá trị cốt lõi</span>
-                        <h2 style={{ fontSize: '64px', fontWeight: '950', color: '#0a192f', letterSpacing: '-2px', lineHeight: '1' }}>Triết Lý Quản Trị</h2>
+                        <h2 style={{ fontSize: '52px', fontWeight: '950', color: '#0a192f', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Triết Lý Quản Trị</h2>
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '40px', marginTop: '100px' }}>
@@ -105,7 +105,7 @@ export default async function AboutPage() {
                 <div className="container">
                     <div className="text-center mb-60 fade-in">
                         <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '6px', fontSize: '14px', display: 'block', marginBottom: '20px' }}>Lịch sử phát triển</span>
-                        <h2 style={{ fontSize: '72px', fontWeight: '950', color: 'white', letterSpacing: '-3px', lineHeight: '1' }}>Hành Trình Thập Kỷ</h2>
+                        <h2 style={{ fontSize: '52px', fontWeight: '950', color: 'white', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Hành Trình Thập Kỷ</h2>
                     </div>
 
                     <div className={styles.timelineContainer}>
@@ -157,20 +157,20 @@ export default async function AboutPage() {
                 <div className="container" style={{ position: 'relative', zIndex: 1 }}>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '60px', textAlign: 'center' }}>
                         <div>
-                            <h3 style={{ fontSize: '100px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-5px', lineHeight: '1' }}>10+</h3>
-                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '15px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Năm Kinh Nghiệm</p>
+                            <h3 style={{ fontSize: '72px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-3px', lineHeight: '1' }}>10+</h3>
+                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '14px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Năm Kinh Nghiệm</p>
                         </div>
                         <div>
-                            <h3 style={{ fontSize: '100px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-5px', lineHeight: '1' }}>50+</h3>
-                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '15px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Lãnh Đạo Kỹ Thuật</p>
+                            <h3 style={{ fontSize: '72px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-3px', lineHeight: '1' }}>50+</h3>
+                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '14px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Lãnh Đạo Kỹ Thuật</p>
                         </div>
                         <div>
-                            <h3 style={{ fontSize: '100px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-5px', lineHeight: '1' }}>1000+</h3>
-                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '15px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Nhân Sự Nòng Cốt</p>
+                            <h3 style={{ fontSize: '72px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-3px', lineHeight: '1' }}>1000+</h3>
+                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '14px', fontWeight: '900', color: 'white', marginTop: '20px' }}>Nhân Sự Nòng Cốt</p>
                         </div>
                         <div>
-                            <h3 style={{ fontSize: '100px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-5px', lineHeight: '1' }}>ISO</h3>
-                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '15px', fontWeight: '900', color: 'white', marginTop: '20px' }}>9001:2015</p>
+                            <h3 style={{ fontSize: '72px', color: 'var(--gold-accent)', fontWeight: '950', letterSpacing: '-3px', lineHeight: '1' }}>ISO</h3>
+                            <p style={{ textTransform: 'uppercase', letterSpacing: '4px', fontSize: '14px', fontWeight: '900', color: 'white', marginTop: '20px' }}>9001:2015</p>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ export default async function AboutPage() {
                 <div className="container">
                     <div className="text-center mb-80 fade-in">
                         <span style={{ color: 'var(--gold-accent)', fontWeight: '900', textTransform: 'uppercase', letterSpacing: '6px', fontSize: '14px', display: 'block', marginBottom: '20px' }}>Đồng hành cùng phát triển</span>
-                        <h2 style={{ fontSize: '64px', color: 'var(--prestige-navy)', fontWeight: '950', letterSpacing: '-2px', lineHeight: '1' }}>Mạng Lưới Đối Tác Hạng Nhất</h2>
+                        <h2 style={{ fontSize: '52px', color: 'var(--prestige-navy)', fontWeight: '950', letterSpacing: '-1.5px', lineHeight: '1.1' }}>Mạng Lưới Đối Tác Hạng Nhất</h2>
                         <p style={{ maxWidth: '800px', margin: '30px auto 0', fontSize: '20px', color: '#64748b' }}>Chúng tôi tự hào là đối tác chiến lược của những định chế tài chính và tập đoàn bán lẻ hàng đầu khu vực.</p>
                     </div>
 
@@ -205,7 +205,7 @@ export default async function AboutPage() {
             {/* CTA Section - Prestige Dark */}
             <section style={{ backgroundColor: '#0a192f', padding: '160px 0', borderTop: '4px solid var(--gold-accent)' }}>
                 <div className="container text-center">
-                    <h2 style={{ fontSize: '60px', fontWeight: '950', color: 'white', letterSpacing: '-2px', marginBottom: '30px' }}>Hợp tác xây dựng tương lai?</h2>
+                    <h2 style={{ fontSize: '52px', fontWeight: '950', color: 'white', letterSpacing: '-1.5px', marginBottom: '30px' }}>Hợp tác xây dựng tương lai?</h2>
                     <p style={{ fontSize: '24px', color: '#cbd5e1', maxWidth: '900px', margin: '0 auto 60px' }}>
                         Hãy để Chợ Lớn Cons đồng hành cùng bạn trong những dự án mang tầm vóc lịch sử.
                     </p>

@@ -7,49 +7,40 @@ import styles from "./projects.module.css";
 export const dynamic = 'force-dynamic';
 
 export default async function ProjectsPage() {
-    const postsFilePath = path.join(process.cwd(), 'src', 'data', 'posts.json');
     const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
-    let dynamicPosts = [];
     let config: any = { heroImages: {} };
 
     try {
-        const fileContent = fs.readFileSync(postsFilePath, 'utf8');
-        dynamicPosts = JSON.parse(fileContent);
         const configFileContent = fs.readFileSync(configFilePath, 'utf8');
         config = JSON.parse(configFileContent);
     } catch (error) {
-        console.error('Failed to read config or dynamic posts:', error);
+        console.error('Failed to read config:', error);
     }
-
     const staticProjects = [
         // Nhóm 1: Công trình Thương mại & Siêu thị
         { id: 's1', name: "Trung Tâm Thương Mại Centre Mall Củ Chi", category: "Thương mại", image: "/projects/CENTRE MALL CU CHI.jpg", year: "2024" },
+        { id: 's1a', name: "Centre Mall Củ Chi - Phối cảnh mặt đứng", category: "Thương mại", image: "/projects/CENTRE MALL CU CHI-min.jpg", year: "2024" },
         { id: 's2', name: "Siêu Thị Co.op Mart Sư Vạn Hạnh", category: "Thương mại", image: "/projects/COOP SU VAN HANH.jpg", year: "2023" },
         { id: 's3', name: "Trung Tâm Thương Mại Sense City Cà Mau", category: "Thương mại", image: "/projects/Sense Camau thuc te.JPG", year: "2023" },
-        { id: 's4', name: "Tòa Nhà Văn Phòng 648 Cách Mạng Tháng 8", category: "Thương mại", image: "/projects/648 CMT8 V3.jpg", year: "2024" },
+        { id: 's4', name: "Tòa Nhà Văn Phòng 648 Cách Mạng Tháng 8", category: "Văn phòng", image: "/projects/648 CMT8 V3.jpg", year: "2024" },
+        { id: 's4a', name: "Văn Phòng 648 CMT8 - Kiến trúc Skyline", category: "Văn phòng", image: "/projects/648 CMT8 V2.jpg", year: "2024" },
+        { id: 's4b', name: "Sảnh Đón khách Tòa nhà 648", category: "Nội thất", image: "/projects/Sanh 648.jpg", year: "2024" },
 
         // Nhóm 2: Công trình Công nghiệp
         { id: 's5', name: "Hệ Thống Xưởng May Việt Long Hưng", category: "Công nghiệp", image: "/projects/XUONG MAY VIET LONG HUNG v2.jpg", year: "2023" },
-        { id: 's6', name: "Xưởng May Việt Tân - Giai Đoạn 2", category: "Công nghiệp", image: "/projects/XUONG MAY VIET TAN V2.jpg", year: "2022" },
+        { id: 's11', name: "Tổ Hợp Xưởng May Việt Long Hưng - Giai Đoạn 3", category: "Công nghiệp", image: "/projects/VL1.jpg", year: "2024" },
+        { id: 's6', name: "Xưởng May Việt Tân - Quy mô lớn", category: "Công nghiệp", image: "/projects/XUONG MAY VIET TAN V2.jpg", year: "2022" },
         { id: 's7', name: "Xưởng Sản Xuất Việt Phát - KCN Bình An", category: "Công nghiệp", image: "/projects/Xuong Viet phat kcn Binh an.jpg", year: "2023" },
         { id: 's8', name: "Kho Vận Logistics Việt Khánh", category: "Công nghiệp", image: "/projects/XUONG MAY VIET KHANH-min.jpg", year: "2024" },
+        { id: 's12', name: "Nhà máy Sản xuất IP Vietnam Heritage", category: "Công nghiệp", image: "/projects/phoi-canh-ipvietnam-factory-for-lease-in-vietnam-1.jpg", year: "2024" },
 
         // Nhóm 3: Công trình Dân dụng
         { id: 's9', name: "Biệt Thự Phố 953 Cách Mạng Tháng 8", category: "Dân dụng", image: "/projects/NHA 953 CMT8 VEIW 1.jpg", year: "2023" },
         { id: 's10', name: "Nhà Phố Cao Cấp Lê Đại Hành", category: "Dân dụng", image: "/projects/NHA LE DAI HANH.jpg", year: "2022" }
     ];
 
-    // Convert dynamic posts to project format
-    const dynamicProjects = dynamicPosts.map((p: any) => ({
-        id: p.id,
-        name: p.title,
-        category: p.category || "Dự án mới",
-        image: p.image || "/hero.png",
-        year: p.date?.split('/')[2] || "2024"
-    }));
-
     // Combine all
-    const allProjects = [...dynamicProjects, ...staticProjects];
+    const allProjects = [...staticProjects];
 
     return (
         <main>

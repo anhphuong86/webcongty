@@ -195,13 +195,13 @@ export default async function Home() {
                 <Image src={config.trust?.imgMain || "/hero.png"} alt="Dự án Tiêu biểu" fill style={{ objectFit: 'cover' }} />
                 <div className={styles.imageTag}>DỰ ÁN TRỌNG ĐIỂM 2024</div>
                 <div className={styles.imageInfo}>
-                  <h4>Khu Phức Hợp Chợ Lớn</h4>
+                  <h4>Centre Mall Củ Chi</h4>
                 </div>
               </div>
               <div className={styles.sideImageCard}>
                 <Image src={config.trust?.imgSide || "/service2.png"} alt="Công trình hạ tầng" fill style={{ objectFit: 'cover' }} />
                 <div className={styles.sideImageInfo}>
-                  <p>Trạm Biến Áp 220kV Quận 8</p>
+                  <p>Tòa nhà cao ốc lê văn sỹ</p>
                 </div>
               </div>
             </div>

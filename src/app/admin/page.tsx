@@ -3,414 +3,485 @@ import { useState, useEffect } from 'react';
 import styles from './admin.module.css';
 import Link from 'next/link';
 
+// --- Types ---
+interface Post {
+    id: number;
+    category: string;
+    title: string;
+    date: string;
+    excerpt: string;
+    content: string;
+    image: string;
+}
+
+interface Project {
+    id: string;
+    name: string;
+    category: string;
+    image: string;
+    year: string;
+}
+
 export default function AdminPage() {
-    const [posts, setPosts] = useState<any[]>([]);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [password, setPassword] = useState('');
+    const [posts, setPosts] = useState<Post[]>([]);
+    const [projects, setProjects] = useState<Project[]>([]);
     const [config, setConfig] = useState<any>(null);
-    const [isEditing, setIsEditing] = useState(false);
-    const [currentPost, setCurrentPost] = useState<any>(null);
-    const [loading, setLoading] = useState(true);
+    const [activeTab, setActiveTab] = useState('config'); // 'config', 'news', 'projects', 'media'
+    const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
-    const [activeTab, setActiveTab] = useState('list'); // 'list', 'form', 'ai', 'config'
 
-    // Form states (Posts)
-    const [title, setTitle] = useState('');
-    const [category, setCategory] = useState('Xây dựng Dân dụng & Công nghiệp');
-    const [excerpt, setExcerpt] = useState('');
-    const [content, setContent] = useState('');
-    const [videoUrl, setVideoUrl] = useState('');
-    const [images, setImages] = useState<string[]>([]);
+    // News Form states
+    const [editingPost, setEditingPost] = useState<Post | null>(null);
+    const [postTitle, setPostTitle] = useState('');
+    const [postCat, setPostCat] = useState('Công nghệ & BIM');
+    const [postExcerpt, setPostExcerpt] = useState('');
+    const [postContent, setPostContent] = useState('');
+    const [postImage, setPostImage] = useState('');
 
-    // AI states
-    const [aiTopic, setAiTopic] = useState('');
-    const [aiKeywords, setAiKeywords] = useState('');
-    const [isGenerating, setIsGenerating] = useState(false);
+    // Project Form states
+    const [editingProj, setEditingProj] = useState<Project | null>(null);
+    const [projName, setProjName] = useState('');
+    const [projCat, setProjCat] = useState('Thương mại');
+    const [projYear, setProjYear] = useState('2024');
+    const [projImage, setProjImage] = useState('');
 
     useEffect(() => {
-        fetchPosts();
-        fetchConfig();
+        const savedAuth = sessionStorage.getItem('admin_auth');
+        if (savedAuth === 'true') {
+            setIsLoggedIn(true);
+            fetchInitialData();
+        }
     }, []);
 
-    const fetchPosts = async () => {
+    const fetchInitialData = async () => {
         setLoading(true);
-        const res = await fetch('/api/posts');
-        const data = await res.json();
-        setPosts(data);
+        try {
+            const [postsRes, configRes, projsRes] = await Promise.all([
+                fetch('/api/posts'),
+                fetch('/api/config'),
+                fetch('/api/projects')
+            ]);
+            if (postsRes.ok) setPosts(await postsRes.json());
+            if (configRes.ok) setConfig(await configRes.json());
+            if (projsRes.ok) setProjects(await projsRes.json());
+        } catch (e) {
+            console.error("Data fetch failed", e);
+        }
         setLoading(false);
     };
 
-    const fetchConfig = async () => {
-        const res = await fetch('/api/config');
-        if (res.ok) {
-            const data = await res.json();
-            setConfig(data);
+    // --- Auth Logic ---
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (password === 'xaylapcholon@anhphuong86') {
+            setIsLoggedIn(true);
+            sessionStorage.setItem('admin_auth', 'true');
+            fetchInitialData();
+        } else {
+            alert('Mật khẩu không chính xác!');
         }
     };
 
-    // --- Post Handlers ---
-    const handleImageChange = (e: any) => {
-        const files = Array.from(e.target.files);
-        files.forEach((file: any) => {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setImages(prev => [...prev, reader.result as string]);
-            };
-            reader.readAsDataURL(file);
-        });
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+        sessionStorage.removeItem('admin_auth');
     };
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        setMessage('Đang xử lý bài viết...');
+    // --- Media Upload Logic ---
+    const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>, callback: (url: string) => void) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
 
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+            setMessage('Đang tải ảnh lên...');
+            const res = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await res.json();
+            if (data.success) {
+                callback(data.url);
+                setMessage('Tải ảnh thành công!');
+            } else {
+                setMessage('Lỗi khi tải ảnh: ' + data.error);
+            }
+        } catch (error) {
+            setMessage('Lỗi kết nối máy chủ khi upload.');
+        }
+    };
+
+    // --- News/Post CRUD ---
+    const handleSavePost = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setMessage('Đang lưu bài viết...');
+        const isNew = !editingPost;
         const postData = {
-            id: currentPost?.id, title, category, excerpt, content,
-            image: images[0] || '/hero.png', images, videoUrl
+            id: editingPost?.id || Date.now(),
+            title: postTitle,
+            category: postCat,
+            excerpt: postExcerpt,
+            content: postContent,
+            image: postImage || '/hero.png',
+            date: editingPost?.date || new Date().toLocaleDateString('vi-VN')
         };
 
-        const method = isEditing ? 'PUT' : 'POST';
         try {
             const res = await fetch('/api/posts', {
-                method, headers: { 'Content-Type': 'application/json' },
+                method: isNew ? 'POST' : 'PUT',
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(postData)
             });
             if (res.ok) {
-                setMessage(isEditing ? 'Cập nhật thành công!' : 'Đã đăng bài thành công!');
-                resetForm(); fetchPosts(); setActiveTab('list');
-            } else {
-                setMessage('Có lỗi xảy ra, vui lòng thử lại.');
+                setMessage('Lưu bài viết thành công!');
+                fetchInitialData();
+                resetNewsForm();
             }
-        } catch (error) {
-            setMessage('Lỗi kết nối máy chủ.');
-        }
+        } catch (e) { setMessage('Lỗi lưu bài viết.'); }
     };
 
-    const handleEdit = (post: any) => {
-        setIsEditing(true); setCurrentPost(post); setTitle(post.title);
-        setCategory(post.category || 'Xây dựng Dân dụng & Công nghiệp');
-        setExcerpt(post.excerpt); setContent(post.content); setVideoUrl(post.videoUrl || '');
-        setImages(post.images || [post.image]); setActiveTab('form');
-    };
-
-    const handleDelete = async (id: number) => {
-        if (!confirm('Bạn có chắc chắn muốn xóa bài viết này không?')) return;
+    const handleDeletePost = async (id: number) => {
+        if (!confirm('Xóa bài viết này?')) return;
         try {
             const res = await fetch(`/api/posts?id=${id}`, { method: 'DELETE' });
-            if (res.ok) { fetchPosts(); setMessage('Đã xóa bài viết.'); }
-        } catch (error) { setMessage('Lỗi khi xóa bài viết.'); }
+            if (res.ok) { fetchInitialData(); setMessage('Đã xóa bài.'); }
+        } catch (e) { setMessage('Lỗi khi xóa.'); }
     };
 
-    const resetForm = () => {
-        setIsEditing(false); setCurrentPost(null); setTitle(''); setExcerpt('');
-        setContent(''); setVideoUrl(''); setImages([]); setMessage('');
+    const resetNewsForm = () => {
+        setEditingPost(null);
+        setPostTitle(''); setPostExcerpt(''); setPostContent(''); setPostImage('');
     };
 
-    // --- AI Handlers ---
-    const handleGenerateAI = async () => {
-        if (!aiTopic) { setMessage('Vui lòng nhập chủ đề bài viết!'); return; }
-        setIsGenerating(true); setMessage('AI đang suy nghĩ và viết bài...');
+    const startEditPost = (post: Post) => {
+        setEditingPost(post);
+        setPostTitle(post.title);
+        setPostCat(post.category);
+        setPostExcerpt(post.excerpt);
+        setPostContent(post.content);
+        setPostImage(post.image);
+    };
+
+    // --- Projects CRUD ---
+    const handleSaveProject = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setMessage('Đang lưu dự án...');
+        const isNew = !editingProj;
+        const projData = {
+            id: editingProj?.id,
+            name: projName,
+            category: projCat,
+            year: projYear,
+            image: projImage || '/hero.png'
+        };
+
         try {
-            const res = await fetch('/api/ai-generate', {
-                method: 'POST', headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ topic: aiTopic, keywords: aiKeywords })
+            const res = await fetch('/api/projects', {
+                method: isNew ? 'POST' : 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(projData)
             });
-            const data = await res.json();
             if (res.ok) {
-                setTitle(data.title); setExcerpt(data.excerpt); setContent(data.content);
-                setActiveTab('form'); setMessage('AI đã viết xong! Vui lòng kiểm tra và xuất bản.');
-            } else { setMessage('Lỗi AI: Vui lòng kiểm tra API Key.'); }
-        } catch (error) { setMessage('Lỗi kết nối API AI.'); }
-        setIsGenerating(false);
-    };
-
-    // --- Config Handlers ---
-    const handleConfigChange = (section: string, key: string, value: string) => {
-        setConfig({
-            ...config,
-            [section]: {
-                ...config[section],
-                [key]: value
+                setMessage('Lưu dự án thành công!');
+                fetchInitialData();
+                resetProjForm();
             }
-        });
+        } catch (e) { setMessage('Lỗi lưu dự án.'); }
     };
 
-    const handleConfigImageChange = (e: any, section: string, key: string) => {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                handleConfigChange(section, key, reader.result as string);
-            };
-            reader.readAsDataURL(file);
-        }
+    const handleDeleteProj = async (id: string) => {
+        if (!confirm('Xóa dự án này?')) return;
+        try {
+            const res = await fetch(`/api/projects?id=${id}`, { method: 'DELETE' });
+            if (res.ok) { fetchInitialData(); setMessage('Đã xóa dự án.'); }
+        } catch (e) { setMessage('Lỗi khi xóa.'); }
     };
 
+    const resetProjForm = () => {
+        setEditingProj(null);
+        setProjName(''); setProjYear('2024'); setProjImage('');
+    };
+
+    const startEditProj = (proj: Project) => {
+        setEditingProj(proj);
+        setProjName(proj.name);
+        setProjCat(proj.category);
+        setProjYear(proj.year);
+        setProjImage(proj.image);
+    };
+
+    // --- Config Save ---
     const handleSaveConfig = async () => {
         setMessage('Đang lưu cấu hình...');
         try {
             const res = await fetch('/api/config', {
-                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(config)
             });
-            if (res.ok) {
-                setMessage('Lưu cấu hình website thành công!');
-            } else {
-                setMessage('Lỗi khi lưu cấu hình.');
-            }
-        } catch (error) {
-            setMessage('Lỗi kết nối máy chủ.');
-        }
+            if (res.ok) setMessage('Cấu hình website đã được cập nhật!');
+        } catch (e) { setMessage('Lỗi lưu cấu hình.'); }
     };
 
-    return (
-        <div className={styles.adminContainer}>
-            <div className="container">
-                <div className={styles.adminHeader} style={{ flexWrap: 'wrap', gap: '20px' }}>
-                    <h1 className="fade-in">CMS Administration V19</h1>
-                    <div className={styles.adminActions}>
-                        <button className={`btn ${activeTab === 'list' ? 'btn-primary' : ''}`} onClick={() => setActiveTab('list')}>Bài viết</button>
-                        <button className={`btn ${activeTab === 'form' ? 'btn-primary' : ''}`} onClick={() => { resetForm(); setActiveTab('form'); }}>+ Thêm bài mới</button>
-                        <button className={`btn ${activeTab === 'config' ? 'btn-primary' : ''}`} onClick={() => setActiveTab('config')} style={{ backgroundColor: activeTab === 'config' ? '#0a192f' : 'transparent', color: activeTab === 'config' ? 'white' : '#0a192f', border: '1px solid #0a192f' }}>⚙ Cấu hình Website</button>
-                        <button className={`btn ${activeTab === 'ai' ? 'btn-primary' : ''}`} onClick={() => setActiveTab('ai')} style={{ backgroundColor: activeTab === 'ai' ? '#10a37f' : 'transparent', color: activeTab === 'ai' ? 'white' : 'inherit', border: activeTab === 'ai' ? 'none' : '1px solid #ddd' }}>✨ Trợ lý AI</button>
-                    </div>
+    // --- Render Login Gate ---
+    if (!isLoggedIn) {
+        return (
+            <div className={styles.loginOverlay}>
+                <div className={styles.loginBox}>
+                    <img src="/logo.jpg" alt="Logo" className={styles.loginLogo} />
+                    <h2>Hệ Thống Quản Trị CHOLONCONS</h2>
+                    <p>Vui lòng nhập mật khẩu để tiếp tục</p>
+                    <form onSubmit={handleLogin}>
+                        <input
+                            type="password"
+                            placeholder="Mật khẩu bảo mật"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                        <button type="submit" className="btn btn-primary">Xác Thực Truy Cập</button>
+                    </form>
                 </div>
-
-                {message && <div className={styles.alert}>{message}</div>}
-
-                {/* TAB: DANH SÁCH BÀI VIẾT */}
-                {activeTab === 'list' && (
-                    <div className={`${styles.postsTableWrapper} fade-in`}>
-                        {loading ? <p>Đang tải dữ liệu...</p> : (
-                            <table className={styles.postsTable}>
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Hình ảnh</th>
-                                        <th>Tiêu đề & Chuyên mục</th>
-                                        <th>Ngày đăng</th>
-                                        <th>Thao tác</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {posts.map((post: any) => (
-                                        <tr key={post.id}>
-                                            <td>{post.id}</td>
-                                            <td><div className={styles.thumbnail}><img src={post.image} alt="thumb" /></div></td>
-                                            <td><div className={styles.postMeta}><span className={styles.postTitle}>{post.title}</span><span className={styles.postCategory}>{post.category}</span></div></td>
-                                            <td>{post.date}</td>
-                                            <td><div className={styles.actionBtns}><button onClick={() => handleEdit(post)} className={styles.editBtn}>Sửa</button><button onClick={() => handleDelete(post.id)} className={styles.deleteBtn}>Xóa</button></div></td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        )}
-                    </div>
-                )}
-
-                {/* TAB: CẤU HÌNH WEBSITE */}
-                {activeTab === 'config' && config && (
-                    <div className={`${styles.adminForm} fade-in`} style={{ maxWidth: '1000px' }}>
-                        <h2 className="mb-30" style={{ color: 'var(--primary-dark)', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>⚙ Cài đặt Cấu hình Toàn trang</h2>
-
-                        <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
-                            {/* General & Contact */}
-                            <div style={{ flex: '1', minWidth: '300px' }}>
-                                <h3 className="mb-20" style={{ color: 'var(--primary-color)' }}>1. Thông tin Doanh nghiệp</h3>
-                                <div className={styles.formGroup}>
-                                    <label>Tên Công Ty</label>
-                                    <input type="text" className={styles.input} value={config.general.companyName} onChange={e => handleConfigChange('general', 'companyName', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Slogan / Phương châm</label>
-                                    <input type="text" className={styles.input} value={config.general.slogan} onChange={e => handleConfigChange('general', 'slogan', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Số điện thoại Hotline</label>
-                                    <input type="text" className={styles.input} value={config.contact.phone} onChange={e => handleConfigChange('contact', 'phone', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Email liên hệ</label>
-                                    <input type="email" className={styles.input} value={config.contact.email} onChange={e => handleConfigChange('contact', 'email', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Địa chỉ Trụ sở</label>
-                                    <textarea className={styles.input} rows={2} value={config.contact.address} onChange={e => handleConfigChange('contact', 'address', e.target.value)} />
-                                </div>
-                            </div>
-
-                            {/* Home Page Config */}
-                            <div style={{ flex: '1', minWidth: '300px' }}>
-                                <h3 className="mb-20" style={{ color: 'var(--primary-color)' }}>2. Nội dung Trang Chủ</h3>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Nền Hero (Trang Chủ)</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.home.heroImage && <img src={config.home.heroImage} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'home', 'heroImage')} style={{ fontSize: '14px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Tiêu đề Hero (Trang Chủ)</label>
-                                    <textarea className={styles.input} rows={2} value={config.home.heroTitle} onChange={e => handleConfigChange('home', 'heroTitle', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Từ khóa Highlight (Chữ Vàng)</label>
-                                    <input type="text" className={styles.input} value={config.home.heroHighlight} onChange={e => handleConfigChange('home', 'heroHighlight', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Mô tả ngắn Hero</label>
-                                    <textarea className={styles.input} rows={3} value={config.home.heroSlogan} onChange={e => handleConfigChange('home', 'heroSlogan', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Tiêu đề phần Giới thiệu (Home)</label>
-                                    <input type="text" className={styles.input} value={config.home.aboutTitle} onChange={e => handleConfigChange('home', 'aboutTitle', e.target.value)} />
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Nội dung phần Giới thiệu (Home)</label>
-                                    <textarea className={styles.input} rows={4} value={config.home.aboutContent} onChange={e => handleConfigChange('home', 'aboutContent', e.target.value)} />
-                                </div>
-                            </div>
-
-                            {/* Images & Other */}
-                            <div style={{ flex: '1', minWidth: '300px' }}>
-                                <h3 className="mb-20" style={{ color: 'var(--primary-color)' }}>3. Hình ảnh Các Trang Con</h3>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Giới thiệu Công ty</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.about?.heroImage && <img src={config.about.heroImage} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'about', 'heroImage')} style={{ fontSize: '14px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Cover Trang Dự Án</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.heroImages?.projects && <img src={config.heroImages.projects} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'heroImages', 'projects')} style={{ fontSize: '14px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Cover Trang Tin Tức</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.heroImages?.news && <img src={config.heroImages.news} style={{ width: '100px', height: '60px', objectFit: 'cover', borderRadius: '4px', border: '1px solid #ddd' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'heroImages', 'news')} style={{ fontSize: '14px' }} />
-                                    </div>
-                                </div>
-
-                                <h3 className="mb-20" style={{ color: 'var(--primary-color)', marginTop: '30px' }}>4. Hình ảnh Dịch Vụ & Năng Lực (Trang Chủ)</h3>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Dịch vụ 1 & 2</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.services?.img1 && <img src={config.services.img1} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img1')} style={{ fontSize: '12px' }} />
-                                        {config.services?.img2 && <img src={config.services.img2} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img2')} style={{ fontSize: '12px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Dịch vụ 3 & 4</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.services?.img3 && <img src={config.services.img3} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img3')} style={{ fontSize: '12px' }} />
-                                        {config.services?.img4 && <img src={config.services.img4} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img4')} style={{ fontSize: '12px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Dịch vụ 5 & 6</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.services?.img5 && <img src={config.services.img5} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img5')} style={{ fontSize: '12px' }} />
-                                        {config.services?.img6 && <img src={config.services.img6} style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'services', 'img6')} style={{ fontSize: '12px' }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label>Ảnh Bản Lĩnh / Năng lực (Chính & Phụ)</label>
-                                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                                        {config.trust?.imgMain && <img src={config.trust.imgMain} style={{ width: '60px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'trust', 'imgMain')} style={{ fontSize: '12px' }} />
-                                        {config.trust?.imgSide && <img src={config.trust.imgSide} style={{ width: '60px', height: '40px', objectFit: 'cover', borderRadius: '4px' }} />}
-                                        <input type="file" accept="image/*" onChange={(e) => handleConfigImageChange(e, 'trust', 'imgSide')} style={{ fontSize: '12px' }} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={styles.formBtns} style={{ marginTop: '40px', borderTop: '2px solid #eee', paddingTop: '20px' }}>
-                            <button onClick={handleSaveConfig} className="btn btn-primary" style={{ padding: '15px 40px', fontSize: '18px' }}>💾 Lưu Toàn Bộ Cấu Hình</button>
-                        </div>
-                    </div>
-                )}
-
-                {/* TAB: FORM THÊM/SỬA BÀI VIẾT */}
-                {activeTab === 'form' && (
-                    <div className={`${styles.adminForm} fade-in`}>
-                        <form onSubmit={handleSubmit}>
-                            {/* Giữ nguyên Form UI như cũ */}
-                            <div className={styles.formGroup}>
-                                <label>Tiêu đề bài viết / Dự án</label>
-                                <input type="text" className={styles.input} value={title} onChange={(e) => setTitle(e.target.value)} required />
-                            </div>
-                            <div className={styles.formGrid}>
-                                <div className={styles.formGroup}>
-                                    <label>Chuyên mục</label>
-                                    <select className={styles.input} value={category} onChange={(e) => setCategory(e.target.value)}>
-                                        <option>Xây dựng Dân dụng & Công nghiệp</option>
-                                        <option>Điện & Năng lượng Tái tạo</option>
-                                        <option>Cấp thoát nước & Điều hòa</option>
-                                        <option>Giao thông & Thủy lợi</option>
-                                        <option>Thương mại & Dịch vụ Phụ trợ</option>
-                                        <option>Nhập khẩu & Phân phối Thiết bị</option>
-                                    </select>
-                                </div>
-                                <div className={styles.formGroup}>
-                                    <label>Link Video (YouTube/Vimeo)</label>
-                                    <input type="url" className={styles.input} value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} />
-                                </div>
-                            </div>
-                            <div className={styles.formGroup}>
-                                <label>Trích dẫn ngắn (Excerpt)</label>
-                                <textarea className={styles.textarea} value={excerpt} onChange={(e) => setExcerpt(e.target.value)} required />
-                            </div>
-                            <div className={styles.formGroup}>
-                                <label>Nội dung chi tiết</label>
-                                <textarea className={`${styles.textarea} ${styles.largeTextarea}`} value={content} onChange={(e) => setContent(e.target.value)} required />
-                            </div>
-                            <div className={styles.formBtns}>
-                                <button type="submit" className="btn btn-primary">{isEditing ? 'Cập Nhật' : 'Xuất Bản'}</button>
-                            </div>
-                        </form>
-                    </div>
-                )}
-
-                {/* TAB: TRỢ LÝ AI */}
-                {activeTab === 'ai' && (
-                    <div className={`${styles.adminForm} fade-in`}>
-                        <h2 className="mb-30" style={{ color: 'var(--primary-dark)' }}>✨ Trợ lý Viết Bài Tự Động (Gemini API)</h2>
-                        <div className={styles.formGroup}>
-                            <label>Chủ đề bài viết mong muốn (*)</label>
-                            <input type="text" className={styles.input} value={aiTopic} onChange={e => setAiTopic(e.target.value)} />
-                        </div>
-                        <div className={styles.formGroup}>
-                            <label>Từ khóa SEO gợi ý (Tùy chọn)</label>
-                            <input type="text" className={styles.input} value={aiKeywords} onChange={e => setAiKeywords(e.target.value)} />
-                        </div>
-                        <div className={styles.formBtns} style={{ marginTop: '30px' }}>
-                            <button onClick={handleGenerateAI} disabled={isGenerating} className="btn btn-primary" style={{ backgroundColor: '#10a37f', color: 'white' }}>
-                                {isGenerating ? 'Đang sáng tạo...' : 'Bắt đầu viết bài'}
-                            </button>
-                        </div>
-                    </div>
-                )}
-
             </div>
+        );
+    }
+
+    return (
+        <div className={styles.adminLayout}>
+            {/* Sidebar Navigation */}
+            <aside className={styles.sidebar}>
+                <div className={styles.sidebarHeader}>
+                    <img src="/logo.jpg" alt="CHOLONCONS" />
+                    <span>CMS CONTROL</span>
+                </div>
+                <nav className={styles.sideNav}>
+                    <button className={activeTab === 'config' ? styles.active : ''} onClick={() => setActiveTab('config')}>⚙ Cấu hình chung</button>
+                    <button className={activeTab === 'news' ? styles.active : ''} onClick={() => setActiveTab('news')}>📰 Quản lý Tin tức</button>
+                    <button className={activeTab === 'projects' ? styles.active : ''} onClick={() => setActiveTab('projects')}>🏗 Quản lý Dự án</button>
+                    <button className={activeTab === 'media' ? styles.active : ''} onClick={() => setActiveTab('media')}>🖼 Thư viện Ảnh</button>
+                </nav>
+                <button onClick={handleLogout} className={styles.logoutBtn}>Đăng xuất</button>
+            </aside>
+
+            {/* Main Content Area */}
+            <main className={styles.mainContent}>
+                <header className={styles.topBar}>
+                    <h2>
+                        {activeTab === 'config' ? 'Cài đặt Website' :
+                            activeTab === 'news' ? 'Quản lý bài viết' :
+                                activeTab === 'projects' ? 'Hồ sơ năng lực dự án' : 'Kho phương tiện'}
+                    </h2>
+                    {message && <div className={styles.topMessage}>{message}</div>}
+                </header>
+
+                <div className={styles.contentScroll}>
+                    {/* TAB: CẤU HÌNH GENERAL */}
+                    {activeTab === 'config' && config && (
+                        <div className={styles.formSection}>
+                            <h3>1. Thông tin Doanh nghiệp & Liên hệ</h3>
+                            <div className={styles.inputGrid}>
+                                <div className={styles.inputGroup}>
+                                    <label>Tên Công Ty</label>
+                                    <input type="text" value={config.general?.companyName} onChange={e => setConfig({ ...config, general: { ...config.general, companyName: e.target.value } })} />
+                                </div>
+                                <div className={styles.inputGroup}>
+                                    <label>Hotline</label>
+                                    <input type="text" value={config.contact?.phone} onChange={e => setConfig({ ...config, contact: { ...config.contact, phone: e.target.value } })} />
+                                </div>
+                                <div className={styles.inputGroup}>
+                                    <label>Email</label>
+                                    <input type="text" value={config.contact?.email} onChange={e => setConfig({ ...config, contact: { ...config.contact, email: e.target.value } })} />
+                                </div>
+                            </div>
+
+                            <h3>2. Nội dung Trang Chủ (Hero)</h3>
+                            <div className={styles.inputGroup}>
+                                <label>Ảnh Nền Hero</label>
+                                <div className={styles.imageEdit}>
+                                    <img src={config.home?.heroImage} alt="Hero" />
+                                    <input type="file" onChange={e => handleFileUpload(e, (url) => setConfig({ ...config, home: { ...config.home, heroImage: url } }))} />
+                                </div>
+                            </div>
+                            <div className={styles.inputGroup}>
+                                <label>Tiêu đề chính (Dòng 1)</label>
+                                <textarea value={config.home?.heroTitle} onChange={e => setConfig({ ...config, home: { ...config.home, heroTitle: e.target.value } })} />
+                            </div>
+                            <div className={styles.inputGroup}>
+                                <label>Highlight (Dòng mầu vàng)</label>
+                                <input type="text" value={config.home?.heroHighlight} onChange={e => setConfig({ ...config, home: { ...config.home, heroHighlight: e.target.value } })} />
+                            </div>
+
+                            <button onClick={handleSaveConfig} className="btn btn-primary" style={{ marginTop: '20px' }}>💾 Lưu thay đổi</button>
+                        </div>
+                    )}
+
+                    {/* TAB: NEWS MANAGEMENT */}
+                    {activeTab === 'news' && (
+                        <div className={styles.newsSection}>
+                            <div className={styles.newsForm}>
+                                <h3>{editingPost ? '✏ Chỉnh sửa bài viết' : '➕ Thêm bài viết mới'}</h3>
+                                <form onSubmit={handleSavePost}>
+                                    <div className={styles.inputGroup}>
+                                        <label>Tiêu đề</label>
+                                        <input type="text" value={postTitle} onChange={e => setPostTitle(e.target.value)} required />
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Chuyên mục</label>
+                                        <select value={postCat} onChange={e => setPostCat(e.target.value)}>
+                                            <option>Công nghệ & BIM</option>
+                                            <option>Xây dựng Xanh</option>
+                                            <option>Hạ tầng Thông minh</option>
+                                            <option>Dự án Trọng điểm</option>
+                                            <option>Vật liệu Mới</option>
+                                            <option>Thị trường & Pháp lý</option>
+                                        </select>
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Ảnh đại diện</label>
+                                        <div className={styles.imageEdit}>
+                                            <img src={postImage || '/hero.png'} alt="Preview" />
+                                            <input type="file" onChange={e => handleFileUpload(e, setPostImage)} />
+                                        </div>
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Trích dẫn ngắn</label>
+                                        <textarea value={postExcerpt} onChange={e => setPostExcerpt(e.target.value)} rows={2} required />
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Nội dung chi tiết</label>
+                                        <textarea value={postContent} onChange={e => setPostContent(e.target.value)} rows={6} required />
+                                    </div>
+                                    <div className={styles.formActions}>
+                                        <button type="submit" className="btn btn-primary">{editingPost ? 'Cập nhật bài viết' : 'Đăng bài ngay'}</button>
+                                        {editingPost && <button type="button" onClick={resetNewsForm} className="btn btn-outline">Hủy bỏ</button>}
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div className={styles.newsTable}>
+                                <h3>Danh sách bản tin</h3>
+                                <div style={{ maxHeight: '500px', overflowY: 'auto' }}>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Ảnh</th>
+                                                <th>Tiêu đề</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {posts.map(post => (
+                                                <tr key={post.id}>
+                                                    <td><img src={post.image} className={styles.rowThumb} /></td>
+                                                    <td className={styles.rowTitle}>{post.title}</td>
+                                                    <td>
+                                                        <button onClick={() => startEditPost(post)}>Sửa</button>
+                                                        <button onClick={() => handleDeletePost(post.id)}>Xóa</button>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* TAB: PROJECT MANAGEMENT */}
+                    {activeTab === 'projects' && (
+                        <div className={styles.newsSection}>
+                            <div className={styles.newsForm}>
+                                <h3>{editingProj ? '✏ Chỉnh sửa dự án' : '➕ Thêm dự án mới'}</h3>
+                                <form onSubmit={handleSaveProject}>
+                                    <div className={styles.inputGrid}>
+                                        <div className={styles.inputGroup}>
+                                            <label>Tên dự án</label>
+                                            <input type="text" value={projName} onChange={e => setProjName(e.target.value)} required />
+                                        </div>
+                                        <div className={styles.inputGroup}>
+                                            <label>Năm hoàn thành</label>
+                                            <input type="text" value={projYear} onChange={e => setProjYear(e.target.value)} required />
+                                        </div>
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Chuyên mục</label>
+                                        <select value={projCat} onChange={e => setProjCat(e.target.value)}>
+                                            <option>Thương mại</option>
+                                            <option>Công nghiệp</option>
+                                            <option>Văn phòng</option>
+                                            <option>Dân dụng</option>
+                                            <option>Nội thất</option>
+                                        </select>
+                                    </div>
+                                    <div className={styles.inputGroup}>
+                                        <label>Ảnh dự án</label>
+                                        <div className={styles.imageEdit}>
+                                            <img src={projImage || '/hero.png'} alt="Preview" />
+                                            <input type="file" onChange={e => handleFileUpload(e, setProjImage)} />
+                                        </div>
+                                    </div>
+                                    <div className={styles.formActions}>
+                                        <button type="submit" className="btn btn-primary">{editingProj ? 'Cập nhật dự án' : 'Thêm dự án'}</button>
+                                        {editingProj && <button type="button" onClick={resetProjForm} className="btn btn-outline">Hủy bỏ</button>}
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div className={styles.newsTable}>
+                                <h3>Danh sách hồ sơ năng lực</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Ảnh</th>
+                                            <th>Dự án</th>
+                                            <th>Năm</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {projects.map(proj => (
+                                            <tr key={proj.id}>
+                                                <td><img src={proj.image} className={styles.rowThumb} /></td>
+                                                <td className={styles.rowTitle}>{proj.name}</td>
+                                                <td>{proj.year}</td>
+                                                <td>
+                                                    <button onClick={() => startEditProj(proj)}>Sửa</button>
+                                                    <button onClick={() => handleDeleteProj(proj.id)}>Xóa</button>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* TAB: MEDIA LIBRARY */}
+                    {activeTab === 'media' && (
+                        <div className={styles.mediaSection}>
+                            <h3>🖼 Tải lên ảnh vào kho dữ liệu</h3>
+                            <div className={styles.uploadBox}>
+                                <input type="file" multiple onChange={e => {
+                                    const files = e.target.files;
+                                    if (files) {
+                                        Array.from(files).forEach(f => {
+                                            const event = { target: { files: [f] } } as any;
+                                            handleFileUpload(event, (url) => {
+                                                console.log("Uploaded:", url);
+                                            });
+                                        });
+                                    }
+                                }} />
+                                <p>Ảnh sẽ được lưu trực tiếp vào thư mục `/public/uploads` với tốc độ load cao.</p>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </main>
         </div>
     );
 }

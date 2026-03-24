@@ -96,7 +96,7 @@ export default function AIChat() {
         setTimeout(() => {
             setMessages(prev => [
                 ...prev, 
-                { role: 'ai', content: foundResponse || RESPONSES['default'] }
+                { role: 'ai', content: foundResponse || dynamicResponses['default'] }
             ]);
         }, 600);
     };

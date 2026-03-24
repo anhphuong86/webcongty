@@ -50,14 +50,17 @@ export default async function ProjectsPage() {
                     <div className={styles.projectsGrid}>
                         {allProjects.map((project: any) => (
                             <div key={project.id} className={`${styles.projectCard} fade-in`}>
-                                <div className={styles.imageContainer}>
+                                <Link href={`/du-an/${project.id}`} className={styles.imageContainer}>
                                     <Image src={project.image} alt={project.name} fill style={{ objectFit: 'cover' }} />
                                     <div className={styles.projectYear}>{project.year}</div>
-                                </div>
+                                </Link>
                                 <div className={styles.projectContent}>
                                     <span className={styles.projectCategory}>{project.category}</span>
-                                    <h3 className={styles.projectName}>{project.name}</h3>
-                                    <Link href="/lien-he" className={styles.projectLink}>Tư vấn giải pháp tương tự →</Link>
+                                    <Link href={`/du-an/${project.id}`} style={{ textDecoration: 'none' }}>
+                                        <h3 className={styles.projectName}>{project.name}</h3>
+                                    </Link>
+                                    {project.description && <p className={styles.projectDescription}>{project.description}</p>}
+                                    <Link href={`/du-an/${project.id}`} className={styles.projectLink}>Xem chi tiết dự án →</Link>
                                 </div>
                             </div>
                         ))}

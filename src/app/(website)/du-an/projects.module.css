@@ -79,6 +79,8 @@
 .imageContainer {
     position: relative;
     height: 280px;
+    display: block;
+    overflow: hidden;
 }
 
 .projectYear {
@@ -112,6 +114,19 @@
     color: var(--primary-dark);
     font-family: var(--font-header);
     line-height: 1.4;
+}
+
+.projectDescription {
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.6;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.8;
 }
 
 .projectLink {

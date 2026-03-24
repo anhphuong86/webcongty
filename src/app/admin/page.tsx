@@ -197,8 +197,10 @@ export default function AdminPage() {
                             <div className={styles.formGrid}>
                                 <div className={styles.field}><label>Tên Công Ty</label><input type="text" value={config.general.companyName} onChange={e => setConfig({ ...config, general: { ...config.general, companyName: e.target.value } })} /></div>
                                 <div className={styles.field}><label>Slogan Thương Hiệu</label><input type="text" value={config.general.slogan} onChange={e => setConfig({ ...config, general: { ...config.general, slogan: e.target.value } })} /></div>
-                                <div className={styles.field}><label>Hotline</label><input type="text" value={config.contact.phone} onChange={e => setConfig({ ...config, contact: { ...config.contact, phone: e.target.value } })} /></div>
-                                <div className={styles.field}><label>Email</label><input type="text" value={config.contact.email} onChange={e => setConfig({ ...config, contact: { ...config.contact, email: e.target.value } })} /></div>
+                                <div className={styles.field}><label>Hotline (Số cố định)</label><input type="text" value={config.contact.phone} onChange={e => setConfig({ ...config, contact: { ...config.contact, phone: e.target.value } })} /></div>
+                                <div className={styles.field}><label>Hotline Zalo (Số di động)</label><input type="text" value={config.contact.zalo} onChange={e => setConfig({ ...config, contact: { ...config.contact, zalo: e.target.value } })} /></div>
+                                <div className={styles.field}><label>Facebook Link</label><input type="text" value={config.general.facebook} onChange={e => setConfig({ ...config, general: { ...config.general, facebook: e.target.value } })} /></div>
+                                <div className={styles.field}><label>Email Công Ty</label><input type="text" value={config.contact.email} onChange={e => setConfig({ ...config, contact: { ...config.contact, email: e.target.value } })} /></div>
                             </div>
                             <button className={styles.saveBtn} onClick={() => saveConfig()}>LƯU CẤU HÌNH</button>
                         </div>
@@ -256,7 +258,35 @@ export default function AdminPage() {
                                                 <div className={styles.field}><label>Danh mục</label><input value={editingPost.category} onChange={e => setEditingPost({ ...editingPost, category: e.target.value })} /></div>
                                                 <div className={styles.field}><label>Ngày đăng</label><input value={editingPost.date} onChange={e => setEditingPost({ ...editingPost, date: e.target.value })} /></div>
                                             </div>
-                                            <div className={styles.field}><label>Ảnh đại diện (URL)</label><input value={editingPost.image} onChange={e => setEditingPost({ ...editingPost, image: e.target.value })} /></div>
+                                            <div className={styles.field}><label>Ảnh đại diện (URL chính)</label><input value={editingPost.image} onChange={e => setEditingPost({ ...editingPost, image: e.target.value })} /></div>
+                                            <div className={styles.field}>
+                                                <label>Bộ sưu tập hình ảnh (Gallery)</label>
+                                                <div className={styles.galleryManage}>
+                                                    <div className={styles.galleryGrid}>
+                                                        {(editingPost.images || []).map((img: string, idx: number) => (
+                                                            <div key={idx} className={styles.galleryThumbnail}>
+                                                                <img src={img} alt="preview" />
+                                                                <button type="button" className={styles.removeImg} onClick={() => setEditingPost({ ...editingPost, images: editingPost.images.filter((_: any, i: number) => i !== idx) })}>×</button>
+                                                            </div>
+                                                        ))}
+                                                        <div className={styles.addStep}>
+                                                            <input type="file" multiple onChange={async e => {
+                                                                const files = Array.from(e.target.files || []);
+                                                                for (const file of files) {
+                                                                    const url = await handleUpload(file);
+                                                                    if (url) {
+                                                                        setEditingPost((prev: any) => ({
+                                                                            ...prev,
+                                                                            images: [...(prev?.images || []), url]
+                                                                        }));
+                                                                    }
+                                                                }
+                                                            }} />
+                                                            <span>+ UPLOAD ẢNH</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div className={styles.field}><label>Nội dung</label><textarea rows={10} value={editingPost.content} onChange={e => setEditingPost({ ...editingPost, content: e.target.value })} /></div>
                                             <div className={styles.modalBtns}>
                                                 <button type="button" onClick={() => setEditingPost(null)}>HỦY BỎ</button>
@@ -306,7 +336,36 @@ export default function AdminPage() {
                                                 <div className={styles.field}><label>Lĩnh vực</label><input value={editingProj.category} onChange={e => setEditingProj({ ...editingProj, category: e.target.value })} /></div>
                                                 <div className={styles.field}><label>Năm hoàn thành</label><input value={editingProj.year} onChange={e => setEditingProj({ ...editingProj, year: e.target.value })} /></div>
                                             </div>
-                                            <div className={styles.field}><label>Ảnh công trình (URL)</label><input value={editingProj.image} onChange={e => setEditingProj({ ...editingProj, image: e.target.value })} /></div>
+                                            <div className={styles.field}><label>Ảnh công trình (URL chính)</label><input value={editingProj.image} onChange={e => setEditingProj({ ...editingProj, image: e.target.value })} /></div>
+                                            <div className={styles.field}>
+                                                <label>Bộ sưu tập hình ảnh (Gallery)</label>
+                                                <div className={styles.galleryManage}>
+                                                    <div className={styles.galleryGrid}>
+                                                        {(editingProj.images || []).map((img: string, idx: number) => (
+                                                            <div key={idx} className={styles.galleryThumbnail}>
+                                                                <img src={img} alt="preview" />
+                                                                <button type="button" className={styles.removeImg} onClick={() => setEditingProj({ ...editingProj, images: editingProj.images.filter((_: any, i: number) => i !== idx) })}>×</button>
+                                                            </div>
+                                                        ))}
+                                                        <div className={styles.addStep}>
+                                                            <input type="file" multiple onChange={async e => {
+                                                                const files = Array.from(e.target.files || []);
+                                                                for (const file of files) {
+                                                                    const url = await handleUpload(file);
+                                                                    if (url) {
+                                                                        setEditingProj((prev: any) => ({
+                                                                            ...prev,
+                                                                            images: [...(prev?.images || []), url]
+                                                                        }));
+                                                                    }
+                                                                }
+                                                            }} />
+                                                            <span>+ UPLOAD ẢNH</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className={styles.field}><label>Mô tả chi tiết</label><textarea rows={4} value={editingProj.description || ''} onChange={e => setEditingProj({ ...editingProj, description: e.target.value })} /></div>
                                             <div className={styles.modalBtns}>
                                                 <button type="button" onClick={() => setEditingProj(null)}>HỦY BỎ</button>
                                                 <button type="submit" className={styles.saveBtn}>LƯU DỰ ÁN</button>

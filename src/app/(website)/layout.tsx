@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import FloatingContact from "@/components/FloatingContact";
+import AIChat from "@/components/AIChat";
 import Link from "next/link";
 import fs from 'fs';
 import path from 'path';
@@ -151,6 +152,7 @@ export default function WebsiteLayout({
                 </div>
             </footer>
             <FloatingContact />
+            <AIChat />
         </>
     );
 }

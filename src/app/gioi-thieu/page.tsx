@@ -19,7 +19,7 @@ export default async function AboutPage() {
             {/* Signature Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroBackground}>
-                    <img src="/projects/CENTRE MALL CU CHI.jpg" alt="Hero Background" />
+                    <img src="/projects/centre-mall-cu-chi.jpg" alt="Hero Background" />
                 </div>
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
@@ -53,10 +53,10 @@ export default async function AboutPage() {
                             </p>
                             <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
                                 <div style={{ flex: 1, height: '200px', overflow: 'hidden', borderRadius: '4px' }}>
-                                    <img src="/projects/Xuong Viet phat kcn Binh an.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Construction" />
+                                    <img src="/projects/xuong-viet-phat-kcn-binh-an.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Construction" />
                                 </div>
                                 <div style={{ flex: 1, height: '200px', overflow: 'hidden', borderRadius: '4px' }}>
-                                    <img src="/projects/COOP SU VAN HANH.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Project" />
+                                    <img src="/projects/coop-su-van-hanh.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Project" />
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export default async function AboutPage() {
                         <div className={`${styles.imageMosaic} fade-in`} style={{ animationDelay: '0.2s' }}>
                             <div className={styles.mainImage}>
                                 <img
-                                    src="/projects/CENTRE MALL CU CHI.jpg"
+                                    src="/projects/centre-mall-cu-chi.jpg"
                                     alt="Dự án tiêu biểu"
                                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                                 />
@@ -80,10 +80,10 @@ export default async function AboutPage() {
 
             {/* Project Strip - Visual Richness */}
             <div className={styles.projectStrip}>
-                <img src="/projects/Xuong Viet phat kcn Binh an.jpg" className={styles.stripImage} alt="Project 1" />
-                <img src="/projects/COOP SU VAN HANH.jpg" className={styles.stripImage} alt="Project 2" />
-                <img src="/projects/NHA 953 CMT8 VEIW 1.jpg" className={styles.stripImage} alt="Project 3" />
-                <img src="/projects/CENTRE MALL CU CHI.jpg" className={styles.stripImage} alt="Project 4" />
+                <img src="/projects/xuong-viet-phat-kcn-binh-an.jpg" className={styles.stripImage} alt="Project 1" />
+                <img src="/projects/coop-su-van-hanh.jpg" className={styles.stripImage} alt="Project 2" />
+                <img src="/projects/nha-953-cmt8-veiw-1.jpg" className={styles.stripImage} alt="Project 3" />
+                <img src="/projects/centre-mall-cu-chi.jpg" className={styles.stripImage} alt="Project 4" />
             </div>
 
             {/* Iconic Core Values Section */}
@@ -128,7 +128,7 @@ export default async function AboutPage() {
                 <div className="container">
                     <div className={styles.chairmanGrid}>
                         <div className={`${styles.chairmanImage} fade-in`}>
-                            <img src="/projects/Sanh 648.jpg" style={{ width: '100%', height: '520px', objectFit: 'cover' }} alt="Corporate Office" />
+                            <img src="/projects/sanh-648.jpg" style={{ width: '100%', height: '520px', objectFit: 'cover' }} alt="Corporate Office" />
                             <div style={{ position: 'absolute', bottom: '-20px', right: '-20px', background: 'var(--gold-accent)', padding: '30px', color: '#0a192f', boxShadow: '20px 20px 60px rgba(0,0,0,0.2)' }}>
                                 <p style={{ fontWeight: '950', fontSize: '26px', margin: 0, letterSpacing: '-1px', textTransform: 'uppercase' }}>Ông LÊ HUY ANH VŨ</p>
                                 <p style={{ fontWeight: '700', fontSize: '14px', margin: '5px 0 0', textTransform: 'uppercase', letterSpacing: '2px', opacity: 0.8 }}>GIÁM ĐỐC CÔNG TY XÂY LẮP CHỢ LỚN</p>

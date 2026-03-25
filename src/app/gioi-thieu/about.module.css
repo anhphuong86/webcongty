@@ -538,16 +538,19 @@
     .timelineSection,
     .partnerSection,
     .coreValuesSection {
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
     .hero h1 {
-        font-size: 40px;
-        line-height: 1.2;
+        font-size: 34px;
+        line-height: 1.35;
+        letter-spacing: -0.5px;
+        margin-top: 15px;
     }
 
     .signatureTitle {
-        font-size: 36px;
+        font-size: 30px;
+        line-height: 1.25;
     }
 
     .iconicValueGrid {
@@ -555,16 +558,13 @@
         gap: 20px;
     }
 
-    .iconicValueCard {
-        padding: 40px 25px;
-    }
-
-    .partnerGrid {
+    .chairmanGrid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
-    .partnerItem {
-        height: 140px;
-        padding: 30px 15px;
+    .chairmanQuote {
+        font-size: 20px;
+        line-height: 1.6;
     }
 }

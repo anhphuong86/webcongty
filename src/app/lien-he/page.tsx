@@ -80,9 +80,16 @@ export default async function ContactPage() {
 
                     {/* Map Box */}
                     <div className={`${styles.mapBox} fade-in`}>
-                        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f5f7fa' }}>
-                            <p style={{ color: '#999', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '2px' }}>Vị trí bản đồ sẽ được tích hợp tại đây</p>
-                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8979350438677!2d106.671317775838!3d10.742368959822602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f01017ef69d%3A0x6280436852377!2zODY4IFThuqEgUXVhbmcgQuG7rXUsIFBoxrDhu51uZyA1LCBRdeG6rW4gOCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1711343000000!5m2!1svi!2s"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Địa chỉ Xây Lắp Chợ Lớn"
+                        ></iframe>
                     </div>
                 </div>
             </section>

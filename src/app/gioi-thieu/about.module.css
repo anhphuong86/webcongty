@@ -575,8 +575,19 @@
     }
 
     .partnerItem {
-        padding: 20px 10px;
-        height: 120px;
+        padding: 15px 10px;
+        height: 100px;
+        /* Reduced height for tighter mobile view */
+        min-height: 80px;
+    }
+
+    .partnerLogo {
+        font-size: 14px !important;
+        /* Scale down for mobile to avoid truncation */
+        letter-spacing: 0.5px !important;
+        word-break: break-word;
+        text-align: center;
+        width: 100%;
     }
 
     .chairmanQuote {

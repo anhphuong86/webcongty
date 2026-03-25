@@ -21,26 +21,26 @@
         "aboutContent": "Được thành lập từ năm 2014, Xây Lắp Chợ Lớn đã khẳng định uy tín qua hàng trăm dự án công nghiệp, thương mại và dân dụng. Chúng tôi chú trọng đầu tư phát triển nguồn nhân lực, máy móc thiết bị và ứng dụng công nghệ mới để mang lại giá trị gia tăng cao nhất cho khách hàng."
     },
     "about": {
-        "heroImage": "/projects/CENTRE MALL CU CHI.jpg",
+        "heroImage": "/projects/centre-mall-cu-chi.jpg",
         "heroTitle": "Về Xây Lắp Chợ Lớn",
         "vision": "Trở thành biểu tượng niềm tin hàng đầu Việt Nam về chất lượng, tiến độ và giải pháp kỹ thuật tối ưu trong lĩnh vực xây lắp và cơ điện.",
         "mission": "Cung cấp những công trình chất lượng vượt trội, áp dụng tiêu chuẩn ISO 9001 và không ngừng cải tiến liên tục để đáp ứng mọi nhu cầu khắt khe nhất của khách hàng."
     },
     "heroImages": {
-        "news": "/projects/Sense Camau thuc te.JPG",
-        "projects": "/projects/648 CMT8 V3.jpg",
-        "contact": "/projects/Xuong Viet phat kcn Binh an.jpg"
+        "news": "/projects/sense-camau-thuc-te.jpg",
+        "projects": "/projects/648-cmt8-v3.jpg",
+        "contact": "/projects/xuong-viet-phat-kcn-binh-an.jpg"
     },
     "services": {
-        "img1": "/projects/XUONG MAY VIET TAN V2.jpg",
-        "img2": "/projects/Xuong Viet phat kcn Binh an.jpg",
-        "img3": "/projects/CENTRE MALL CU CHI.jpg",
-        "img4": "/projects/648 CMT8 V2.jpg",
-        "img5": "/projects/Sanh 648.jpg",
-        "img6": "/projects/XUONG MAY VIET KHANH-min.jpg"
+        "img1": "/projects/xuong-may-viet-tan-v2.jpg",
+        "img2": "/projects/xuong-viet-phat-kcn-binh-an.jpg",
+        "img3": "/projects/centre-mall-cu-chi.jpg",
+        "img4": "/projects/648-cmt8-v2.jpg",
+        "img5": "/projects/sanh-648.jpg",
+        "img6": "/projects/xuong-may-viet-khanh-min.jpg"
     },
     "trust": {
-        "imgMain": "/projects/CENTRE MALL CU CHI.jpg",
-        "imgSide": "/projects/648 CMT8 V4.jpg"
+        "imgMain": "/projects/centre-mall-cu-chi.jpg",
+        "imgSide": "/projects/648-cmt8-v4.jpg"
     }
 }

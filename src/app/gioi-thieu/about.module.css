@@ -507,7 +507,7 @@
 /* Global Professional Polish */
 @media (max-width: 1024px) {
     .hero h1 {
-        font-size: 60px;
+        font-size: 52px;
     }
 
     .signatureTitle {
@@ -523,12 +523,12 @@
         height: 500px;
     }
 
-    .partnerGrid {
+    .iconicValueGrid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .timelineYearStick {
-        font-size: 100px;
+    .partnerGrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -536,15 +536,35 @@
 
     .aboutContent,
     .timelineSection,
-    .partnerSection {
-        padding: 120px 0;
+    .partnerSection,
+    .coreValuesSection {
+        padding: 80px 0;
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 1.2;
     }
 
-    .signatureDescription {
-        font-size: 20px;
+    .signatureTitle {
+        font-size: 36px;
+    }
+
+    .iconicValueGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .iconicValueCard {
+        padding: 40px 25px;
+    }
+
+    .partnerGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .partnerItem {
+        height: 140px;
+        padding: 30px 15px;
     }
 }

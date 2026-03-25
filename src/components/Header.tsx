@@ -40,7 +40,12 @@ export default function Header({ initialConfig }: { initialConfig?: any }) {
                 e.currentTarget.style.display = 'none';
               }}
             />
-            <span className={styles.logoText}>{companyName}</span>
+            <div className={styles.logoText}>
+              <span className={styles.logoTop}>CÔNG TY CỔ PHẦN</span>
+              <span className={styles.logoMain}>
+                XÂY LẮP <span className={styles.logoHighlightSmall}>CHỢ LỚN</span>
+              </span>
+            </div>
           </Link>
         </div>
 

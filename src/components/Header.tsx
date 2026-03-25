@@ -24,7 +24,7 @@ export default function Header({ initialConfig }: { initialConfig?: any }) {
   }, [pathname]);
 
   const companyName = initialConfig?.general?.companyName || "XÂY LẮP CHỢ LỚN";
-  const logoImage = initialConfig?.general?.logoUrl || "/logo.png";
+  const logoImage = initialConfig?.general?.logoUrl || "/logo.jpg";
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
@@ -35,7 +35,10 @@ export default function Header({ initialConfig }: { initialConfig?: any }) {
               src={logoImage}
               alt="Logo Cty"
               className={styles.logoImage}
-              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              onError={(e) => {
+                console.error("Logo failed to load:", logoImage);
+                e.currentTarget.style.display = 'none';
+              }}
             />
             <span className={styles.logoText}>{companyName}</span>
           </Link>

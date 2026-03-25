@@ -1,21 +1,24 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import Header from "@/components/Header";
 import FloatingContact from "@/components/FloatingContact";
 import AIChat from "@/components/AIChat";
 import Link from "next/link";
-import fs from 'fs';
-import path from 'path';
 
-export default function WebsiteLayout({
+export default function MainLayoutWrapper({
     children,
-}: Readonly<{
+    config
+}: {
     children: React.ReactNode;
-}>) {
-    const configFilePath = path.join(process.cwd(), 'src', 'data', 'config.json');
-    let config: any = { general: {}, contact: {} };
-    try {
-        const fileContent = fs.readFileSync(configFilePath, 'utf8');
-        config = JSON.parse(fileContent);
-    } catch (e) { console.error(e); }
+    config: any;
+}) {
+    const pathname = usePathname();
+    const isAdmin = pathname.startsWith('/admin');
+
+    if (isAdmin) {
+        return <>{children}</>;
+    }
 
     return (
         <>

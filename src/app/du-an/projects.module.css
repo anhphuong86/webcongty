@@ -1,200 +1,211 @@
 .hero {
-    background-color: var(--primary-dark);
-    background-image: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.95));
+    position: relative;
+    padding: 280px 0 140px;
     background-size: cover;
     background-position: center;
-    padding: 240px 0 100px;
-    text-align: center;
-    color: var(--white);
+    background-attachment: fixed;
+    color: white;
     margin-top: -90px;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #fdfdfd, transparent);
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: clamp(48px, 8vw, 84px);
     font-weight: 950;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
 
 .breadcrumb {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--white);
-    font-weight: 700;
     display: flex;
-    justify-content: center;
-    gap: 15px;
     align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     margin-bottom: 20px;
+    color: var(--gold-accent);
 }
 
 .breadcrumb a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
-    transition: opacity 0.3s;
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .breadcrumb a:hover {
-    opacity: 0.8;
-}
-
-.breadcrumb p {
-    color: var(--white);
-    margin: 0;
+    opacity: 1;
+    color: var(--gold-accent);
 }
 
 .breadcrumb span {
-    color: rgba(255, 255, 255, 0.4);
+    opacity: 0.3;
 }
 
 .projectsContent {
-    padding: 100px 0;
-    background: #fdfdfd;
+    padding: 120px 0;
+    background-color: #fdfdfd;
+    position: relative;
+}
+
+.pageSubtitle {
+    font-size: 20px;
+    color: #475569;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.titleLine {
+    width: 80px;
+    height: 4px;
+    background: var(--gold-accent);
+    margin: 40px auto;
 }
 
 .projectsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 60px;
+    margin-top: 80px;
 }
 
 .projectCard {
+    position: relative;
     background: white;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-    /* Stronger shadow */
-    border-radius: 8px;
+    border-radius: 0;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .projectCard:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(22, 116, 213, 0.1);
+    transform: translateY(-15px);
 }
 
 .imageContainer {
     position: relative;
-    height: 280px;
     display: block;
+    height: 420px;
     overflow: hidden;
+}
+
+.imageContainer img {
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.projectCard:hover .imageContainer img {
+    transform: scale(1.1);
 }
 
 .projectYear {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    background: var(--accent-color);
+    top: 30px;
+    right: 30px;
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
     color: white;
-    padding: 5px 15px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 2px;
-    z-index: 1;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projectContent {
-    padding: 30px;
+    padding: 40px;
+    background: white;
+    position: relative;
 }
 
 .projectCategory {
-    color: var(--primary-color);
+    display: block;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    color: var(--gold-accent);
+    margin-bottom: 20px;
 }
 
 .projectName {
-    font-size: 20px;
-    margin-top: 10px;
-    color: var(--primary-dark);
-    font-family: var(--font-header);
-    line-height: 1.4;
+    font-size: 26px;
+    font-weight: 950;
+    color: #0a192f;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+    transition: 0.3s;
+}
+
+.projectCard:hover .projectName {
+    color: var(--gold-accent);
 }
 
 .projectDescription {
-    margin-top: 15px;
-    font-size: 15px;
-    color: var(--text-light);
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #64748b;
+    margin-bottom: 30px;
     display: -webkit-box;
-    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    opacity: 0.8;
 }
 
 .projectLink {
-    display: inline-block;
-    margin-top: 20px;
-    color: var(--text-light);
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0a192f;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
 }
 
 .projectLink:hover {
-    color: var(--accent-color);
-}
-
-.pageTitle {
-    font-size: 48px;
-    color: var(--primary-dark);
-    text-transform: uppercase;
-}
-
-.titleLine {
-    height: 4px;
-    width: 60px;
-    background-color: var(--primary-color);
-    margin: 20px auto;
-}
-
-.pageSubtitle {
-    font-size: 18px;
-    color: var(--text-light);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.ctaTitle {
-    font-size: 32px;
-    margin-bottom: 30px;
+    gap: 20px;
+    color: var(--gold-accent);
 }
 
 @media (max-width: 768px) {
-    .pageTitle {
-        font-size: 32px;
-    }
-
-    .pageSubtitle {
-        font-size: 16px;
-    }
-
-    .ctaTitle {
-        font-size: 24px;
-    }
-
     .projectsGrid {
         grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .projectContent {
-        padding: 25px;
+        gap: 40px;
     }
 
     .imageContainer {
-        height: 220px;
+        height: 300px;
     }
 
-    .projectName {
-        font-size: 18px;
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .projectContent {
+        padding: 30px;
     }
 }

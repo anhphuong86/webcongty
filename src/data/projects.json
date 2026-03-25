@@ -3,7 +3,7 @@
     "id": "s6",
     "name": "Siêu Thị Co.op Mart Sư Vạn Hạnh",
     "category": "Thương mại",
-    "image": "/projects/COOP SU VAN HANH.jpg",
+    "image": "/projects/coop-su-van-hanh.jpg",
     "year": "2023",
     "description": "Dự án thi công cải tạo và nâng cấp hệ thống kỹ thuật cho siêu thị Co.op Mart, đảm bảo vận hành ổn định và hiện đại hóa không gian mua sắm.",
     "images": []
@@ -12,58 +12,58 @@
     "id": "s1",
     "name": "Trung Tâm Thương Mại Centre Mall Củ Chi",
     "category": "Thương mại",
-    "image": "/projects/CENTRE MALL CU CHI.jpg",
+    "image": "/projects/centre-mall-cu-chi.jpg",
     "year": "2024",
     "description": "Dự án trung tâm thương mại hiện đại với quy mô lớn, bao gồm hệ thống rạp chiếu phim, khu vui chơi và siêu thị tiện ích, phục vụ nhu cầu mua sắm giải trí cho khu vực Tây Bắc TP.HCM.",
     "images": [
-      "/projects/CENTRE MALL CU CHI-min.jpg",
-      "/projects/VL1.jpg"
+      "/projects/centre-mall-cu-chi-min.jpg",
+      "/projects/vl1.jpg"
     ]
   },
   {
     "id": "s4",
     "name": "Tòa Nhà Văn Phòng 648 Cách Mạng Tháng 8",
     "category": "Văn phòng",
-    "image": "/projects/648 CMT8 V3.jpg",
+    "image": "/projects/648-cmt8-v3.jpg",
     "year": "2024",
     "description": "Tòa nhà văn phòng hạng A với phong cách kiến trúc xanh, tối ưu hóa ánh sáng tự nhiên và tiết kiệm năng lượng.",
     "images": [
-      "/projects/648 CMT8 V2.jpg",
-      "/projects/Sanh 648.jpg"
+      "/projects/648-cmt8-v2.jpg",
+      "/projects/sanh-648.jpg"
     ]
   },
   {
     "id": "s3",
     "name": "Trung Tâm Thương Mại Sense City Cà Mau",
     "category": "Thương mại",
-    "image": "/projects/Sense Camau thuc te.JPG",
+    "image": "/projects/sense-camau-thuc-te.jpg",
     "year": "2023",
     "description": "Thi công hạ tầng kỹ thuật và lắp đặt hệ thống điều hòa trung tâm cho tổ hợp mua sắm lớn nhất tỉnh Cà Mau.",
     "images": [
-      "/projects/COOP SU VAN HANH.jpg"
+      "/projects/coop-su-van-hanh.jpg"
     ]
   },
   {
     "id": "s5",
     "name": "Hệ Thống Xưởng May Việt Long Hưng",
     "category": "Công nghiệp",
-    "image": "/projects/XUONG MAY VIET LONG HUNG v2.jpg",
+    "image": "/projects/xuong-may-viet-long-hung-v2.jpg",
     "year": "2023",
     "description": "Xây dựng nhà xưởng quy mô lớn đạt tiêu chuẩn xuất khẩu quốc tế, tích hợp hệ thống thông gió và làm mát thông minh.",
     "images": [
-      "/projects/VL1.jpg",
-      "/projects/XUONG MAY VIET TAN V2.jpg"
+      "/projects/vl1.jpg",
+      "/projects/xuong-may-viet-tan-v2.jpg"
     ]
   },
   {
     "id": "s10",
     "name": "Nhà Phố Cao Cấp Lê Đại Hành",
     "category": "Dân dụng",
-    "image": "/projects/NHA LE DAI HANH.jpg",
+    "image": "/projects/nha-le-dai-hanh.jpg",
     "year": "2022",
     "description": "Hoàn thiện kiến trúc ngoại thất và nội thất cho nhà phố hiện đại, chú trọng vào chi tiết và công năng sử dụng.",
     "images": [
-      "/projects/NHA 953 CMT8 VEIW 1.jpg"
+      "/projects/nha-953-cmt8-veiw-1.jpg"
     ]
   }
 ]

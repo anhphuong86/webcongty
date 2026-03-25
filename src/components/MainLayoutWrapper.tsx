@@ -21,10 +21,10 @@ export default function MainLayoutWrapper({
     }
 
     return (
-        <>
+        <div id="master-layout-wrapper">
             <Header initialConfig={{ general: config.general }} />
             <main>{children}</main>
-            <footer className="fade-in" style={{
+            <footer id="main-footer-v5" className="fade-in" style={{
                 backgroundColor: '#020617',
                 color: 'var(--white)',
                 padding: '120px 0 60px',
@@ -58,7 +58,7 @@ export default function MainLayoutWrapper({
                                 marginBottom: '20px',
                                 fontFamily: 'var(--font-header)'
                             }}>
-                                CP Xây Lắp <span style={{ color: '#1674D5' }}>Chợ Lớn</span>
+                                CP Xây Lắp <span style={{ color: '#1674D5' }}>Chợ Lớn</span> [ROOT-V6]
                             </h3>
                             <div style={{
                                 height: '2px',
@@ -156,6 +156,6 @@ export default function MainLayoutWrapper({
             </footer>
             <FloatingContact />
             <AIChat />
-        </>
+        </div>
     );
 }

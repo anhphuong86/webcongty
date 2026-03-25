@@ -563,6 +563,21 @@
         gap: 30px;
     }
 
+    .partnerGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .partnerSection {
+        padding-bottom: 200px !important;
+        /* Extremely large padding to clear floating buttons */
+    }
+
+    .partnerItem {
+        padding: 20px 10px;
+        height: 120px;
+    }
+
     .chairmanQuote {
         font-size: 20px;
         line-height: 1.6;

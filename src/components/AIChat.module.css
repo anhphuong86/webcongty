@@ -213,8 +213,9 @@
 
 @media (max-width: 768px) {
     .chatWrapper {
-        bottom: 80px;
-        right: 20px;
+        bottom: 75px;
+        /* Adjusted for 15px base + 50px hotline + 10px gap */
+        right: 15px;
     }
 
     .triggerBtn {

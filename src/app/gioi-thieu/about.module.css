@@ -563,14 +563,15 @@
         gap: 30px;
     }
 
+    .partnerSection {
+        padding-bottom: 300px !important;
+        /* Massive padding to ensure logos can be scrolled above floating buttons */
+    }
+
     .partnerGrid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-    }
-
-    .partnerSection {
-        padding-bottom: 200px !important;
-        /* Extremely large padding to clear floating buttons */
+        margin-bottom: 50px;
     }
 
     .partnerItem {
